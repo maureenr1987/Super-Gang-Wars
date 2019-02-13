@@ -47,6 +47,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
             "value": "50"
+        },
+        {
+            "id": "e8a49b41-3a36-4757-9e11-b30845fdfdfa",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
+            "value": "Machine Gun"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

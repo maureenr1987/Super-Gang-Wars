@@ -17,6 +17,12 @@ flash.x += lengthdir_x(bulletspawnposition, Owner.face);
 flash.y += lengthdir_y(bulletspawnposition, Owner.face);
 flash.image_angle = Owner.face;
 
+//Sparks
+repeat(3) {
+	var spark = instance_create_layer(x + lengthdir_x(bulletspawnposition, Owner.face), y + lengthdir_y(bulletspawnposition, Owner.face), "Player", obj_spark);
+	spark.direction =  Owner.face + random_range(-30, 30);
+}
+
 //Recoil
 x -= lengthdir_x(recoil, Owner.face);
 y -= lengthdir_y(recoil, Owner.face);

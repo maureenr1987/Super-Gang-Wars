@@ -55,6 +55,22 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "e5cfb039-6129-413e-8186-006ed9f2475d",
             "value": "True"
+        },
+        {
+            "id": "548f9ea9-c090-4ad0-bdc9-15de2717c9fe",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
+            "value": "Blast Gun"
+        },
+        {
+            "id": "21add2f0-733b-4390-8d75-b5a596641575",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "31a3e735-277d-485d-a2f1-f7a58cfd8fa9",
+            "value": "80"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

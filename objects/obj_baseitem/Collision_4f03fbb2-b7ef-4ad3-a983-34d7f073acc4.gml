@@ -1,11 +1,12 @@
 if (other != Owner){
 	if (doesdamage) {
-		with (other){
-			flicker = 5;
-			forcedir = other.Owner.face;
-			forcespd = 6;
-			current_hp -= CalcDamage_atk(other.Owner, self, other.hit_atkpower);
-		}
+		other.flicker = 5;
+		other.forcedir = Owner.face;
+		other.forcespd = 6;
+		CalcDamage(Owner, other, hit_atkpower,true);
+		
+		var txt = instance_create_layer(x, y,"Overlay",obj_feedback)
+		txt.text = "-" + string(CalcDamage(Owner, other, hit_atkpower,true))
 	}
 	 doesdamage = false;
 }

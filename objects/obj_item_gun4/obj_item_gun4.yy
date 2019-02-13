@@ -23,6 +23,14 @@
             "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
             "propertyId": "c33c5a2b-29c7-41cf-8756-8fa6a0f2f33c",
             "value": "6"
+        },
+        {
+            "id": "c0ab263f-f582-4c94-bcaf-6392c1965693",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
+            "value": "Tutorial Gun"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

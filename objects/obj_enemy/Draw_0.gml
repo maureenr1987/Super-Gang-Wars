@@ -39,7 +39,8 @@ if point_in_circle(obj_player.x, obj_player.y, x, y, 200) || (hp != current_hp) 
 	OutlineText(x + (string_width(NAME)*0.5) + 2, y-60, LVL);
 	
 	//draw Healthbar
-	draw_healthbar(x - (string_width(NAME)*0.5), y - 40 , x + (string_width(NAME)*0.5) - string_width(HP), y - 45, (current_hp / hp) * 100 , c_dkgray , c_red, c_lime, 0, true, true);
+	if (flicker > 0) draw_healthbar(x - (string_width(NAME)*0.5), y - 40 , x + (string_width(NAME)*0.5) - string_width(HP), y - 45, (current_hp / hp) * 100 , c_dkgray , c_red, c_red, 0, true, true);
+	else draw_healthbar(x - (string_width(NAME)*0.5), y - 40 , x + (string_width(NAME)*0.5) - string_width(HP), y - 45, (current_hp / hp) * 100 , c_dkgray , c_red, c_lime, 0, true, true);
 
 	//draw hp
 	DrawSetText(c_black,font_stats,fa_right,fa_top);

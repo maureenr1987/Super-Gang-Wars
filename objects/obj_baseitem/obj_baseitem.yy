@@ -72,8 +72,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Item",
-            "varName": "Name",
+            "value": "",
+            "varName": "name",
             "varType": 2
         },
         {
@@ -87,21 +87,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "Price",
-            "varType": 1
-        },
-        {
-            "id": "aa26ac0c-e700-4673-ac49-3b98d1c5c724",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "Quantity",
+            "varName": "price",
             "varType": 1
         },
         {
@@ -176,6 +162,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "cb2a758e-0e14-4649-ae53-a047343b7827",
     "visible": true
 }

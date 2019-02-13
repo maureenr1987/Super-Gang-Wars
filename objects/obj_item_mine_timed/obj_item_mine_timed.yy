@@ -42,6 +42,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
             "value": "500"
+        },
+        {
+            "id": "096828a1-d913-474f-af42-59d4b0c6eb2a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
+            "value": "Timed Mine"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

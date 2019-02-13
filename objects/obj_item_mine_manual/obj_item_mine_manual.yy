@@ -52,6 +52,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
             "value": "500"
+        },
+        {
+            "id": "71f7519f-6867-42a0-a6d6-34637a7370cc",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
+            "value": "Manual Mine"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

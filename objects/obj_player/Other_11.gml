@@ -13,10 +13,10 @@ if (cancontrol) {
 		key_jump = keyboard_check(vk_space);
 		if (use_pressed) key_use = mouse_check_button_pressed(mb_right); else key_use = mouse_check_button(mb_right);
 		if (hit_pressed) key_hit = mouse_check_button_pressed(mb_left); else  key_hit = mouse_check_button(mb_left);
-		key_interact = keyboard_check(ord("E"))
+		key_interact = keyboard_check_pressed(ord("E"))
 		
-		key_switchnext = mouse_wheel_up() || keyboard_check_pressed(vk_tab);
-		key_switchprev = mouse_wheel_down();
+		key_switchnext = mouse_wheel_down() || keyboard_check_pressed(vk_tab);
+		key_switchprev = mouse_wheel_up();
 	}
 	
 	//Get player controller input
@@ -27,7 +27,7 @@ if (cancontrol) {
 		key_jump = gamepad_button_check(0, gp_face1);
 		if (use_pressed) key_use = gamepad_button_check_pressed(0, gp_shoulderrb); else key_use = gamepad_button_check(0, gp_shoulderrb);
 		if (hit_pressed) key_hit = gamepad_button_check_pressed(0, gp_shoulderlb); else key_hit = gamepad_button_check(0, gp_shoulderlb);
-		key_interact = gamepad_button_check(0, gp_face2);
+		key_interact = gamepad_button_check_pressed(0, gp_face2);
 		
 		key_switchnext = gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(0, gp_shoulderr);
 		key_switchprev = gamepad_button_check_pressed(0, gp_padr) || gamepad_button_check_pressed(0, gp_shoulderl);

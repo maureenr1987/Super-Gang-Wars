@@ -60,7 +60,36 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "cac99ec5-2927-4de0-b2dd-c41499d5201c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "obj_player",
+            "varName": "nemesis",
+            "varType": 5
+        },
+        {
+            "id": "3525d1bc-76f7-430d-9ae1-98560670b7f7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "150",
+            "varName": "look_dist",
+            "varType": 1
+        }
+    ],
     "solid": false,
     "spriteId": "88880e96-a83b-4495-84ef-d0e42e92404e",
     "visible": true

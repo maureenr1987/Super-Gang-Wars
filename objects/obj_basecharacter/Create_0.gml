@@ -38,16 +38,31 @@ RecalcStats(self);
 
 //Inventory an items
 inventory = [
-	obj_baseitem,
-	obj_item_basegun,
-	obj_item_gun2,
-	obj_item_gun3,
-	obj_item_gun4,
-	obj_item_basespear,
-	obj_item_basesword,
-	obj_item_mine_manual,
-	obj_item_mine_proximity,
-	obj_item_mine_timed
+	"obj_baseitem",
+	"obj_item_basegun",
+	"obj_item_gun2",
+	"obj_item_gun3",
+	"obj_item_gun4",
+	"obj_item_basespear",
+	"obj_item_basesword",
+	"obj_item_mine_manual",
+	"obj_item_mine_proximity",
+	"obj_item_mine_timed",
+	"obj_item_missilelauncher"
+];
+
+inventory_quantity = [
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
 ];
 currentitem = 0;
 physitem = obj_baseitem;

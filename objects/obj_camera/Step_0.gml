@@ -33,9 +33,9 @@ if (keyboard_check_pressed(vk_f11)){
 
 //Parallax Backgrounds
 var xxx = 2;
-for (var i = 0; i <= 5; i++){
+for (var i = 0; i <= 10; i++){
 	var bg = "bg_" + string(i);
-	xxx += .2;
+	xxx += .1;
 	
 	if (layer_exists(bg)){
 		layer_x(bg,(x / xxx) * zoom)

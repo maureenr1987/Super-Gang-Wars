@@ -35,13 +35,24 @@ if (key_use) if (instance_exists(physitem)) physitem.Use = true;
 if (key_hit) if (instance_exists(physitem)) physitem.Hit = true;
 //Switch currentitem
 if (key_switchnext || key_switchprev){
-	if (key_switchnext) currentitem++
-	if (key_switchprev) currentitem--
-	if (currentitem < 0) currentitem = array_length_1d(inventory) - 1;
-	if (currentitem >= array_length_1d(inventory)) currentitem = 0;
+	if (key_switchnext) {
+		currentitem++
+		if (currentitem >= array_length_1d(inventory)) currentitem = 0;
+		while (inventory_quantity[currentitem] == 0){ currentitem++; if (currentitem >= array_length_1d(inventory)) currentitem = 0;}
+	}
+	if (key_switchprev) {
+		currentitem--
+		if (currentitem < 0) currentitem = array_length_1d(inventory) - 1;
+		while (inventory_quantity[currentitem] == 0){ currentitem-- if (currentitem < 0) currentitem = array_length_1d(inventory) - 1;}
+	}
 	SpawnItem(self);
 }
-
+if (inventory_quantity[currentitem] <= 0){ 
+	currentitem++
+	if (currentitem >= array_length_1d(inventory)) currentitem = 0;
+	while (inventory_quantity[currentitem] == 0){ currentitem++; if (currentitem >= array_length_1d(inventory)) currentitem = 0;}
+	SpawnItem(self);
+}
 
 ////Collision
 //Horizantal Collision
