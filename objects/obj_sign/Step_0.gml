@@ -1,16 +1,20 @@
 var pl = instance_nearest(x, y, obj_player)
-if point_in_circle(pl.x,pl.y,x,y,64){
-	//Check if nearest player open chest
-	if (pl.key_interact) && (global.showID){
-		
-		with(instance_create_layer(x, y - 64, layer, obj_text)){
-			text = other.text;
-			length = string_length(text);
-		}
-		with (obj_camera){
-			target = other.id;
-		}
+
+overlap = point_in_circle(pl.x,pl.y,x,y,64);
+	
+	
+if (global.showID && overlap){
+	
+	//Interaction
+	if (pl.key_interact){
+		var otxt = instance_create_layer(x, y-60, layer, obj_text)
+		otxt.text = text;
+		otxt.length = string_length(text);
 	}
-	overlap = true;
+	
+	if (!instance_exists(otxtbbl)){
+		if !gamepad_is_connected(0) otxtbbl = CreateTextBubble(x, y-60,"E");
+		else otxtbbl = CreateTextBubble(x, y-60,"B");
+	}
 }
-else overlap = false;
+else instance_destroy(otxtbbl);

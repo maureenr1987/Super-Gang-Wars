@@ -46,7 +46,34 @@ if point_in_circle(obj_player.x, obj_player.y, x, y, 200) || (hp != current_hp) 
 	DrawSetText(c_black,font_stats,fa_right,fa_top);
 	OutlineText(x + (string_width(NAME)*0.5) + 2, y-50, HP);
 	
+	
 }
 }
 }
+}
+
+//Check if character is alive
+if (global.debug) && (current_hp >= 0){
+	
+	//Draw line of sight cone
+	if (!foundnemesis) draw_set_colour(c_yellow);
+	else draw_set_colour(c_red);
+	draw_set_alpha(0.1);
+	draw_triangle(x,y,x+lengthdir_x(look_dist,face+15),y+lengthdir_y(look_dist,face+15),x+lengthdir_x(look_dist,face),y+lengthdir_y(look_dist,face),false);
+	draw_triangle(x,y,x+lengthdir_x(look_dist,face),y+lengthdir_y(look_dist,face),x+lengthdir_x(look_dist,face-15),y+lengthdir_y(look_dist,face-15),false);
+	draw_set_alpha(1);
+	
+	//Draw radius
+	if (!foundnemesis) draw_set_colour(c_lime);
+	else draw_set_colour(c_red);
+	draw_set_alpha(0.5);
+	draw_circle(x,y,look_dist,true);
+	draw_set_alpha(1);
+	
+	//Draw line
+	var facepoint = point_direction(0,0,x_axis,y_axis);
+	draw_set_alpha(0.5);
+	if (!foundnemesis) draw_line_color(x,y,x+lengthdir_x(look_dist,facepoint),y+lengthdir_y(look_dist,facepoint),c_lime,c_lime)
+	else draw_line_color(x,y,x+lengthdir_x(look_dist,facepoint),y+lengthdir_y(look_dist,facepoint),c_red,c_red)
+	draw_set_alpha(1);
 }

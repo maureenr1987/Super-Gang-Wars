@@ -1,7 +1,5 @@
-display_set_gui_size(camera_get_view_width(cam),camera_get_view_height(cam));
 w = display_get_gui_width();
 h = display_get_gui_height();
-
 
 menu_x = w - (w*.05) + yeet;
 menu_y = h - (h*.05);
@@ -25,7 +23,7 @@ if (menu_control){
 
 if (menu_x > w + 150 && menu_committed != -1){
 	switch (menu_committed){
-		case 2: default: SlideTransition(trans_mode.goto, rm_bigroom); break;
+		case 2: default: SlideTransition(trans_mode.goto, rm_retrosity); break;
 		case 0: game_end(); break;
 	}
 }

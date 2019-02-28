@@ -1,6 +1,7 @@
 /// @desc
+otxtbbl = obj_menu;
 image_speed = 0;
-rand = random_range(1,10)
+rand = irandom_range(1,11);
 var possiblecontent = [
 	"obj_baseitem",
 	"obj_item_basegun",
@@ -12,7 +13,8 @@ var possiblecontent = [
 	"obj_item_mine_manual",
 	"obj_item_mine_proximity",
 	"obj_item_mine_timed",
-	"obj_item_missilelauncher"
+	"obj_item_missilelauncher",
+	"obj_item_lazergun"
 ];
 var possiblecontent_quantity = [
 	1,
@@ -25,6 +27,7 @@ var possiblecontent_quantity = [
 	10,
 	10,
 	10,
+	1,
 	1
 ];
 content = possiblecontent[rand];

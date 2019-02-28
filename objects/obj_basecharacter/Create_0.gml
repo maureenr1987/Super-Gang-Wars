@@ -48,11 +48,13 @@ inventory = [
 	"obj_item_mine_manual",
 	"obj_item_mine_proximity",
 	"obj_item_mine_timed",
-	"obj_item_missilelauncher"
+	"obj_item_missilelauncher",
+	"obj_item_lazergun"
 ];
 
 inventory_quantity = [
 	1,
+	0,
 	0,
 	0,
 	0,

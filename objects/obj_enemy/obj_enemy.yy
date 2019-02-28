@@ -85,7 +85,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "150",
+            "value": "200",
             "varName": "look_dist",
             "varType": 1
         }

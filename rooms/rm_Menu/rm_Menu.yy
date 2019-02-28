@@ -16,7 +16,7 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Instances_1",
+            "name": "Overlay",
             "id": "bd4bc283-49fe-4158-8799-f6e1162d48aa",
             "depth": 0,
             "grid_x": 32,

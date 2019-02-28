@@ -7,8 +7,7 @@ else if (text != text_current) text_current += " ";
 
 draw_set_font(font_sign);
 
-if (h == 0) h = string_height(text)
-
+h = string_height(text_current)
 w = string_width(text_current)
 
 //Destroy when done

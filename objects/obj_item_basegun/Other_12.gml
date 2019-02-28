@@ -1,4 +1,4 @@
-/// @description (hit) Jab
+/// @desc (hit) Jab
 //Lunge
 Owner.forcespd = 3;
 Owner.forcedir = Owner.face;

@@ -10,3 +10,5 @@ for (var i = 0; i <= array_length_1d(inventory)-1; i++){ inventory_quantity[i] =
 
 currentitem = irandom_range(1,9);
 SpawnItem(self);
+
+foundnemesis = false;

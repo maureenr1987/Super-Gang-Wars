@@ -17,10 +17,19 @@ with (argument0){
 	satk = 2 * lvl + 109;
 	sdef = 2 * lvl + 85;
 	spd = 2 * lvl + 100;
-	totalexp = totalexp_array[lvl];
-	tonextlvl = tonextlvl_array[lvl];
-	currentexp = xp - totalexp;
-	neededexp = totalexp + tonextlvl;
+	
+	if (lvl <= 100){
+		totalexp = totalexp_array[lvl];
+		tonextlvl = tonextlvl_array[lvl];
+		currentexp = xp - totalexp;
+		neededexp = totalexp + tonextlvl;
+	}
+	else {
+		totalexp = totalexp_array[100];
+		tonextlvl = tonextlvl_array[100];
+		currentexp = xp - totalexp;
+		neededexp = totalexp + tonextlvl;
+	}
 	
 
 }

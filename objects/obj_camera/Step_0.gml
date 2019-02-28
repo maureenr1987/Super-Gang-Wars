@@ -41,3 +41,6 @@ for (var i = 0; i <= 10; i++){
 		layer_x(bg,(x / xxx) * zoom)
 	}
 }
+
+//Set GUI size
+display_set_gui_size(camera_get_view_width(cam),camera_get_view_height(cam));
