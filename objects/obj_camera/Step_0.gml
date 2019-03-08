@@ -26,11 +26,6 @@ if keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_stickr
 	if (target_zoom >= 0.9) target_zoom = 0.5; else target_zoom += 0.2;
 }
 
-//fullscreen
-if (keyboard_check_pressed(vk_f11)){
-	if (window_get_fullscreen()) window_set_fullscreen(false); else window_set_fullscreen(true);
-}
-
 //Parallax Backgrounds
 var xxx = 2;
 for (var i = 0; i <= 10; i++){

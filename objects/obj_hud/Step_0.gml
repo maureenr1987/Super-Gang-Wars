@@ -17,14 +17,31 @@ if keyboard_check_pressed(vk_f1){// || gamepad_button_check_pressed(0, gp_start)
 	if (global.debug) global.debug = false; else global.debug = true;
 }
 
-//fill inventory
+//Fill inventory
 if keyboard_check_pressed(vk_f2){
-	for (var i = 0; i < array_length_1d(obj_player.inventory)-1; i++){
+	for (var i = 0; i <= array_length_1d(obj_player.inventory)-1; i++){
 		obj_player.inventory_quantity[i] = 99;
 	}
 }
 
+//Fullscreen
+if (keyboard_check_pressed(vk_f11)){
+	if (window_get_fullscreen()) window_set_fullscreen(false); else window_set_fullscreen(true);
+}
+
+//Add exp
 if keyboard_check(vk_f3){
 	obj_player.xp += floor(obj_player.tonextlvl/20);
 	RecalcStats(obj_player);
+}
+
+//Save Game
+if keyboard_check(vk_control) && keyboard_check_pressed(ord("S")){
+	//Overwrite old save
+	if (file_exists(SAVEFILE)) file_delete(SAVEFILE);
+	
+	//Create new file
+	var file;
+	file = file_text_open_write(SAVEFILE);
+	file_text_write_real(file,room);
 }

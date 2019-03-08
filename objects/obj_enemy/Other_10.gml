@@ -1,4 +1,6 @@
-lvl = irandom_range(1,100);
+/// @desc (begin)
+
+lvl = irandom_range(1,10);
 Setxp(self);
 RecalcStats(self);
 current_hp = hp;

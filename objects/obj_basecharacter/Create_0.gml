@@ -49,7 +49,8 @@ inventory = [
 	"obj_item_mine_proximity",
 	"obj_item_mine_timed",
 	"obj_item_missilelauncher",
-	"obj_item_lazergun"
+	"obj_item_lazergun",
+	"obj_item_flamethrower"
 ];
 
 inventory_quantity = [
@@ -64,7 +65,8 @@ inventory_quantity = [
 	0,
 	0,
 	0,
-	0
+	0,
+	1
 ];
 currentitem = 0;
 physitem = obj_baseitem;

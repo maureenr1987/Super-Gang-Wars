@@ -10,10 +10,16 @@
         "f412f40d-6990-43d8-90d4-973e58a3d499",
         "74f65231-5d60-4d9b-adde-e9ba618c7cd8",
         "29f5fd4e-cf0f-483b-95f9-fecc97ca0f56",
-        "a2f2bd72-0d04-4584-9a21-fcbbb7227485",
         "2dbe7862-b306-4fd5-822c-ad63eb00ae91",
         "94b44583-2612-4e10-b704-dc675db198dc",
-        "821f95bc-cf66-45a5-a468-9bd572792c54"
+        "d2b6fdd4-1664-4941-bec2-f000402cf274",
+        "821f95bc-cf66-45a5-a468-9bd572792c54",
+        "c0505e57-2685-4afc-846e-3171e772386d",
+        "a115425c-0ce4-49a5-9dcf-1f3b06fff5b7",
+        "61aa38e2-3c08-4a63-8ee4-7492087be4d8",
+        "16fee55f-fdf8-41be-a4be-85b4be7a49a8",
+        "595ad99a-8e75-4c1a-823f-8d63abde7755",
+        "b997640c-79b7-4884-b587-81876421ab6c"
     ],
     "filterType": "GMSprite",
     "folderName": "BuildingMaterials",

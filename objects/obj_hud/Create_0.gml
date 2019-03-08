@@ -7,3 +7,6 @@ w = display_get_gui_width();
 h = display_get_gui_height();
 
 global.debug = false;
+
+//initialize save game.
+#macro SAVEFILE "save.sav"

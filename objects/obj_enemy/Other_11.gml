@@ -16,7 +16,7 @@ if !place_meeting(nextx, y + 30, obj_wall) && place_meeting(x, y + 30, obj_wall)
 if (instance_exists(nemesis)){
 	
 	//Find nearest instance of nemesis
-	var c_nemesis = instance_nearest(x,y,nemesis);
+	var c_nemesis = instance_nearest(x,y,nemesis);	
 	var c_nemesis_dir = point_direction(x, y, c_nemesis.x, c_nemesis.y);
 	
 	//Check if nemesis is within 15 degreese of enemy's facing direction
@@ -27,7 +27,6 @@ if (instance_exists(nemesis)){
 	
 		//Check if nemesis is within a certain distance of the enemy
 		if point_in_circle(c_nemesis.x, c_nemesis.y, x, y, look_dist){
-		
 		
 			key_jump = false;
 			key_use = false;
@@ -47,40 +46,37 @@ if (instance_exists(nemesis)){
 			if(collision_line(x,y, lengthdir_x(look_dist,face), lengthdir_y(look_dist,face), obj_wall, false, false)){
 			
 				//Check if nemesis is within 15 degrees of where self is facing
-				for (var i = -15; i < 15; i++){
-					if(!collision_line(x,y, lengthdir_x(look_dist,face+i), lengthdir_y(look_dist,face+i), c_nemesis, false, false)){
+				if (c_nemesis_dir <= face+15) && (c_nemesis_dir >= face-15){
 
-						//Check what item is currently in use
-						switch (asset_get_index(inventory[currentitem])){
-							case obj_item_basegun:
-							case obj_item_gun2:
-							case obj_item_gun3:
-							case obj_item_gun4:
-								key_use = true
-								break;
+					//Check what item is currently in use
+					switch (asset_get_index(inventory[currentitem])){
+						case obj_item_basegun:
+						case obj_item_gun2:
+						case obj_item_gun3:
+						case obj_item_gun4:
+							key_use = true
+							break;
+
+						case obj_item_basespear:
+						case obj_item_basesword:
+							key_hit = true
+							break;
 							
-							case obj_item_basespear:
-							case obj_item_basesword:
-								key_hit = true
-								break;
-							
-							case obj_item_mine_manual:
-								//Check if manual mine has been placed
-								if instance_exists(physitem.mine){
-									//If it has wait for nemesis to get near it
-									if collision_circle(physitem.mine.x, physitem.mine.y, 15, nemesis, false, false) && (physitem.CurrentDelay <= 0) key_use = true;
-								}
-								//place mine
-								else key_use = true;
-							
-								break;
-							
-							case obj_item_mine_proximity:
-							case obj_item_mine_timed:
-								key_use = true;
-								break;
-						}				
-					}
+						case obj_item_mine_manual:
+							//Check if manual mine has been placed
+							if instance_exists(physitem.mine){
+								//If it has wait for nemesis to get near it
+								if collision_circle(physitem.mine.x, physitem.mine.y, 15, nemesis, false, false) && (physitem.CurrentDelay <= 0) key_use = true;
+							}
+							//place mine
+							else key_use = true;
+							break;
+	
+						case obj_item_mine_proximity:
+						case obj_item_mine_timed:
+							key_use = true;
+							break;
+					}				
 				}
 			}
 		
