@@ -13,8 +13,8 @@ if !place_meeting(nextx, y + 30, obj_wall) && place_meeting(x, y + 30, obj_wall)
 }
 
 // Check if nemesis exists
-if (instance_exists(nemesis)){
-	
+if instance_exists(nemesis){
+
 	//Find nearest instance of nemesis
 	var c_nemesis = instance_nearest(x,y,nemesis);	
 	var c_nemesis_dir = point_direction(x, y, c_nemesis.x, c_nemesis.y);
@@ -41,6 +41,9 @@ if (instance_exists(nemesis)){
 				y_axis = lengthdir_y(1, c_nemesis_dir);
 				x_axis = lengthdir_x(1, c_nemesis_dir);
 			}
+			
+			//Walk fast at firts
+			if (distance_to_object(c_nemesis)/look_dist >= .5) x_axis = sign(x_axis);
 		
 			//Check if there is a wall in the way
 			if(collision_line(x,y, lengthdir_x(look_dist,face), lengthdir_y(look_dist,face), obj_wall, false, false)){
@@ -54,7 +57,7 @@ if (instance_exists(nemesis)){
 						case obj_item_gun2:
 						case obj_item_gun3:
 						case obj_item_gun4:
-							key_use = true
+							key_hit = true
 							break;
 
 						case obj_item_basespear:
@@ -65,6 +68,7 @@ if (instance_exists(nemesis)){
 						case obj_item_mine_manual:
 							//Check if manual mine has been placed
 							if instance_exists(physitem.mine){
+
 								//If it has wait for nemesis to get near it
 								if collision_circle(physitem.mine.x, physitem.mine.y, 15, nemesis, false, false) && (physitem.CurrentDelay <= 0) key_use = true;
 							}
@@ -104,9 +108,9 @@ if (instance_exists(nemesis)){
 		key_use = false;
 		key_jump = false;
 		y_axis = 0;
+		x_axis = sign(x_axis);
 		//put away item
 		if instance_exists(physitem) && (physitem.CurrentDelay <= 0) instance_destroy(physitem);
 	}
 }
 
-x_axis = sign(x_axis);

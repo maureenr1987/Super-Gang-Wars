@@ -31,6 +31,22 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
             "value": "Tutorial Gun"
+        },
+        {
+            "id": "b9327c31-3530-4aaa-9447-a32a9e05998e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
+            "value": "snd_Gunshot_Start"
+        },
+        {
+            "id": "052e1b82-6813-439c-86ff-cf908d39d8d8",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
+            "value": "100"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

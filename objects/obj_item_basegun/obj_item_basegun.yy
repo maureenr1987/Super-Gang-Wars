@@ -40,7 +40,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 14,
+            "enumb": 13,
             "eventtype": 7,
             "m_owner": "31e10c66-239b-4158-87a0-68c55ee37915"
         }
@@ -48,28 +48,36 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "ba506729-ed70-4ae1-8f8d-921fa0652d7c",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "value": "100"
-        },
-        {
-            "id": "01a1b8f6-d51a-4f17-80f8-a6b28b80d3e0",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
-            "value": "True"
-        },
-        {
             "id": "a71dca97-d21a-462e-b6a2-a584b8167dad",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
             "value": "Base Gun"
+        },
+        {
+            "id": "284343c2-8b1c-431c-941e-58442ed89642",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "e5cfb039-6129-413e-8186-006ed9f2475d",
+            "value": "True"
+        },
+        {
+            "id": "a464c9e7-f748-460f-8012-dd91787b4c95",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
+            "value": "100"
+        },
+        {
+            "id": "9fbd4672-9336-4eb8-b06f-136819ffe79c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
+            "value": "snd_Gunshot_pop"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

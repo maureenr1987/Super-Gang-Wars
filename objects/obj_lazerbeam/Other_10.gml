@@ -4,3 +4,4 @@ repeat(10) {
 		spark.direction = image_angle -180 + random_range(-30, 30);
 }
 instance_destroy();
+audio_play_sound(snd_lazer2,1,false)

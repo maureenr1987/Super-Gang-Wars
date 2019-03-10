@@ -91,20 +91,6 @@
             "varType": 1
         },
         {
-            "id": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1000",
-            "varName": "UseDelay",
-            "varType": 1
-        },
-        {
             "id": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -116,6 +102,20 @@
             "resourceFilter": 1023,
             "value": "1000",
             "varName": "HitDelay",
+            "varType": 1
+        },
+        {
+            "id": "050578ed-fa1a-4d84-8820-14b36c387f40",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1000",
+            "varName": "UseDelay",
             "varType": 1
         },
         {
@@ -159,6 +159,34 @@
             "value": "0",
             "varName": "use_pressed",
             "varType": 3
+        },
+        {
+            "id": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "snd_empty",
+            "varName": "hit_sfx",
+            "varType": 5
+        },
+        {
+            "id": "e09f2288-d787-4d35-a421-b3b9659ba5a5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "snd_empty",
+            "varName": "use_sfx",
+            "varType": 5
         }
     ],
     "solid": false,

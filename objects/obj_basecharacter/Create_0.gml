@@ -37,37 +37,9 @@ xp = 0;
 RecalcStats(self);
 
 //Inventory an items
-inventory = [
-	"obj_baseitem",
-	"obj_item_basegun",
-	"obj_item_gun2",
-	"obj_item_gun3",
-	"obj_item_gun4",
-	"obj_item_basespear",
-	"obj_item_basesword",
-	"obj_item_mine_manual",
-	"obj_item_mine_proximity",
-	"obj_item_mine_timed",
-	"obj_item_missilelauncher",
-	"obj_item_lazergun",
-	"obj_item_flamethrower"
-];
+inventory = global.inv
+inventory_quantity = global.invq
 
-inventory_quantity = [
-	1,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	1
-];
 currentitem = 0;
 physitem = obj_baseitem;
 

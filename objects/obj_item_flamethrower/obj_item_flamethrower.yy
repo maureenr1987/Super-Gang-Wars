@@ -10,7 +10,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
+            "enumb": 12,
             "eventtype": 7,
             "m_owner": "e0157cdb-394c-4a58-b292-49edec4510f8"
         },
@@ -38,28 +38,20 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "3c487167-3a02-442d-89fd-3e2a3fa05a2a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "value": "5"
-        },
-        {
-            "id": "339a2afe-1057-43df-ac21-a4ef09aef0ab",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
-            "value": "True"
-        },
-        {
             "id": "573cc5d8-15eb-4abd-a60b-0de4b3d589d6",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
             "value": "FlameThrower"
+        },
+        {
+            "id": "d8abe839-3119-4dba-a8d2-66cfee0096e6",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
+            "value": "10"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

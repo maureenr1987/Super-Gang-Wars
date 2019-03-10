@@ -10,3 +10,35 @@ global.debug = false;
 
 //initialize save game.
 #macro SAVEFILE "save.sav"
+
+global.inv = [
+	"obj_baseitem",
+	"obj_item_basegun",
+	"obj_item_gun2",
+	"obj_item_gun3",
+	"obj_item_gun4",
+	"obj_item_basespear",
+	"obj_item_basesword",
+	"obj_item_mine_manual",
+	"obj_item_mine_proximity",
+	"obj_item_mine_timed",
+	"obj_item_missilelauncher",
+	"obj_item_lazergun",
+	"obj_item_flamethrower"
+]
+
+global.invq = [
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
+]

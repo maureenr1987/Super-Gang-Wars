@@ -41,22 +41,6 @@
             "value": "10"
         },
         {
-            "id": "892c87d7-64b2-47d5-a203-34d3c3fcff2b",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "value": "300"
-        },
-        {
-            "id": "f48a4c6b-d69b-4579-8bb4-bd9b79ed8998",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "e5cfb039-6129-413e-8186-006ed9f2475d",
-            "value": "True"
-        },
-        {
             "id": "548f9ea9-c090-4ad0-bdc9-15de2717c9fe",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -71,6 +55,30 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "31a3e735-277d-485d-a2f1-f7a58cfd8fa9",
             "value": "80"
+        },
+        {
+            "id": "615e3c71-68e7-4d94-82c9-6688061616fe",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
+            "value": "True"
+        },
+        {
+            "id": "791a169a-d7fb-4eff-9f7a-944b64dd88bc",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
+            "value": "snd_Gunshot_Heavy"
+        },
+        {
+            "id": "ea5e0d49-98a1-4db1-9d99-9472cdd5c0fe",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
+            "value": "300"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

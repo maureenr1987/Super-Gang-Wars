@@ -3,11 +3,15 @@
 if (CurrentDelay <= 0){
 	if (Use) {
 		event_user(1);
+		var snd = audio_play_sound(use_sfx,1,false)
+		audio_sound_pitch(snd,random_range(0.93,1.07))
 		ScreenShake(shakeonusemagnitude, 10);
 		CurrentDelay = UseDelay;
 	}
 	if (Hit) {
 		event_user(2);
+		var snd = audio_play_sound(hit_sfx,1,false)
+		audio_sound_pitch(snd,random_range(0.93,1.07))
 		ScreenShake(shakeonusemagnitude, 10);
 		CurrentDelay = HitDelay;
 	}

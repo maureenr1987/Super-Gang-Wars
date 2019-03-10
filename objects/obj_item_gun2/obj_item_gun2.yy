@@ -41,20 +41,28 @@
             "value": "15"
         },
         {
-            "id": "92dfd61a-3cd6-4697-9739-017046381c37",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "value": "50"
-        },
-        {
             "id": "e8a49b41-3a36-4757-9e11-b30845fdfdfa",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
             "value": "Machine Gun"
+        },
+        {
+            "id": "a41c194c-92f9-4161-ba50-b681489cb675",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
+            "value": "snd_Gunshot_pew"
+        },
+        {
+            "id": "b5789439-aa0b-446b-a872-68f9c5572542",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
+            "value": "100"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

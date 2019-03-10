@@ -17,13 +17,8 @@ if (place_meeting(x, y + 1,obj_wall)) && (key_jump){
 
 //Calculate direction player is 'facing'
 var facepoint = point_direction(0,0,x_axis,y_axis);
-
-if (facepoint <= 45 || facepoint >= 315) && (x_axis >= 0.2) face = 0; else if (facepoint >= 135 && facepoint <= 225 && x_axis <= -0.2) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
+if (facepoint <= 45 || facepoint >= 315) && (x_axis >= 0.1) face = 0; else if (facepoint >= 135 && facepoint <= 225 && x_axis <= -0.1) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
 if (facepoint >= 225 && facepoint <= 315) face = 270; else if (facepoint >= 45 && facepoint <= 135) face = 90;
-
-/*
-if (x_axis >= 0.5) face = 0; else if (x_axis <= -0.5) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
-if (y_axis >= 0.5) face = 270; else if (y_axis <= -0.5) face = 90;*/
 
 //Force
 if (forcespd >= 0) {

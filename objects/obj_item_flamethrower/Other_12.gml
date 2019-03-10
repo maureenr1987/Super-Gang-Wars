@@ -21,3 +21,4 @@ if (CurrentDelay <= -50 && Owner.key_use) {
 	anglecurrent = random_range(anglerange-1,-anglerange+1);
 	anglespeed = choose(1, -1);
 }
+
