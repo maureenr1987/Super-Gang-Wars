@@ -86,36 +86,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "50",
             "varName": "price",
-            "varType": 1
-        },
-        {
-            "id": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1000",
-            "varName": "HitDelay",
-            "varType": 1
-        },
-        {
-            "id": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1000",
-            "varName": "UseDelay",
             "varType": 1
         },
         {
@@ -129,7 +101,35 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "5",
-            "varName": "hit_atkpower",
+            "varName": "atkpower",
+            "varType": 1
+        },
+        {
+            "id": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1000",
+            "varName": "use1_delay",
+            "varType": 1
+        },
+        {
+            "id": "050578ed-fa1a-4d84-8820-14b36c387f40",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1000",
+            "varName": "use2_delay",
             "varType": 1
         },
         {
@@ -142,8 +142,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "hit_pressed",
+            "value": "True",
+            "varName": "use1_pressed",
             "varType": 3
         },
         {
@@ -156,8 +156,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "use_pressed",
+            "value": "True",
+            "varName": "use2_pressed",
             "varType": 3
         },
         {
@@ -171,7 +171,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "snd_empty",
-            "varName": "hit_sfx",
+            "varName": "use1_sfx",
             "varType": 5
         },
         {
@@ -185,7 +185,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "snd_empty",
-            "varName": "use_sfx",
+            "varName": "use2_sfx",
             "varType": 5
         }
     ],

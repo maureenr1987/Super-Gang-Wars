@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 14,
+            "enumb": 13,
             "eventtype": 7,
             "m_owner": "96f63391-2431-423d-aa8c-b4ac791ed5d8"
         }
@@ -38,28 +38,28 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "579a3489-fe08-47cb-b917-cc2992ad5123",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "e5cfb039-6129-413e-8186-006ed9f2475d",
-            "value": "True"
-        },
-        {
-            "id": "eb550c31-ecd6-4f50-b401-fb7b3799bb11",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "value": "500"
-        },
-        {
             "id": "71f7519f-6867-42a0-a6d6-34637a7370cc",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
             "value": "Manual Mine"
+        },
+        {
+            "id": "4a0902a6-0175-459c-b0c3-6b132a1c4819",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
+            "value": "500"
+        },
+        {
+            "id": "a5f48c49-86bc-44b9-9602-e05744f8ba7d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
+            "value": "snd_activatemine"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

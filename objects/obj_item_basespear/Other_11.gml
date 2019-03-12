@@ -1,4 +1,4 @@
-/// @description (hit) Use spear
+/// @description (use1) spear start
 //Lunge
 Owner.forcespd = lunge;
 Owner.forcedir = Owner.face;

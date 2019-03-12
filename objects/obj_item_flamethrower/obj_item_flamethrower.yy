@@ -10,7 +10,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 12,
+            "enumb": 11,
             "eventtype": 7,
             "m_owner": "e0157cdb-394c-4a58-b292-49edec4510f8"
         },
@@ -52,6 +52,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
             "value": "10"
+        },
+        {
+            "id": "c5583180-0520-4798-b193-26d8a5efb8a3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
+            "value": "False"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

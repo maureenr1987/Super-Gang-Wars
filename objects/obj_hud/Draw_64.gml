@@ -7,6 +7,7 @@ if (instance_exists(obj_player)){
 	var NAME = pl.firstname + " " + pl.middlename + " " + pl.lastname;
 	var GEND =  " (" + pl.gender + ")";
 	var LVL = "lvl. " + string(pl.lvl);
+	var CUR = "Currency: " + string(pl.currency);
 	var HP = "HP " + string(floor(pl.current_hp))  + " / " + string(pl.hp);
 	var XP = "XP " + string(pl.currentexp) + "/" + string(pl.tonextlvl);
 
@@ -26,11 +27,12 @@ if (instance_exists(obj_player)){
 	
 	//draw name
 	DrawSetText(c_black,font_stats,fa_left,fa_top);
-	OutlineText(x, y+10, NAME + GEND)//,c_white,c_black);
-	OutlineText(x, y+30,LVL)//,c_white,c_black);
+	OutlineText(x, y+10, NAME + GEND);
+	OutlineText(x, y+30, LVL);
+	OutlineText(x+boxwidth-5-string_width(CUR), y+30, CUR);
 	
 	//hp
-	OutlineText(x, y+40,HP)//,c_white,c_black);
+	OutlineText(x, y+40,HP)
 	if (pl.flicker > 0 ) draw_healthbar(x + string_width(HP)+5, y+45 , x+boxwidth-5, y+50, (pl.current_hp / pl.hp) * 100 , c_dkgray , c_red, c_red, 0, true, true);
 	else draw_healthbar(x + string_width(HP)+5, y+45 , x+boxwidth-5, y+50, (pl.current_hp / pl.hp) * 100 , c_dkgray , c_red, c_lime, 0, true, true);
 	

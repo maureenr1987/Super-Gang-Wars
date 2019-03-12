@@ -49,22 +49,6 @@
             "value": "30"
         },
         {
-            "id": "cf3c94c7-5590-4f44-8515-4d5ad813e540",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
-            "propertyId": "6f46328c-02c9-448c-9d11-7a94752609d9",
-            "value": "2"
-        },
-        {
-            "id": "a5fd73d1-8ca9-4e4f-b5d8-cd698d1e65a0",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
-            "propertyId": "0842d314-8894-4295-953b-55dec6b9d83c",
-            "value": "0"
-        },
-        {
             "id": "739cfa3e-7713-4e06-ab53-8bd68205c24d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -79,6 +63,38 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
             "value": "80"
+        },
+        {
+            "id": "d241730c-cec4-4227-a18e-f1706918dc6e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
+            "value": "False"
+        },
+        {
+            "id": "fa3c0e8c-a863-4414-b6ca-521eb4237a41",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
+            "propertyId": "6f46328c-02c9-448c-9d11-7a94752609d9",
+            "value": "1"
+        },
+        {
+            "id": "1c2c464c-196a-460c-ad6e-8bc733f9065f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
+            "propertyId": "fd1ebc15-ff82-4346-96c1-ab3fbd712a37",
+            "value": "200"
+        },
+        {
+            "id": "35c7746a-9203-42ff-af68-a45ad5fe41c3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
+            "propertyId": "0842d314-8894-4295-953b-55dec6b9d83c",
+            "value": "0"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

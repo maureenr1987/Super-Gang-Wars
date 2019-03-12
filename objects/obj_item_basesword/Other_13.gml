@@ -1,4 +1,4 @@
-/// @description (step hit) hit
+/// @description (step) sword anim
 if (hit){
 	if (image_yscale == 1 * hitdir) { if (hitcurrent <= hitend) hit = false }
 	else if (hitcurrent >= hitend) hit = false; 

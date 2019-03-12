@@ -7,6 +7,9 @@ if (overlap) && (!opened){
 	//check if the player interacts with the chest
 	if (pl.key_interact){
 	
+		//sfx
+		audio_play_sound(snd_openchest,1,false);
+	
 		//Add to inventory
 		AddToInventory(content, content_quantity, pl)
 	

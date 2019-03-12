@@ -29,7 +29,7 @@ if instance_exists(nemesis){
 		if point_in_circle(c_nemesis.x, c_nemesis.y, x, y, look_dist){
 		
 			key_jump = false;
-			key_use = false;
+			key_use2 = false;
 		
 			//Take out item
 			if(!instance_exists(physitem)) SpawnItem(self);
@@ -57,12 +57,12 @@ if instance_exists(nemesis){
 						case obj_item_gun2:
 						case obj_item_gun3:
 						case obj_item_gun4:
-							key_hit = true
+							key_use1 = true
 							break;
 
 						case obj_item_basespear:
 						case obj_item_basesword:
-							key_hit = true
+							key_use1 = true
 							break;
 							
 						case obj_item_mine_manual:
@@ -70,15 +70,15 @@ if instance_exists(nemesis){
 							if instance_exists(physitem.mine){
 
 								//If it has wait for nemesis to get near it
-								if collision_circle(physitem.mine.x, physitem.mine.y, 15, nemesis, false, false) && (physitem.CurrentDelay <= 0) key_use = true;
+								if collision_circle(physitem.mine.x, physitem.mine.y, 15, nemesis, false, false) && (physitem.CurrentDelay <= 0) key_use1 = true;
 							}
 							//place mine
-							else key_use = true;
+							else key_use1 = true;
 							break;
 	
 						case obj_item_mine_proximity:
 						case obj_item_mine_timed:
-							key_use = true;
+							key_use1 = true;
 							break;
 					}				
 				}
@@ -105,7 +105,8 @@ if instance_exists(nemesis){
 	}
 	//nemesis not in sight
 	else {
-		key_use = false;
+		key_use1 = false;
+		key_use2 = false;
 		key_jump = false;
 		y_axis = 0;
 		x_axis = sign(x_axis);

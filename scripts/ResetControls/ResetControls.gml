@@ -12,12 +12,12 @@ with (argument0){
 
 	key_jump = false;
 	key_interact = false;
-	key_hit = false;
-	key_use = false;
+	key_use1 = false;
+	key_use2 = false;
 
 	key_switchnext = false;
 	key_switchprev = false;
 
-	hit_pressed = false;
-	use_pressed = false;	
+	use1_pressed = false;
+	use2_pressed = false;	
 }

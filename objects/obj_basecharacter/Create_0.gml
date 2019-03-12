@@ -50,3 +50,6 @@ cancontrol = true;
 
 ////Custom create
 event_user(0);
+
+//Random money start
+currency = irandom_range(lvl*10,lvl*20)

@@ -5,42 +5,12 @@
     "name": "obj_item_basegun",
     "eventList": [
         {
-            "id": "69de9c80-f6db-4760-933a-e56eb39ff29c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
-            "eventtype": 7,
-            "m_owner": "31e10c66-239b-4158-87a0-68c55ee37915"
-        },
-        {
-            "id": "647c51cd-a6c0-4dc4-8788-89088b332fe1",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "31e10c66-239b-4158-87a0-68c55ee37915"
-        },
-        {
             "id": "2c8930dd-aa59-4dfe-ba94-a5b413923436",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 12,
-            "eventtype": 7,
-            "m_owner": "31e10c66-239b-4158-87a0-68c55ee37915"
-        },
-        {
-            "id": "255bd656-2170-4453-80b9-ce5f6aced739",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 13,
+            "enumb": 11,
             "eventtype": 7,
             "m_owner": "31e10c66-239b-4158-87a0-68c55ee37915"
         }
@@ -54,14 +24,6 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
             "value": "Base Gun"
-        },
-        {
-            "id": "284343c2-8b1c-431c-941e-58442ed89642",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "e5cfb039-6129-413e-8186-006ed9f2475d",
-            "value": "True"
         },
         {
             "id": "a464c9e7-f748-460f-8012-dd91787b4c95",
@@ -78,6 +40,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
             "value": "snd_Gunshot_pop"
+        },
+        {
+            "id": "f76ab0d4-8ec8-4a55-b308-82140d2b0f7c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
+            "value": "False"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
@@ -106,7 +76,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "obj_basebullet",
-            "varName": "bullettype",
+            "varName": "projectile_type",
             "varType": 5
         },
         {
@@ -120,7 +90,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "5",
-            "varName": "bullet_power",
+            "varName": "projectile_power",
             "varType": 1
         },
         {
@@ -134,7 +104,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "22",
-            "varName": "bulletspawnposition",
+            "varName": "projectile_spawnposition",
             "varType": 1
         },
         {
@@ -148,7 +118,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "15",
-            "varName": "bulletspeed",
+            "varName": "projectile_speed",
             "varType": 1
         },
         {
@@ -162,7 +132,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "150",
-            "varName": "bulletlifespan",
+            "varName": "projectile_lifespan",
             "varType": 1
         },
         {
@@ -192,34 +162,6 @@
             "value": "2",
             "varName": "recoil",
             "varType": 1
-        },
-        {
-            "id": "11b7329a-3818-4d75-9504-472e2eac2355",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "20",
-            "varName": "hitreach",
-            "varType": 0
-        },
-        {
-            "id": "8e37ae4c-d0d0-4e66-aa79-92aeec1a9165",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "20",
-            "varName": "hitspeed",
-            "varType": 0
         }
     ],
     "solid": false,

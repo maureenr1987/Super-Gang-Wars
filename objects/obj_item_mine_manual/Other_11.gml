@@ -1,4 +1,4 @@
-/// @desc
+/// @desc (use1) place/detnate
 if (instance_exists(mine)){
 	if (mine.Owner == Owner){
 		with (mine){

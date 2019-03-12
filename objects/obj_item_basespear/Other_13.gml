@@ -1,4 +1,4 @@
-/// @description (step) hit
+/// @description (step) spear anim
 if (hit){
 	if (hitcurrent <= hitreach) {
 		image_angle = Owner.face + ang;

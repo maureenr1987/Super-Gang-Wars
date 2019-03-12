@@ -49,22 +49,6 @@
             "value": "Blast Gun"
         },
         {
-            "id": "21add2f0-733b-4390-8d75-b5a596641575",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "31a3e735-277d-485d-a2f1-f7a58cfd8fa9",
-            "value": "80"
-        },
-        {
-            "id": "615e3c71-68e7-4d94-82c9-6688061616fe",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
-            "value": "True"
-        },
-        {
             "id": "791a169a-d7fb-4eff-9f7a-944b64dd88bc",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -79,6 +63,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
             "value": "300"
+        },
+        {
+            "id": "96e9f33d-6ca2-4e31-b989-57c680b6317b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
+            "value": "True"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

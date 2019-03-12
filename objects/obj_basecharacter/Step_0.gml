@@ -6,10 +6,14 @@ else {
 	ResetControls(self);
 }
 
+
 ////Movement
 //Calculate movement
 hsp = x_axis * walksp * (delta_time/10000);
 vsp += grv * (delta_time/10000);
+
+
+
 
 if (place_meeting(x, y + 1,obj_wall)) && (key_jump){
 	vsp = (jmp * -1);
@@ -31,9 +35,9 @@ else forcespd = 0;
 
 ////Items
 //Use/Hit current item
-if (key_use) if (instance_exists(physitem)) physitem.Use = true;
+if (key_use1) if (instance_exists(physitem)) physitem.use1 = true;
 //Hit with current item
-if (key_hit) if (instance_exists(physitem)) physitem.Hit = true;
+if (key_use2) if (instance_exists(physitem)) physitem.use2 = true;
 //Switch currentitem
 if (key_switchnext || key_switchprev){
 	if (key_switchnext) {
@@ -54,6 +58,7 @@ if (inventory_quantity[currentitem] <= 0){
 	while (inventory_quantity[currentitem] == 0){ currentitem++; if (currentitem >= array_length_1d(inventory)) currentitem = 0;}
 	SpawnItem(self);
 }
+
 
 ////Collision
 //Horizantal Collision
@@ -89,14 +94,12 @@ if (current_hp <= 0) {
 	dead = true
 	cancontrol = false;
 	ResetControls(self);
-	
 	instance_destroy(physitem);
 	sprite_index = asset_get_index(sprite + "dead");
 	image_speed = 0;
 	if place_meeting(x,y+30,obj_wall) image_index = 1; else image_index = 0;
-	
-	
 }
+
 //Player is falling
 else if(!place_meeting(x, y + 1, obj_wall)){
 	sprite_index = asset_get_index(sprite + "fall");

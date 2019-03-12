@@ -5,7 +5,7 @@
     "name": "obj_item_missilelauncher",
     "eventList": [
         {
-            "id": "e8a8e0aa-f9f1-4ec9-90a8-06dedcb0f76c",
+            "id": "d1137c87-24ad-4b68-8e2c-204e0b8bdb67",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -13,64 +13,10 @@
             "enumb": 11,
             "eventtype": 7,
             "m_owner": "1e2a3d62-a113-4e8d-8e4b-26f22732bdff"
-        },
-        {
-            "id": "a0b30416-de59-4371-8b1b-591c054fc5f5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "1e2a3d62-a113-4e8d-8e4b-26f22732bdff"
-        },
-        {
-            "id": "d1137c87-24ad-4b68-8e2c-204e0b8bdb67",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 12,
-            "eventtype": 7,
-            "m_owner": "1e2a3d62-a113-4e8d-8e4b-26f22732bdff"
-        },
-        {
-            "id": "054fff2f-387e-469c-8536-2b86d9dfd4c7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 13,
-            "eventtype": 7,
-            "m_owner": "1e2a3d62-a113-4e8d-8e4b-26f22732bdff"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
-        {
-            "id": "fd157934-44dc-46cf-b0f3-1dbf38d4b856",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "value": "800"
-        },
-        {
-            "id": "545e704d-35e0-4e6e-89c2-d59872819a3e",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
-            "value": "True"
-        },
-        {
-            "id": "fa0e9702-6365-4e44-b734-a68c84b28992",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "e5cfb039-6129-413e-8186-006ed9f2475d",
-            "value": "True"
-        },
         {
             "id": "e0a9e5b8-f832-4d5d-99f2-1816bd83dee9",
             "modelName": "GMOverriddenProperty",

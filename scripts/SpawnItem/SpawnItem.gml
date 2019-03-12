@@ -8,6 +8,6 @@ with (argument0){
 	physitem.y = y + lengthdir_y(physitem.Itempositioncenter_x, face) + physitem.Itempositioncenter_y;
 	physitem.image_angle = face;
 	physitem.Owner = self;
-	argument0.hit_pressed = physitem.hit_pressed;
-	argument0.use_pressed = physitem.use_pressed;
+	argument0.use1_pressed = physitem.use1_pressed;
+	argument0.use2_pressed = physitem.use2_pressed;
 }

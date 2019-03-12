@@ -1,16 +1,15 @@
 /// @description Setup
 /*
 Event User 0 - Create
-Event User 1 - Use
-Event User 2 - Hit
-Event User 3 - Use Step
-Event User 4 - 
+Event User 1 - Use1
+Event User 2 - Use2
+Event User 3 - Step
 */
 
 //Set up
 CurrentDelay = 0;
-Use = false;
-Hit = false;
+use1 = false;
+use2 = false;
 Owner = obj_basecharacter;
 
 //Item position from player

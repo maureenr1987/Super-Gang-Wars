@@ -3,10 +3,10 @@ if (other != Owner){
 		other.flicker = 5;
 		other.forcedir = Owner.face;
 		other.forcespd = 6;
-		CalcDamage(Owner, other, hit_atkpower,true);
+		CalcDamage(Owner, other, atkpower,true);
 		
 		var txt = instance_create_layer(x, y,"Overlay",obj_feedback)
-		txt.text = "-" + string(CalcDamage(Owner, other, hit_atkpower,true))
+		txt.text = "-" + string(CalcDamage(Owner, other, atkpower,true))
 	}
 	 doesdamage = false;
 }

@@ -50,6 +50,16 @@ itemsell = [
 	"Cancel"
 ];
 
+itemsell_quantity = "How many would you like to sell?";
+
+itemsell_confirmation = [
+	"Are you sure about that?(sell)",
+	"Yes",
+	"No"
+];
+
+itemsell_message = "Thank you for your purchase!";
+
 padding = 10;
 menu_font = font_menu; 
 menu_cursor = 1;

@@ -11,9 +11,9 @@ if (cancontrol) {
 		y_axis = key_down - key_up;
 		
 		key_jump = keyboard_check(vk_space);
-		if (use_pressed) key_use = mouse_check_button_pressed(mb_right); else key_use = mouse_check_button(mb_right);
-		if (hit_pressed) key_hit = mouse_check_button_pressed(mb_left); else  key_hit = mouse_check_button(mb_left);
-		key_interact = keyboard_check_pressed(ord("E"))
+		if (use2_pressed) key_use2 = mouse_check_button_pressed(mb_right); else key_use2 = mouse_check_button(mb_right);
+		if (use1_pressed) key_use1 = mouse_check_button_pressed(mb_left); else  key_use1 = mouse_check_button(mb_left);
+		key_interact = keyboard_check_pressed(ord("E"));
 		
 		key_switchnext = mouse_wheel_down() || keyboard_check_pressed(vk_tab);
 		key_switchprev = mouse_wheel_up();
@@ -25,8 +25,8 @@ if (cancontrol) {
 		y_axis = gamepad_axis_value(0, gp_axislv);
 		
 		key_jump = gamepad_button_check(0, gp_face1);
-		if (use_pressed) key_use = gamepad_button_check_pressed(0, gp_shoulderrb); else key_use = gamepad_button_check(0, gp_shoulderrb);
-		if (hit_pressed) key_hit = gamepad_button_check_pressed(0, gp_shoulderlb); else key_hit = gamepad_button_check(0, gp_shoulderlb);
+		if (use2_pressed) key_use2 = gamepad_button_check_pressed(0, gp_shoulderlb); else key_use2 = gamepad_button_check(0, gp_shoulderlb);
+		if (use1_pressed) key_use1 = gamepad_button_check_pressed(0, gp_shoulderrb); else key_use1 = gamepad_button_check(0, gp_shoulderrb);
 		key_interact = gamepad_button_check_pressed(0, gp_face2);
 		
 		key_switchnext = gamepad_button_check_pressed(0, gp_padl) || gamepad_button_check_pressed(0, gp_shoulderr);
