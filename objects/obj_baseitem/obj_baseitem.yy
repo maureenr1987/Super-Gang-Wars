@@ -77,6 +77,20 @@
             "varType": 2
         },
         {
+            "id": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "obj_baseitem",
+            "varName": "obj",
+            "varType": 2
+        },
+        {
             "id": "b575c5f5-03a9-4ab6-acdd-2d6099ec4c39",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -89,6 +103,20 @@
             "value": "50",
             "varName": "price",
             "varType": 1
+        },
+        {
+            "id": "e1f7db88-1a9a-4f75-9ec8-6007cb84dbb0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"\"",
+            "varName": "desc",
+            "varType": 2
         },
         {
             "id": "31a3e735-277d-485d-a2f1-f7a58cfd8fa9",

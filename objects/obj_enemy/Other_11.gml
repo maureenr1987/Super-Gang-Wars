@@ -32,7 +32,7 @@ if instance_exists(nemesis){
 			key_use2 = false;
 		
 			//Take out item
-			if(!instance_exists(physitem)) SpawnItem(self);
+			if(!instance_exists(physitem)) SpawnItem();
 		
 			//Go in the direction of the nemesis
 			if (x-8 <= c_nemesis.x && x+8 >= c_nemesis.x){
@@ -52,14 +52,12 @@ if instance_exists(nemesis){
 				if (c_nemesis_dir <= face+15) && (c_nemesis_dir >= face-15){
 
 					//Check what item is currently in use
-					switch (asset_get_index(inventory[currentitem])){
+					
+					switch (asset_get_index(ds_map_find_value(ds_list_find_value(inventory,currentitem),"item"))){
 						case obj_item_basegun:
 						case obj_item_gun2:
 						case obj_item_gun3:
 						case obj_item_gun4:
-							key_use1 = true
-							break;
-
 						case obj_item_basespear:
 						case obj_item_basesword:
 							key_use1 = true

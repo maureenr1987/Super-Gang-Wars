@@ -20,7 +20,7 @@ if (menu_control){
 		menu_committed = menu_cursor;
 		ScreenShake(4,30)
 		menu_control = false
-		audio_play_sound(snd_Gunshot_Heavy,1,false)
+		audio_play_sound(snd_activatemine,1,false)
 	}
 }
 

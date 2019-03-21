@@ -1,0 +1,1 @@
+AddToInventory("obj_item_gun2",1,self);

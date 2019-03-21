@@ -60,6 +60,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
             "value": "snd_activatemine"
+        },
+        {
+            "id": "50eadcbc-ba5f-4cca-87fb-5575cb592153",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
+            "value": "obj_item_mine_manual"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

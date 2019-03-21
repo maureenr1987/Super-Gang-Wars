@@ -54,10 +54,7 @@ if (instance_exists(obj_player)){
 	var boxwidth = 140;
 	
 	//Figure out box height
-	var boxheight = 145;
-	for (var i = 0; i < array_length_1d(obj_player.inventory); i++){
-		if (obj_player.inventory_quantity[i]) boxheight += 10;
-	}
+	var boxheight = 145 + ds_list_size(pl.inventory) * 10;
 
 	//Draw inventory box
 	draw_set_color(c_black);
@@ -73,33 +70,40 @@ if (instance_exists(obj_player)){
 
 	//Populate inventory
 	var textheight = 135;
-	for (var i = 1; i < array_length_1d(obj_player.inventory); i++){
-		if (obj_player.inventory_quantity[i] > 0){
-			var itembuffer = instance_create_layer(x, y,"hidden",asset_get_index(obj_player.inventory[i]))
-			if (obj_player.inventory_quantity[i]) textheight += 10;
-			//Highlight Current Item
-			if (i == obj_player.currentitem) {
-				OutlineTextColor(x,textheight,"> "+string(obj_player.inventory_quantity[i]),c_white,c_black,1);
-				OutlineTextColor(x+35,textheight,itembuffer.name,c_white,c_black,1.5);
-			}
-			//No Highlight
-			else {
-				OutlineTextColor(x,textheight,"   "+string(obj_player.inventory_quantity[i]),c_gray,c_black,1);
-				OutlineTextColor(x+35,textheight,itembuffer.name,c_gray,c_black,1);
-			}
-			instance_destroy(itembuffer);
+	
+	for (var i = 1; i < ds_list_size(pl.inventory); i++){
+		
+		var list = ds_list_find_value(pl.inventory,i);
+		var item = ds_map_find_value(list,"item");
+		var quan = ds_map_find_value(list,"quantity");
+		var itembuffer = instance_create_layer(x, y,"hidden",asset_get_index(item));
+	
+		textheight += 10;
+		
+		//Highlight Current Item
+		if (i == obj_player.currentitem) {
+			OutlineTextColor(x,textheight,"> x"+string(quan),c_white,c_black,1);
+			OutlineTextColor(x+35,textheight,itembuffer.name,c_white,c_black,1.5);
 		}
+		//No Highlight
+		else {
+			OutlineTextColor(x,textheight,"   x"+string(quan),c_gray,c_black,1);
+			OutlineTextColor(x+35,textheight,itembuffer.name,c_gray,c_black,1);
+		}
+		instance_destroy(itembuffer);
 	}
 	
 	//Check if inventory is empty
 	if (textheight == 135) OutlineTextColor(x,textheight,"Your invemtory is empty",c_gray,c_black,1);
 	
+	
+	if (pl.currentitem != 0 && pl.currentitem <= ds_list_size(pl.inventory)-1){
 	//Display Item Preview
 	var previewanchor_x = x+boxwidth+5;
 	var previewanchor_y = y+115;
 	
 	//Create item buffer
-	var itembuffer = instance_create_layer(x, y,"hidden",asset_get_index(obj_player.inventory[obj_player.currentitem]));
+	var itembuffer = instance_create_layer(x, y,"hidden",asset_get_index(ds_map_find_value(ds_list_find_value(pl.inventory, pl.currentitem),"item")));
 	
 	//Save sprite origin
 	var offset_x = itembuffer.sprite_xoffset;
@@ -123,6 +127,7 @@ if (instance_exists(obj_player)){
 	
 	//Destroy item buffer
 	instance_destroy(itembuffer);
+	}
 	
 	if (global.debug){
 		OutlineTextColor(w-110, 30,"x_axis = " + string(pl.x_axis),c_lime,c_black,1)

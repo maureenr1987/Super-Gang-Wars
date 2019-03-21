@@ -24,6 +24,7 @@ var facepoint = point_direction(0,0,x_axis,y_axis);
 if (facepoint <= 45 || facepoint >= 315) && (x_axis >= 0.1) face = 0; else if (facepoint >= 135 && facepoint <= 225 && x_axis <= -0.1) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
 if (facepoint >= 225 && facepoint <= 315) face = 270; else if (facepoint >= 45 && facepoint <= 135) face = 90;
 
+
 //Force
 if (forcespd >= 0) {
 	hsp += lengthdir_x(forcespd,forcedir);
@@ -33,6 +34,7 @@ if (forcespd >= 0) {
 }
 else forcespd = 0;
 
+
 ////Items
 //Use/Hit current item
 if (key_use1) if (instance_exists(physitem)) physitem.use1 = true;
@@ -40,25 +42,15 @@ if (key_use1) if (instance_exists(physitem)) physitem.use1 = true;
 if (key_use2) if (instance_exists(physitem)) physitem.use2 = true;
 //Switch currentitem
 if (key_switchnext || key_switchprev){
-	if (key_switchnext) {
-		currentitem++
-		if (currentitem >= array_length_1d(inventory)) currentitem = 0;
-		while (inventory_quantity[currentitem] == 0){ currentitem++; if (currentitem >= array_length_1d(inventory)) currentitem = 0;}
-	}
-	if (key_switchprev) {
-		currentitem--
-		if (currentitem < 0) currentitem = array_length_1d(inventory) - 1;
-		while (inventory_quantity[currentitem] == 0){ currentitem-- if (currentitem < 0) currentitem = array_length_1d(inventory) - 1;}
-	}
-	SpawnItem(self);
+	if (key_switchnext) currentitem++; if (currentitem >= ds_list_size(inventory)) currentitem = 0;	
+	if (key_switchprev) currentitem--; if (currentitem < 0) currentitem = ds_list_size(inventory) - 1;
+	SpawnItem();
 }
-if (inventory_quantity[currentitem] <= 0){ 
-	currentitem++
-	if (currentitem >= array_length_1d(inventory)) currentitem = 0;
-	while (inventory_quantity[currentitem] == 0){ currentitem++; if (currentitem >= array_length_1d(inventory)) currentitem = 0;}
-	SpawnItem(self);
+if instance_exists(physitem){
+	var exists = false;
+	for (var i=0; i<=ds_list_size(inventory)-1; i++){ if (physitem.obj == ds_map_find_value(ds_list_find_value(inventory,i),"item")) exists = true; }
+	if (!exists) {if (currentitem == ds_list_size(inventory)) {currentitem = ds_list_size(inventory)-1} SpawnItem()}
 }
-
 
 ////Collision
 //Horizantal Collision

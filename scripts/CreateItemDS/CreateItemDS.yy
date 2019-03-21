@@ -1,8 +1,8 @@
 {
-    "id": "9a9c48e3-8819-4178-a33a-6167f27387e9",
+    "id": "afe4dd93-b2eb-40c2-9e0f-feeea9fc7b1e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "RemoveToInventory",
+    "name": "CreateItemDS",
     "IsCompatibility": false,
     "IsDnD": false
 }

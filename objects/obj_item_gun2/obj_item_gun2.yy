@@ -63,6 +63,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
             "value": "100"
+        },
+        {
+            "id": "a49f3fea-ae90-4cd0-893a-aeec859cc209",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
+            "value": "obj_item_gun2"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

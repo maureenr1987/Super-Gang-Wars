@@ -1,0 +1,1 @@
+current_hp = 13;

@@ -36,12 +36,14 @@ lvl = 1;
 xp = 0;
 RecalcStats(self);
 
+
+
 //Inventory an items
-inventory = global.inv
-inventory_quantity = global.invq
+inventory = ds_list_create();
+ds_list_add(inventory, CreateItemDS("obj_baseitem",1));
 
 currentitem = 0;
-physitem = obj_baseitem;
+physitem = obj_menu;
 
 //Thing to collide with
 flicker = 0;

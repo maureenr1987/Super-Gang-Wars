@@ -48,6 +48,22 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
             "value": "False"
+        },
+        {
+            "id": "46c206f3-f847-4620-9708-32cf3b6fb10e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "e1f7db88-1a9a-4f75-9ec8-6007cb84dbb0",
+            "value": "\"A basic gun. It's low price makes it a popular for beginerszz3\""
+        },
+        {
+            "id": "496bb9fb-5269-4f6b-a9c7-d5db6f5e9228",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
+            "value": "obj_item_basegun"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

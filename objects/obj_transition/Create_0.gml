@@ -17,4 +17,3 @@ mode = trans_mode.intro;
 percent = 1;
 target = room;
 
-window_set_fullscreen(true);

@@ -3,7 +3,7 @@ if (instance_exists(mine)){
 	if (mine.Owner == Owner){
 		with (mine){
 			event_user(0);
-			RemoveToInventory("obj_item_mine_manual",1,Owner)
+			AddToInventory("obj_item_mine_manual",-1,Owner)
 		}
 	}
 }

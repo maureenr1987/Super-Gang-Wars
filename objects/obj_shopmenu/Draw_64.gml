@@ -1,4 +1,8 @@
 /// @desc
+
+
+var pl = menu_controller;
+
 switch (menu_current){
 	
 	case itembuy:
@@ -13,10 +17,10 @@ switch (menu_current){
 				var itembuffer = instance_create_layer(0,0,"hidden",asset_get_index(menu_current[i]));
 			
 				//Highlight currently selected item
-				if (menu_cursor == i) OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"> "+string(itembuffer.name)+" - $"+string(itembuffer.price),c_white,c_black,1)
+				if (menu_cursor == i) OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"> "+string(itembuffer.name)+" $"+string(itembuffer.price),c_white,c_black,1)
 				
 				//Gray everything else on the list
-				else OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"   "+string(itembuffer.name)+" - $"+string(itembuffer.price),c_gray,c_black,1)
+				else OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"   "+string(itembuffer.name)+" $"+string(itembuffer.price),c_gray,c_black,1)
 				
 				instance_destroy(itembuffer);
 			}
@@ -24,10 +28,10 @@ switch (menu_current){
 			//Is cancel
 			else{
 				//Highlight currently selected item
-				if (menu_cursor == i) OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"> "+string(NameObjTranslate(menu_current[i])),c_white,c_black,1)
+				if (menu_cursor == i) OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"> Cancel",c_white,c_black,1);
 		
 				//Gray everything else on the list
-				else OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"   "+string(NameObjTranslate(menu_current[i])),c_gray,c_black,1)
+				else OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"   Cancel",c_gray,c_black,1)
 			}
 			
 		}
@@ -39,32 +43,52 @@ switch (menu_current){
 		else OutlineText(menu_anchor_x,menu_anchor_y+15,"Cancel");
 		break;
 	
-	case itembuy_message:
-	case itemsell_message:
-		OutlineText(menu_anchor_x,menu_anchor_y,itembuy_message);
+	case message:
+		OutlineText(menu_anchor_x,menu_anchor_y,message);
 		break;
 		
 	case itemsell:
-		for (var i = 0; i < array_length_1d(menu_current); i++){
-			//Heading is always white text
-			if (i == 0) OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,menu_current[i],c_white,c_black,1)
 			
-			else if (i == array_length_1d(menu_current)-1){
-				//Highlight currently selected item
-				if (menu_cursor == i) OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,">    - "+string(NameObjTranslate(menu_current[i])),c_white,c_black,1)
+		//Heading is always white text
+		OutlineTextColor(menu_anchor_x, menu_anchor_y,menu_current,c_white,c_black,1);
+		var textheight = 0;
 		
-				//Gray everything else on the list
-				else OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"      - "+string(NameObjTranslate(menu_current[i])),c_gray,c_black,1)
+		//Items loop
+		for (var i = 1; i <= ds_list_size(pl.inventory)-1; i++){
+
+			//Highlitght Current Item
+			if (i == menu_cursor) {
+				textheight += 15;
+				var itembuffer = instance_create_layer(x, y,"hidden",asset_get_index(ds_map_find_value(ds_list_find_value(pl.inventory,i),"item")));
+				OutlineTextColor(menu_anchor_x,menu_anchor_y+textheight,"> x"+string(ds_map_find_value(ds_list_find_value(pl.inventory,i),"quantity"))+" "+itembuffer.name+" $"+string(itembuffer.price),c_white,c_black,1.5);
+				instance_destroy(itembuffer);
 			}
+			//No Highlight
 			else {
-				//Highlight currently selected item
-				if (menu_cursor == i) OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"> "+string(menu_controller.inventory_quantity[i])+" - "+string(NameObjTranslate(menu_current[i])),c_white,c_black,1)
-		
-				//Gray everything else on the list
-				else OutlineTextColor(menu_anchor_x, menu_anchor_y+i*15,"   "+string(menu_controller.inventory_quantity[i])+" - "+string(NameObjTranslate(menu_current[i])),c_gray,c_black,1)
+				textheight += 15;
+				var itembuffer = instance_create_layer(x, y,"hidden",asset_get_index(ds_map_find_value(ds_list_find_value(pl.inventory,i),"item")));
+				OutlineTextColor(menu_anchor_x,menu_anchor_y+textheight,"   x"+string(ds_map_find_value(ds_list_find_value(pl.inventory,i),"quantity"))+" "+itembuffer.name+" $"+string(itembuffer.price),c_gray,c_black,1);
+				instance_destroy(itembuffer);
 			}
 			
 		}
+		
+		//Inventory is completely empty
+		if (textheight == 0){
+			textheight += 15;
+			OutlineTextColor(menu_anchor_x, menu_anchor_y+textheight,"   Nigga you broke!",c_gray,c_black,1);
+			broke = true;
+		}
+		else{
+			textheight += 15;
+			//Highlight currently selected item
+			if (menu_cursor == ds_list_size(pl.inventory)) OutlineTextColor(menu_anchor_x, menu_anchor_y+textheight,"> Cancel",c_white,c_black,1.5);
+		
+			//Gray everything else on the list
+			else OutlineTextColor(menu_anchor_x, menu_anchor_y+textheight,"   Cancel",c_gray,c_black,1);
+			broke = false;
+		}
+
 		break;
 		
 	case itemsell_quantity:

@@ -1,8 +1,8 @@
 {
-    "id": "8c5385a9-6a2b-48db-8841-25fa10347def",
+    "id": "3d36423d-3db9-4465-8603-e21e7de83004",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "NameObjTranslate",
+    "name": "ChangeMenu",
     "IsCompatibility": false,
     "IsDnD": false
 }

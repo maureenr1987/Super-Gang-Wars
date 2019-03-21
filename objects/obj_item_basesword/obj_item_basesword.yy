@@ -68,6 +68,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
             "value": "snd_sword_col"
+        },
+        {
+            "id": "3194c441-b81d-43f7-855f-587a0737b5e6",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
+            "value": "obj_item_basesword"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

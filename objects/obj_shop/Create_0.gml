@@ -1,3 +1,3 @@
 /// @desc
 otxtbbl = obj_menu;
-oshopmenu = obj_shopmenu;
+oshopmenu = obj_menu;

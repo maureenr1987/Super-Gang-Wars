@@ -19,8 +19,8 @@ if keyboard_check_pressed(vk_f1){// || gamepad_button_check_pressed(0, gp_start)
 
 //Fill inventory
 if keyboard_check_pressed(vk_f2){
-	for (var i = 0; i <= array_length_1d(obj_player.inventory)-1; i++){
-		obj_player.inventory_quantity[i] = 99;
+	for (var i = 1; i <= array_length_1d(global.inv)-1; i++){
+		AddToInventory(global.inv[i],1,obj_player)
 	}
 }
 

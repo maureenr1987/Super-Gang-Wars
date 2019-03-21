@@ -11,6 +11,8 @@ global.debug = false;
 //initialize save game.
 #macro SAVEFILE "save.sav"
 
+window_set_fullscreen(true);
+
 global.inv = [
 	"obj_baseitem",
 	"obj_item_basegun",
@@ -25,20 +27,4 @@ global.inv = [
 	"obj_item_missilelauncher",
 	"obj_item_lazergun",
 	"obj_item_flamethrower"
-]
-
-global.invq = [
-	1,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0
 ]

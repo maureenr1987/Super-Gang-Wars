@@ -95,6 +95,14 @@
             "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
             "propertyId": "0842d314-8894-4295-953b-55dec6b9d83c",
             "value": "0"
+        },
+        {
+            "id": "ac02142a-3d63-45ac-b65f-acdd6737b9cf",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
+            "value": "obj_item_lazergun"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

@@ -31,24 +31,8 @@ itembuy_confirmation = [
 	"Yes",
 	"No"
 ];
-itembuy_message = "Thank you for your purchase!";
 
-
-itemsell = [
-	"What item would you like to sell?",
-	"obj_item_basegun",
-	"obj_item_gun2",
-	"obj_item_gun3",
-	"obj_item_gun4",
-	"obj_item_basespear",
-	"obj_item_basesword",
-	"obj_item_mine_manual",
-	"obj_item_mine_proximity",
-	"obj_item_mine_timed",
-	"obj_item_missilelauncher",
-	"obj_item_lazergun",
-	"Cancel"
-];
+itemsell = "What item would you like to sell?";
 
 itemsell_quantity = "How many would you like to sell?";
 
@@ -58,13 +42,16 @@ itemsell_confirmation = [
 	"No"
 ];
 
-itemsell_message = "Thank you for your purchase!";
-
+message = "";
 padding = 10;
 menu_font = font_menu; 
 menu_cursor = 1;
-menu_controller = obj_basecharacter;
+menu_controller = obj_player;
 menu_current = start;
 menu_length = array_length_1d(start);
 menu_anchor_x = w-250;
 menu_anchor_y = 40;
+
+broke = true;
+sItem = obj_baseitem;
+sQuan = 0;
