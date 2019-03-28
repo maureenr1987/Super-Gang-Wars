@@ -5,7 +5,7 @@ orig_h = camera_get_view_height(cam);
 display_set_gui_size(orig_w,orig_h);
 w = display_get_gui_width();
 h = display_get_gui_height();
-gui_margin = 32;
+
 
 yeet = 1000;
 menu_x_target = 20;

@@ -1,5 +1,5 @@
 /// @desc
-if (instance_exists(obj_player)){
+if (instance_exists(obj_player) && room != rm_Menu){
 	var pl = obj_player;
 	
 	////Draw Identification/Status Card
@@ -9,7 +9,7 @@ if (instance_exists(obj_player)){
 	var LVL = "lvl. " + string(pl.lvl);
 	var CUR = "Currency: " + string(pl.currency);
 	var HP = "HP " + string(floor(pl.current_hp))  + " / " + string(pl.hp);
-	var XP = "XP " + string(pl.currentexp) + "/" + string(pl.tonextlvl);
+	var XP = "XP " + string(pl.currentxp) + "/" + string(pl.tonextlvl);
 
 	DrawSetText(c_black,font_stats,fa_center,fa_top);
 	x = 5;
@@ -37,16 +37,17 @@ if (instance_exists(obj_player)){
 	else draw_healthbar(x + string_width(HP)+5, y+45 , x+boxwidth-5, y+50, (pl.current_hp / pl.hp) * 100 , c_dkgray , c_red, c_lime, 0, true, true);
 	
 	//other stats
-	OutlineText(x, y+60, "HP - " + string(pl.hp))
-	OutlineText(x+70, y+60, "ATK - " + string(pl.atk))
-	OutlineText(x+70, y+70, "DEF - " + string(pl.def))
-	OutlineText(x+140, y+60, "SATK - " + string(pl.satk))
-	OutlineText(x+140, y+70, "SDEF - " + string(pl.sdef))
-	OutlineText(x, y+70, "SPD - " + string(pl.spd))
+	DrawSetText(c_gray,font_stats,fa_left,fa_top)
+	draw_text(x, y+60, "HP - " + string(pl.hp))
+	draw_text(x+70, y+60, "ATK - " + string(pl.atk))
+	draw_text(x+70, y+70, "DEF - " + string(pl.def))
+	draw_text(x+140, y+60, "SATK - " + string(pl.satk))
+	draw_text(x+140, y+70, "SDEF - " + string(pl.sdef))
+	draw_text(x, y+70, "SPD - " + string(pl.spd))
 	
 	//xp
 	OutlineText(x, y+90,XP)
-	draw_healthbar(x + string_width(XP)+5, y+95 , x+boxwidth-5, y+100, (pl.currentexp / pl.tonextlvl) * 100 , c_dkgray , c_yellow, c_orange, 0, true, true);
+	draw_healthbar(x + string_width(XP)+5, y+95 , x+boxwidth-5, y+100, (pl.currentxp / pl.tonextlvl) * 100 , c_dkgray , c_yellow, c_orange, 0, true, true);
 	
 	//========================================================================================================================================================
 	
@@ -82,13 +83,15 @@ if (instance_exists(obj_player)){
 		
 		//Highlight Current Item
 		if (i == obj_player.currentitem) {
+			//DrawSetText(c_gray,font_stats,fa_left,fa_top)
 			OutlineTextColor(x,textheight,"> x"+string(quan),c_white,c_black,1);
 			OutlineTextColor(x+35,textheight,itembuffer.name,c_white,c_black,1.5);
 		}
 		//No Highlight
 		else {
-			OutlineTextColor(x,textheight,"   x"+string(quan),c_gray,c_black,1);
-			OutlineTextColor(x+35,textheight,itembuffer.name,c_gray,c_black,1);
+			DrawSetText(c_gray,font_stats,fa_left,fa_top)
+			draw_text(x,textheight,"   x"+string(quan));
+			draw_text(x+35,textheight,itembuffer.name);
 		}
 		instance_destroy(itembuffer);
 	}

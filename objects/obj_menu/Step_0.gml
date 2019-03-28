@@ -26,15 +26,8 @@ if (menu_control){
 
 if (menu_x > w + 150 && menu_committed != -1){
 	switch (menu_committed){
-		case 2: SlideTransition(trans_mode.goto, rm_retrosity); break;
-		case 1: 
-			if file_exists(SAVEFILE){
-				var file = file_text_read_real(SAVEFILE);
-				var target = file_text_read_real(file);
-				file_text_close(file);
-				SlideTransition(trans_mode.goto,target);
-			}
-			break;
+		case 2: SlideTransition(trans_mode.goto, rm_apartment_playerroom,448,448); ResetControls(obj_player); break;
+		case 1: with (obj_hud){event_user(1);} break;
 		case 0: game_end(); break;
 	}
 }

@@ -1,4 +1,5 @@
 /// @description Update Camera
+if (room != 0) target = obj_player; else target = emptyobj;
 
 //Update camera position
 if (instance_exists(target)){
@@ -39,3 +40,5 @@ for (var i = 0; i <= 10; i++){
 
 //Set GUI size
 display_set_gui_size(camera_get_view_width(cam),camera_get_view_height(cam));
+
+//if instance_exists(obj_player) camera_set_view_angle(cam,obj_player.face);

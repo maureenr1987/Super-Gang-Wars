@@ -17,3 +17,5 @@ mode = trans_mode.intro;
 percent = 1;
 target = room;
 
+plx = 0;
+ply = 0;

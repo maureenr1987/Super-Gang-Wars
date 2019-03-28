@@ -8,9 +8,6 @@ h = display_get_gui_height();
 
 global.debug = false;
 
-//initialize save game.
-#macro SAVEFILE "save.sav"
-
 window_set_fullscreen(true);
 
 global.inv = [
@@ -26,5 +23,7 @@ global.inv = [
 	"obj_item_mine_timed",
 	"obj_item_missilelauncher",
 	"obj_item_lazergun",
-	"obj_item_flamethrower"
-]
+	"obj_item_flamethrower",
+	"obj_item_zawarudo",
+	"obj_item_basefood"
+];

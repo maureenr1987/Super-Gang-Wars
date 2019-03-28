@@ -60,6 +60,8 @@ if instance_exists(nemesis){
 						case obj_item_gun4:
 						case obj_item_basespear:
 						case obj_item_basesword:
+						case obj_item_lazergun:
+						case obj_item_flamethrower:
 							key_use1 = true
 							break;
 							

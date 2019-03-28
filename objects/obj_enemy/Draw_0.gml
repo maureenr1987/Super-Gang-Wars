@@ -13,7 +13,7 @@ if point_in_circle(obj_player.x, obj_player.y, x, y, 200) || (hp != current_hp) 
 	var NAME = firstname + " " + middlename + " " + lastname;
 	var GEND = " (" + gender + ")";
 	var LVL = "lvl. " + string(lvl);
-	var EXP = "XP " + string(currentexp) + "/" + string(tonextlvl);
+	var EXP = "XP " + string(currentxp) + "/" + string(tonextlvl);
 	var HP = string(floor(current_hp))  + " / " + string(hp);
 	
 	DrawSetText(c_black,font_stats,fa_center,fa_top);

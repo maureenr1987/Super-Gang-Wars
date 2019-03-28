@@ -12,7 +12,9 @@
         "1c6bbbe1-2b64-45e3-b20f-715099e468a6",
         "06484582-89df-4a03-9167-ac23bda5e7f6",
         "e79daca8-bbe0-4d93-8a81-c60e6733ca39",
-        "7a9d856c-f259-41b8-b2cb-00329710858d"
+        "7a9d856c-f259-41b8-b2cb-00329710858d",
+        "8b2fd234-5cd4-4cd0-b0a5-22addde3f8d4",
+        "389da2f2-6848-4e31-8fa6-1a7dac67e0e7"
     ],
     "filterType": "GMSound",
     "folderName": "Gunshots",

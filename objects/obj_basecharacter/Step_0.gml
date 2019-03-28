@@ -48,7 +48,7 @@ if (key_switchnext || key_switchprev){
 }
 if instance_exists(physitem){
 	var exists = false;
-	for (var i=0; i<=ds_list_size(inventory)-1; i++){ if (physitem.obj == ds_map_find_value(ds_list_find_value(inventory,i),"item")) exists = true; }
+	for (var i=0; i<=ds_list_size(inventory)-1; i++){ if (string(object_get_name(physitem.object_index)) == ds_map_find_value(ds_list_find_value(inventory,i),"item")) exists = true;}
 	if (!exists) {if (currentitem == ds_list_size(inventory)) {currentitem = ds_list_size(inventory)-1} SpawnItem()}
 }
 
@@ -80,13 +80,13 @@ event_user(2);
 //Die
 if (current_hp <= 0) {
 	if (!dead){
-	var objxp = instance_create_layer(x, y, "Player", obj_xp);
-	objxp.xp = lvl * 5;
+		var objxp = instance_create_layer(x, y, "Player", obj_xp);
+		objxp.xp = lvl * 5;
+		dead = true
+		cancontrol = false;
+		ResetControls(self);
+		instance_destroy(physitem);
 	}
-	dead = true
-	cancontrol = false;
-	ResetControls(self);
-	instance_destroy(physitem);
 	sprite_index = asset_get_index(sprite + "dead");
 	image_speed = 0;
 	if place_meeting(x,y+30,obj_wall) image_index = 1; else image_index = 0;
@@ -107,3 +107,6 @@ else {
 }
 //Flip sprite
 if (face == 0) image_xscale = 1; else if (face == 180) image_xscale = -1;
+
+////Other Stuff
+if (!dead) && (room != 0)cancontrol = true; else cancontrol = false;

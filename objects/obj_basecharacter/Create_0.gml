@@ -6,8 +6,8 @@ Event User 2 - Step
 
 global.showID = true;
 
-/*if gamepad_is_connected(0)*/ gamepad_set_axis_deadzone(0, 0.1);
 //Reset controls
+gamepad_set_axis_deadzone(0, 0.2);
 ResetControls(self)
 
 //Reset Movements
@@ -23,27 +23,26 @@ forcespd = 0;
 forcedir = 0;
 
 //Idenity
-firstname = "Joe"
-middlename = "Geena"
-lastname = "Smith"
-gender = "male"
+firstname = "";
+middlename = "";
+lastname = "";
+gender = "";
 
 //Randomize Idenity
 RandomizeID(self);
 
-//Set player level and other stats
+//Set level and other stats
 lvl = 1;
 xp = 0;
 RecalcStats(self);
-
-
+current_hp = hp;
 
 //Inventory an items
 inventory = ds_list_create();
 ds_list_add(inventory, CreateItemDS("obj_baseitem",1));
 
 currentitem = 0;
-physitem = obj_menu;
+physitem = emptyobj;
 
 //Thing to collide with
 flicker = 0;

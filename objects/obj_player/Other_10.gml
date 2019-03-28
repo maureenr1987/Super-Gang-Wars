@@ -1,5 +1,6 @@
 /// @desc (begin)
-lvl = irandom_range(20,30);
-Setxp(self);
-RecalcStats(self);
-current_hp = hp;
+plx = 0;
+ply = 0;
+
+passwordlist = ds_list_create();
+AddPassword("",self);
