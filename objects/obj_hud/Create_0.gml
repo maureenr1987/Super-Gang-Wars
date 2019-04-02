@@ -25,5 +25,6 @@ global.inv = [
 	"obj_item_lazergun",
 	"obj_item_flamethrower",
 	"obj_item_zawarudo",
-	"obj_item_basefood"
+	"obj_item_basefood",
+	"obj_item_armcannon"
 ];

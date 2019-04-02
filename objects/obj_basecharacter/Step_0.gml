@@ -53,6 +53,15 @@ if instance_exists(physitem){
 }
 
 ////Collision
+
+//Ladders
+if place_meeting(x, y+1, obj_ladder){
+	var ladder = instance_nearest(x,y,obj_ladder)
+	if (face == 90 && abs(hsp) < 3) { vsp = -5; x = ladder.x + ladder.sprite_width/2;}
+	else if (face == 270 && abs(hsp) < 1) { vsp = 5; x = ladder.x + ladder.sprite_width/2;}
+	else if (abs(hsp) < 3) { vsp = 0;}
+}
+
 //Horizantal Collision
 if place_meeting(x + hsp, y, obj_wall){
 	while(!place_meeting(x + sign(hsp), y, obj_wall)){

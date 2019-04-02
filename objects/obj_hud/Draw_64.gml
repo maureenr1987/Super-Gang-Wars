@@ -41,8 +41,6 @@ if (instance_exists(obj_player) && room != rm_Menu){
 	draw_text(x, y+60, "HP - " + string(pl.hp))
 	draw_text(x+70, y+60, "ATK - " + string(pl.atk))
 	draw_text(x+70, y+70, "DEF - " + string(pl.def))
-	draw_text(x+140, y+60, "SATK - " + string(pl.satk))
-	draw_text(x+140, y+70, "SDEF - " + string(pl.sdef))
 	draw_text(x, y+70, "SPD - " + string(pl.spd))
 	
 	//xp

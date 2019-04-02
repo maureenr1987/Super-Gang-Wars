@@ -30,9 +30,7 @@ ds_map_add(_map, "currenthp", pl.current_hp);
 ds_map_add(_map, "hp", pl.hp);
 ds_map_add(_map, "atk", pl.atk);
 ds_map_add(_map, "def", pl.def);
-ds_map_add(_map, "satk", pl.satk);
-ds_map_add(_map, "sdef", pl.sdef);
-ds_map_add(_map, "spd", pl.sdef);
+ds_map_add(_map, "spd", pl.spd);
 
 ds_map_add(_map, "totalxp", pl.totalxp);
 ds_map_add(_map, "tonextlvl", pl.tonextlvl);

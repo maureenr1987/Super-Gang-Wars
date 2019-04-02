@@ -26,7 +26,7 @@ if (menu_control){
 
 if (menu_x > w + 150 && menu_committed != -1){
 	switch (menu_committed){
-		case 2: SlideTransition(trans_mode.goto, rm_apartment_playerroom,448,448); ResetControls(obj_player); break;
+		case 2: SlideTransition(trans_mode.goto, rm_jail_1_cell,384,416); ResetControls(obj_player); break;
 		case 1: with (obj_hud){event_user(1);} break;
 		case 0: game_end(); break;
 	}

@@ -14,8 +14,6 @@ with (argument0){
 	hp =  2 * lvl + 78;
 	atk = 2 * lvl + 101;
 	def = 2 * lvl + 78;
-	satk = 2 * lvl + 109;
-	sdef = 2 * lvl + 85;
 	spd = 2 * lvl + 100;
 	
 	if (lvl <= 100){

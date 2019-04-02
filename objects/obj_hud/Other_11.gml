@@ -22,8 +22,6 @@ if file_exists("savedgame.sav") && instance_exists(obj_player){
 	pl.hp = _map[?"hp"];
 	pl.atk = _map[?"atk"];
 	pl.def = _map[?"def"];
-	pl.satk = _map[?"satk"];
-	pl.sdef = _map[?"sdef"];
 	pl.spd = _map[?"spd"];
 	
 	pl.totalxp = _map[?"totalxp"];

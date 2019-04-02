@@ -18,8 +18,7 @@
         "a115425c-0ce4-49a5-9dcf-1f3b06fff5b7",
         "61aa38e2-3c08-4a63-8ee4-7492087be4d8",
         "16fee55f-fdf8-41be-a4be-85b4be7a49a8",
-        "595ad99a-8e75-4c1a-823f-8d63abde7755",
-        "b997640c-79b7-4884-b587-81876421ab6c"
+        "595ad99a-8e75-4c1a-823f-8d63abde7755"
     ],
     "filterType": "GMSprite",
     "folderName": "BuildingMaterials",
