@@ -5,15 +5,14 @@
 event_inherited();
 
 //Show Identification
-if (global.showID){
-if (current_hp >= 0) {
+if (global.showID) && (current_hp >= 0) {
 if (instance_exists(obj_player)){
 if point_in_circle(obj_player.x, obj_player.y, x, y, 200) || (hp != current_hp) {
 	//Local vars
 	var NAME = firstname + " " + middlename + " " + lastname;
 	var GEND = " (" + gender + ")";
 	var LVL = "lvl. " + string(lvl);
-	var EXP = "XP " + string(currentxp) + "/" + string(tonextlvl);
+	
 	var HP = string(floor(current_hp))  + " / " + string(hp);
 	
 	DrawSetText(c_black,font_stats,fa_center,fa_top);
@@ -22,6 +21,7 @@ if point_in_circle(obj_player.x, obj_player.y, x, y, 200) || (hp != current_hp) 
 	draw_set_color(c_black);
 	draw_set_alpha(0.5);
 	draw_roundrect_ext(x-5-(string_width(NAME)*0.5), y - 75 , x+5+(string_width(NAME)*0.5), y - 35 , 10, 10, false);
+	
 	//drawMarker
 	draw_sprite(spr_Marker, 0, x, y-35);
 	draw_set_alpha(1);
@@ -50,15 +50,21 @@ if point_in_circle(obj_player.x, obj_player.y, x, y, 200) || (hp != current_hp) 
 }
 }
 }
-}
 
-//Check if character is alive
+//Check if character is alive and debug is on
 if (global.debug) && (current_hp >= 0){
 	
 	//Draw line of sight cone
 	if (!foundnemesis) draw_set_colour(c_yellow);
 	else draw_set_colour(c_red);
-	draw_set_alpha(0.1);
+	
+	// Check if nemesis exists
+	if instance_exists(nemesis){
+	//Find nearest instance of nemesis
+	var c_nemesis = instance_nearest(x,y,nemesis);	
+	var c_nemesis_dir = point_direction(x, y, c_nemesis.x, c_nemesis.y);
+	if (c_nemesis_dir <= face+15) && (c_nemesis_dir >= face-15) && (foundnemesis) draw_set_alpha(0.3); else draw_set_alpha(0.1);
+	} else draw_set_alpha(0.1);
 	draw_triangle(x,y,x+lengthdir_x(look_dist,face+15),y+lengthdir_y(look_dist,face+15),x+lengthdir_x(look_dist,face),y+lengthdir_y(look_dist,face),false);
 	draw_triangle(x,y,x+lengthdir_x(look_dist,face),y+lengthdir_y(look_dist,face),x+lengthdir_x(look_dist,face-15),y+lengthdir_y(look_dist,face-15),false);
 	draw_set_alpha(1);

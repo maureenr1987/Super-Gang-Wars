@@ -1,5 +1,5 @@
 /// @desc Controlls/Collision/Animation
-
+polygon = polygon_from_instance(id)
 ////Input or AI
 if (cancontrol) event_user(1);
 else {
@@ -20,9 +20,30 @@ if (place_meeting(x, y + 1,obj_wall)) && (key_jump){
 }
 
 //Calculate direction player is 'facing'
-var facepoint = point_direction(0,0,x_axis,y_axis);
-if (facepoint <= 45 || facepoint >= 315) && (x_axis >= 0.1) face = 0; else if (facepoint >= 135 && facepoint <= 225 && x_axis <= -0.1) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
-if (facepoint >= 225 && facepoint <= 315) face = 270; else if (facepoint >= 45 && facepoint <= 135) face = 90;
+/*if (x_axis != 0 || y_axis != 0){
+	var facepoint = point_direction(0,0,x_axis,y_axis);
+	if (facepoint <= 45 || facepoint >= 315) && (x_axis >= 0.3) face = 0; else if (facepoint >= 135 && facepoint <= 225 && x_axis <= -0.3) face = 180;
+	if (facepoint >= 225 && facepoint <= 315) face = 270; else if (facepoint >= 45 && facepoint <= 135) face = 90;
+}  else if (image_xscale = 1) face = 0; else face = 180;*/
+
+
+
+if (x_cam_axis == 0 && y_cam_axis == 0){
+	if (x_axis >= 0.8) face = 0; else if (x_axis <= -0.8) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
+	if (y_axis > 0.8) face = 270; else if (y_axis < -0.8) face = 90;
+} else {
+	if (sign(x_cam_axis) >= 0.8) face = 0; else if (sign(x_cam_axis) <= -0.8) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
+	if (sign(y_cam_axis) > 0.8) face = 270; else if (sign(y_cam_axis) < -0.8) face = 90;
+}
+
+
+/*
+////Is the Player Visible?
+var val = 0;
+for (var i=0; i <= 32; i++){
+	val += color_get_value(draw_getpixel(640,360-16+i)) + color_get_value(draw_getpixel(640-16+i,360));
+}
+is_visable = (val > 0);*/
 
 
 //Force

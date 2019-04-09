@@ -67,7 +67,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "target",
+            "varName": "target_room",
             "varType": 5
         },
         {
@@ -81,7 +81,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "plx",
+            "varName": "target_x",
             "varType": 1
         },
         {
@@ -95,7 +95,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "ply",
+            "varName": "target_y",
             "varType": 1
         }
     ],

@@ -1,4 +1,4 @@
 /// @description Destroy Bullet
-speed = bullet_speed * (delta_time/10000)/2;
-lifespan -= 16.6;
-if (lifespan <= 0) instance_destroy();
+speed = proj_speed * (delta_time/10000)/2;
+proj_lifespan -= 16.6;
+if (proj_lifespan <= 0) instance_destroy();

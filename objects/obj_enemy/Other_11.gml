@@ -19,71 +19,65 @@ if instance_exists(nemesis){
 	var c_nemesis = instance_nearest(x,y,nemesis);	
 	var c_nemesis_dir = point_direction(x, y, c_nemesis.x, c_nemesis.y);
 	
-	//Check if nemesis is within 15 degreese of enemy's facing direction
-	if (c_nemesis_dir > 270) c_nemesis_dir -= 360;
-	if point_in_circle(c_nemesis.x, c_nemesis.y, x, y, look_dist) && (c_nemesis_dir <= face+15) && (c_nemesis_dir >= face-15) foundnemesis = true;
+	//Only look for the enemy if they haven't been found
+	if (!foundnemesis){
+		//Check if the nemesis is a character and then if they're visible.
+		if (object_get_parent(c_nemesis.object_index) == obj_basecharacter) if (c_nemesis.is_visable) {
+		
+			//Check if nemesis is within 15 degreese of enemy's facing direction
+			if (c_nemesis_dir > 270) c_nemesis_dir -= 360;
+			if (distance_to_object(c_nemesis) <= look_dist) && (c_nemesis_dir <= face+15) && (c_nemesis_dir >= face-15) {
+			
+				//Check how many obj_wall(s) are obstructing the view.
+				ds_list_clear(walllist);
+				collision_line_list(x,y,c_nemesis.x,c_nemesis.y,obj_wall,false,true,walllist,false);
+			
+				//If there is no walls the enemy is found
+				if ds_list_empty(walllist) foundnemesis = true;
+			}
+		}
+	}
 	
+	//The enemy is found so now eliminate him
 	if (foundnemesis){
-	
 		//Check if nemesis is within a certain distance of the enemy
 		if point_in_circle(c_nemesis.x, c_nemesis.y, x, y, look_dist){
 		
+			//Reset jump and useitem
 			key_jump = false;
+			key_use1 = false;
 			key_use2 = false;
 		
-			//Take out item
+			//Take out item if it isn't out already
 			if(!instance_exists(physitem)) SpawnItem();
-		
+			
 			//Go in the direction of the nemesis
-			if (x-8 <= c_nemesis.x && x+8 >= c_nemesis.x){
+			
+			if (l < 1){
+			//If too close then back away
+			if point_in_circle(c_nemesis.x, c_nemesis.y, x, y, look_dist*.33){
+				y_axis = 0;
+				if ( abs(lengthdir_x(2.5, c_nemesis_dir-180)) > 1.5) x_axis = sign(lengthdir_x(1, c_nemesis_dir-180)); else x_axis = 0; l = 10;
+			} 
+			//If at a good distance stay
+			else if point_in_circle(c_nemesis.x, c_nemesis.y, x, y, look_dist*.66){
+				y_axis = 0;
+				x_axis = 0;
+				if (abs(face-c_nemesis_dir) > 90) if (abs(lengthdir_x(2.5, c_nemesis_dir)) > 1.5) x_axis = sign(lengthdir_x(1, c_nemesis_dir)); else x_axis = 0;
 			}
-			else{
-				y_axis = lengthdir_y(1, c_nemesis_dir);
-				x_axis = lengthdir_x(1, c_nemesis_dir);
+			//If too far away then chase
+			else {
+				if ( abs(lengthdir_y(2.5, c_nemesis_dir)) > 1.5) y_axis = sign(lengthdir_y(1, c_nemesis_dir)); else y_axis = 0;
+				if ( abs(lengthdir_x(2.5, c_nemesis_dir)) > 1.5) x_axis = sign(lengthdir_x(1, c_nemesis_dir)); else x_axis = 0;
 			}
 			
-			//Walk fast at firts
-			if (distance_to_object(c_nemesis)/look_dist >= .5) x_axis = sign(x_axis);
-		
-			//Check if there is a wall in the way
-			if(collision_line(x,y, lengthdir_x(look_dist,face), lengthdir_y(look_dist,face), obj_wall, false, false)){
-			
-				//Check if nemesis is within 15 degrees of where self is facing
-				if (c_nemesis_dir <= face+15) && (c_nemesis_dir >= face-15){
+			}l--;
 
-					//Check what item is currently in use
-					
-					switch (asset_get_index(ds_map_find_value(ds_list_find_value(inventory,currentitem),"item"))){
-						case obj_item_basegun:
-						case obj_item_gun2:
-						case obj_item_gun3:
-						case obj_item_gun4:
-						case obj_item_basespear:
-						case obj_item_basesword:
-						case obj_item_lazergun:
-						case obj_item_flamethrower:
-							key_use1 = true
-							break;
-							
-						case obj_item_mine_manual:
-							//Check if manual mine has been placed
-							if instance_exists(physitem.mine){
-
-								//If it has wait for nemesis to get near it
-								if collision_circle(physitem.mine.x, physitem.mine.y, 15, nemesis, false, false) && (physitem.CurrentDelay <= 0) key_use1 = true;
-							}
-							//place mine
-							else key_use1 = true;
-							break;
-	
-						case obj_item_mine_proximity:
-						case obj_item_mine_timed:
-							key_use1 = true;
-							break;
-					}				
-				}
+			//Check if nemesis is within 15 degrees of where self is facing
+			if (c_nemesis_dir <= face+15) && (c_nemesis_dir >= face-15) {
+				key_use1 = true;		
 			}
-		
+			
 			//Randomly jump sometimes
 			if(random(1) < 0.01 && y > c_nemesis.y) {
 				key_jump = true;
@@ -94,7 +88,7 @@ if instance_exists(nemesis){
 				key_jump = true;
 			}
 		
-			//Jump off ledges
+			//Jump off ledges if the player is at a higher elevation
 			if !place_meeting(nextx, y + 30, obj_wall) && place_meeting(x, y + 30, obj_wall) && (random(1) < 0.01){
 				key_jump = true;
 			}

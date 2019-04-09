@@ -13,7 +13,7 @@ if keyboard_check_pressed(ord("R")) || gamepad_button_check_pressed(0, gp_start)
 }
 
 //Debugmode
-if keyboard_check_pressed(vk_f1){// || gamepad_button_check_pressed(0, gp_start){
+if keyboard_check_pressed(vk_f1){
 	if (global.debug) global.debug = false; else global.debug = true;
 }
 

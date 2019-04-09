@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "096c81af-a960-4782-b9f7-a33b636611ba"
+        },
+        {
+            "id": "6993e9b7-bc7a-43e7-b0af-883036545696",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 12,
+            "m_owner": "096c81af-a960-4782-b9f7-a33b636611ba"
         }
     ],
     "maskSpriteId": "6b1c400a-ab1d-487e-b4ce-f6bb6557e111",
@@ -85,8 +95,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "200",
+            "value": "300",
             "varName": "look_dist",
+            "varType": 1
+        },
+        {
+            "id": "043e5f63-d5be-4387-ac41-67d75c7841bf",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "lvl",
             "varType": 1
         }
     ],

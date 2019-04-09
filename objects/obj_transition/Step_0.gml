@@ -24,7 +24,6 @@ if (mode != trans_mode.off){
 			case trans_mode.goto:
 				mode = trans_mode.intro
 				room_goto(target)
-				if (target == 0 && instance_exists(obj_player)) instance_destroy(obj_player);
 				break;
 			
 			case trans_mode.restart:

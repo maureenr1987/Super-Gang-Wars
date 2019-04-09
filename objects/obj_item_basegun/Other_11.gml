@@ -1,17 +1,17 @@
 /// @description (use1) Fire gun
 //projectile_
-var projectile = instance_create_layer(x,y,"Player",projectile_type);
+var projectile = instance_create_layer(x,y,"Overlay",projectile_type);
 projectile.direction = image_angle + random_range(-miss, miss);
 projectile.image_angle = projectile.direction;
-projectile.lifespan = projectile_lifespan;
-projectile.bullet_speed = projectile_speed;
+projectile.proj_lifespan = projectile_lifespan;
+projectile.proj_speed = projectile_speed;
 projectile.x += lengthdir_x(projectile_spawnposition, Owner.face);
 projectile.y += lengthdir_y(projectile_spawnposition, Owner.face);
-projectile.bullet_power = projectile_power;
-projectile.Owner = Owner;
+projectile.proj_power = projectile_power;
+projectile.proj_Owner = Owner;
 
 //Muzzle flash
-var flash = instance_create_layer(x,y,"Player",obj_muzzleflash);
+var flash = instance_create_layer(x,y,"Overlay",obj_muzzleflash);
 flash.direction = image_angle;
 flash.x += lengthdir_x(projectile_spawnposition, Owner.face);
 flash.y += lengthdir_y(projectile_spawnposition, Owner.face);

@@ -22,9 +22,7 @@ if (global.showID && overlap){
 		//If the player does not have the password don't let them through
 		if (index != -1) {
 			//Next room
-			SlideTransition(trans_mode.goto, target, plx, ply)
-			//SAVE GAME
-			with (obj_hud){event_user(0)};
+			SlideTransition(trans_mode.goto, target_room, target_x, target_y)		
 		}
 		else {
 			//Feedback text

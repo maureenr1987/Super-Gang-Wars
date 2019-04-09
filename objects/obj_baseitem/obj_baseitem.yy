@@ -198,7 +198,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "snd_empty",
+            "value": "emptysound",
             "varName": "use1_sfx",
             "varType": 5
         },
@@ -212,7 +212,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "snd_empty",
+            "value": "emptysound",
             "varName": "use2_sfx",
             "varType": 5
         }

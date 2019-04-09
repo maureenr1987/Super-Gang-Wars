@@ -1,4 +1,7 @@
 /// @desc
+draw_sprite_stretched(spr_vignette,0,0,0,w,h)
+
+
 if (instance_exists(obj_player) && room != rm_Menu){
 	var pl = obj_player;
 	
@@ -129,19 +132,25 @@ if (instance_exists(obj_player) && room != rm_Menu){
 	//Destroy item buffer
 	instance_destroy(itembuffer);
 	}
-	
-	if (global.debug){
-		OutlineTextColor(w-110, 30,"x_axis = " + string(pl.x_axis),c_lime,c_black,1)
-		OutlineTextColor(w-110, 45,"y_axis = " + string(pl.y_axis),c_lime,c_black,1)
-	}
 }
 
 if (global.debug){
 	DrawSetText(c_white,font_stats,fa_left,fa_top)
 	OutlineTextColor(w-110, 0,"delta_time = " + string(delta_time/1000),c_lime,c_black,1);
-	OutlineTextColor(w-110, 15,"fps = " + string(fps),c_lime,c_black,1)
+	OutlineTextColor(w-110, 15,"fps = " + string(fps),c_lime,c_black,1);
 	
-		
-		
-
+	if instance_exists(obj_player) && (room != 0) {
+		//Axis
+		OutlineTextColor(w-110, 30,"x_axis = " + string(pl.x_axis),c_lime,c_black,1)
+		OutlineTextColor(w-110, 45,"y_axis = " + string(pl.y_axis),c_lime,c_black,1)
+		OutlineTextColor(w-110, 60,"x_cam_axis = " + string(pl.x_cam_axis),c_lime,c_black,1);
+		OutlineTextColor(w-110, 75,"y_cam_axis = " + string(pl.y_cam_axis),c_lime,c_black,1);
+	
+		//Is visible
+		if (pl.is_visable) OutlineTextColor(w-110, 90, "visable",c_lime,c_black,1)
+		else OutlineTextColor(w-110, 90, "not visable",c_lime,c_black,1)
+		draw_circle(w-130,95,10,0);
+		draw_set_color(pl.colour);
+		draw_circle(w-130,95,9.5,0);
+	}
 }

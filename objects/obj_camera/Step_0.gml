@@ -46,25 +46,10 @@ if keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_stickr
 }
 
 
-//Move camera
-if !gamepad_is_connected(0) {
-	key_cam_left = keyboard_check(vk_left);
-	key_cam_right = keyboard_check(vk_right);
-	key_cam_up = keyboard_check(vk_up);
-	key_cam_down = keyboard_check(vk_down);
-	
-	x_cam_axis = key_cam_right - key_cam_left;
-	y_cam_axis = key_cam_down - key_cam_up;
-} 
-else {
-	x_cam_axis = gamepad_axis_value(0,gp_axisrh);
-	y_cam_axis = gamepad_axis_value(0,gp_axisrv);
+
+if (target == obj_player){
+	x += target.x_cam_axis * 10;
+	y += target.y_cam_axis * 10;
 }
-
-
-
-x += x_cam_axis * 10;
-y += y_cam_axis * 10;
-
 
 

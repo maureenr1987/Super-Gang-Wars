@@ -43,6 +43,16 @@
             "enumb": 4,
             "eventtype": 7,
             "m_owner": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe"
+        },
+        {
+            "id": "29a17841-dd18-4ad4-b992-d530e5063d96",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 12,
+            "m_owner": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe"
         }
     ],
     "maskSpriteId": "6b1c400a-ab1d-487e-b4ce-f6bb6557e111",
@@ -75,6 +85,41 @@
             "value": "spr_player_",
             "varName": "sprite",
             "varType": 2
+        },
+        {
+            "id": "7f450d0b-8f24-42bc-aa29-219a01b8193e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": [
+                "\"noone\"",
+                "\"random\"",
+                "\"obj_item_startgun\"",
+                "\"obj_item_lesser_warden_gun\"",
+                "\"obj_item_medium_warden_gun\"",
+                "\"obj_item_higher_warden_gun\""
+            ],
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"noone\"",
+            "varName": "startitem",
+            "varType": 6
+        },
+        {
+            "id": "833e829c-d472-46a4-be43-fa07f3ac6b34",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": true,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "walksp",
+            "varType": 0
         }
     ],
     "solid": false,

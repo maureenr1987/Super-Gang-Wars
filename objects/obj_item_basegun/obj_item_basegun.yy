@@ -13,6 +13,16 @@
             "enumb": 11,
             "eventtype": 7,
             "m_owner": "31e10c66-239b-4158-87a0-68c55ee37915"
+        },
+        {
+            "id": "e5e550b0-6801-4798-bc43-0cd275260f3c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "31e10c66-239b-4158-87a0-68c55ee37915"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -24,14 +34,6 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
             "value": "Base Gun"
-        },
-        {
-            "id": "a464c9e7-f748-460f-8012-dd91787b4c95",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "11d268fc-e8cc-4a84-a7b8-49c0df187a73",
-            "value": "100"
         },
         {
             "id": "9fbd4672-9336-4eb8-b06f-136819ffe79c",
@@ -47,7 +49,7 @@
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "e8001e46-3f89-493a-a058-52953b77033f",
-            "value": "False"
+            "value": "True"
         },
         {
             "id": "46c206f3-f847-4620-9708-32cf3b6fb10e",
@@ -55,7 +57,7 @@
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "e1f7db88-1a9a-4f75-9ec8-6007cb84dbb0",
-            "value": "\"A basic gun. It's low price makes it a popular for beginerszz3\""
+            "value": "A basic gun. It's low price makes it a popular for beginerszz3"
         },
         {
             "id": "496bb9fb-5269-4f6b-a9c7-d5db6f5e9228",
@@ -119,7 +121,7 @@
             "rangeMax": 40,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "22",
+            "value": "20",
             "varName": "projectile_spawnposition",
             "varType": 1
         },

@@ -23,3 +23,6 @@ menu = [
 ];
 menu_items = array_length_1d(menu);
 menu_cursor = 2;
+
+clr = c_black;
+out = c_red;

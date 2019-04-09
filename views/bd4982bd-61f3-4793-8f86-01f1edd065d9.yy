@@ -9,7 +9,8 @@
         "30eabdfe-3013-4c6d-84fe-4797a3ffc059",
         "23b85330-ca3a-442e-94f1-0df98b7f88aa",
         "8aeda797-4dbc-4123-a180-c07b4ddfe63e",
-        "5da6c92f-e04c-4967-8615-ab8681a3d380"
+        "5da6c92f-e04c-4967-8615-ab8681a3d380",
+        "efb4bac3-80af-4903-a33f-99e24105f112"
     ],
     "filterType": "GMObject",
     "folderName": "Interact",

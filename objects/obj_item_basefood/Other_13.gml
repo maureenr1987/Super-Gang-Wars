@@ -9,5 +9,7 @@ if (repeatt > 0){
 		var snd = audio_play_sound(use1_sfx,1,false)
 		audio_sound_pitch(snd,random_range(0.70,1.30))
 	}
-}
+} 
 else Itempositioncenter_x = 10;
+
+if (repeatt == 1 && !m) { AddToInventory(string(object_get_name(object_index)),-1,Owner); m = true }
