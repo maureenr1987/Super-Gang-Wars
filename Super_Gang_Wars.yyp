@@ -319,14 +319,6 @@
             }
         },
         {
-            "Key": "14f84b91-0abd-415c-9f93-276a17678be9",
-            "Value": {
-                "id": "c7b8aef4-88c2-483a-81d7-643f56bf42b5",
-                "resourcePath": "sounds\\Devil_Dragon_Tatoo___Stealth\\Devil_Dragon_Tatoo___Stealth.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "150d235b-50f5-4a93-858f-3666436a9ab8",
             "Value": {
                 "id": "7eec023f-5180-4aef-ac74-160fb6cf714f",
@@ -1572,14 +1564,6 @@
                 "id": "1758645b-245f-45eb-85ee-2c8285dc9f9b",
                 "resourcePath": "sprites\\cement_side\\cement_side.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7247565c-e9f8-4db1-ab2a-b81dbb71cfcb",
-            "Value": {
-                "id": "18bd5e79-808c-45b2-831f-d73c1e87bab6",
-                "resourcePath": "sounds\\Devil_Dragon_Tatoo___Culmination\\Devil_Dragon_Tatoo___Culmination.yy",
-                "resourceType": "GMSound"
             }
         },
         {

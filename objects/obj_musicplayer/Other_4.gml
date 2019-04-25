@@ -1,4 +1,4 @@
-/// @desc
+/*/// @desc
 if (room == 0) audio_stop_all();
 
 switch(room){
