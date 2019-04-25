@@ -7,8 +7,6 @@ h = display_get_gui_height();
 
 if instance_exists(obj_player) && !(room == 0 || room == 1){
 	var pl = obj_player;
-	
-	
 	#region //Draw Identification/Status Card
 	//Local vars
 	var NAME = pl.firstname + " " + pl.middlename + " " + pl.lastname;
@@ -65,7 +63,6 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	text_y += 20;
 	
 	#endregion
-
 	#region //Draw Item Icon
 	/*//if inventory is empty
 	if (ds_list_size(pl.inventory) <= 1) { text_y += 5; OutlineTextColor(x,text_y,"Your invemtory is empty",c_gray,c_black,1);}
@@ -103,7 +100,6 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	instance_destroy(itembuffer);
 	}*/
 	#endregion
-
 	#region //Draw Inventory
 	//Draw inventory box
 	draw_set_color(c_black);
@@ -144,9 +140,7 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 		instance_destroy(itembuffer);
 	}
 	#endregion
-	
 }
-
 #region Draw Debug Stuff
 if (global.debug){
 	DrawSetText(c_white,font_stats,fa_left,fa_top)
@@ -161,17 +155,9 @@ if (global.debug){
 		OutlineTextColor(w-110, 45,"y_axis = " + string(pl.y_axis),c_lime,c_black,1)
 		OutlineTextColor(w-110, 60,"x_cam_axis = " + string(pl.x_cam_axis),c_lime,c_black,1);
 		OutlineTextColor(w-110, 75,"y_cam_axis = " + string(pl.y_cam_axis),c_lime,c_black,1);
-	
-		//Is visible
-		if (pl.is_visable) OutlineTextColor(w-110, 90, "visable",c_lime,c_black,1)
-		else OutlineTextColor(w-110, 90, "not visable",c_lime,c_black,1)
-		draw_circle(w-130,95,10,0);
-		draw_set_color(pl.colour);
-		draw_circle(w-130,95,9.5,0);
 		
 		//OutlineTextColor(w-110,105,,c_lime,c_black,1)
 	}
 }
 #endregion
-
 display_set_gui_size(oldw,oldh)

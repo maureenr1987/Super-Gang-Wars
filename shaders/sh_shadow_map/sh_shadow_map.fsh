@@ -9,7 +9,7 @@ varying vec4 v_vColour;
 
 // How many iterations of blending to perform, if BLEND_AVERAGE is enabled?
 // This performs this number of iterations towards BLEND_TEXELS
-// Supports 1, 2, 4, 8, 12, 24
+// Supports 1, 2, 4, 8, 12
 #define BLEND_ITERATIONS 12
 
 // How many texels to diverge from this fragment when blending?

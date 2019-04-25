@@ -1,15 +1,22 @@
 /// @desc
-if (room == 0 || room == 1) {
+if (room == rm_Menu || room == rm_LevelSelect) {
+	//Delete old player object and make a new one
 	if instance_exists(obj_player) instance_destroy(obj_player);
 	instance_create_layer(0,0,"Player",obj_player);
-	event_user(0)
-	audio_stop_all();
 	obj_player.cancontrol = false;
-} 
+	
+	//Load Player Info
+	LoadPlayerInfo();
+	
+	//Reset audio
+	audio_stop_all();
+	
+}
+
+//If in any other room save the players
 else {
-	event_user(0)
 	obj_player.cancontrol = true;
-	instance_create_layer(0,0,"Overlay",obj_save);
+	SaveGame()
 }
 ResetControls(self)
 

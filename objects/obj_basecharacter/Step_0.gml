@@ -110,21 +110,6 @@ if (place_meeting(x,y+vsp,obj_wall)){
 y += vsp;
 #endregion
 
-#region //Visibility
-var cam = view_camera[0];
-
-var gui_x = display_get_width() * (x - camera_get_view_x(cam)) / camera_get_view_width(cam);
-var gui_y = display_get_height() * (y - camera_get_view_y(cam)) / camera_get_view_height(cam);
-var value = 0;
-for (var i = -24; i<=24; i+=4){
-	colour = draw_getpixel(gui_x,gui_y+i);
-	value += color_get_value(colour);
-}
-value /= 12;
-colour = draw_getpixel(gui_x,gui_y+i);
-is_visable = (value > 15);
-#endregion
-
 #region //Custom step for child objects
 event_user(2);
 #endregion

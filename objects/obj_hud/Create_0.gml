@@ -25,10 +25,7 @@ target_y = 0;
 HideHUDTimer = 0;
 
 
-//0 == Level never beaten
-//1 == Level passed on easy
-//2 == Level passed on medium
-//3 == Level passed on hard
+
 
 
 

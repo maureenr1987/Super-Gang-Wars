@@ -49,10 +49,6 @@ cancontrol = true;
 //Random money start
 currency = irandom_range(lvl*10,lvl*20)
 
-//Visibility
-is_visable = true;
-colour = $000000;
-
 //Give Start item
 if (startitem == "random") AddToInventory(global.inv[irandom(array_length_1d(global.inv)-1)],1,self);
 else if (startitem != "noone") AddToInventory(startitem,1,self);

@@ -24,7 +24,7 @@ ds_map_add(_map, "lastname", pl.lastname);
 ds_map_add(_map, "gender", pl.gender);
 
 //Stats
-ds_map_add(_map, "totalxp", pl.totalxp);
+ds_map_add(_map, "xp", pl.xp);
 
 //Saveroom
 ds_map_add(_map, "difficulty", global.difficulty);

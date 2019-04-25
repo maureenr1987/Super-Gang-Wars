@@ -21,20 +21,11 @@ if instance_exists(nemesis){
 			ds_list_clear(walllist);
 			collision_line_list(x,y,c_nemesis.x,c_nemesis.y,obj_wall,false,true,walllist,false);
 			
-			//Check if the nemesis is a character and then if they're visible.
-			if (object_get_parent(c_nemesis.object_index) == obj_basecharacter) {
+			//If there is no walls the nemesis is found
+			if ds_list_empty(walllist) foundnemesis = true;
 			
-				//If there is no walls and the nemesis is visible the nemesis is found
-				if ds_list_empty(walllist) && (c_nemesis.is_visable) foundnemesis = true;
-			}
-			else {
-				//If there is no walls the nemesis is found
-				if ds_list_empty(walllist) foundnemesis = true;
-			}
 		}
 	}
-			
-	
 	#endregion
 	
 	#region //Attack
