@@ -7,6 +7,7 @@ h = display_get_gui_height();
 enum trans_mode{
 	off,
 	next,
+	prev,
 	goto,
 	restart,
 	intro,
@@ -17,5 +18,5 @@ mode = trans_mode.intro;
 percent = 1;
 target = room;
 
-plx = 0;
-ply = 0;
+target_x = 0;
+target_y = 0;

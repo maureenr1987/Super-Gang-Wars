@@ -17,20 +17,37 @@ if (mode != trans_mode.off){
 				break;
 
 			case trans_mode.next:
-				mode = trans_mode.intro
-				room_goto_next()
+				mode = trans_mode.intro;
+				room_goto_next();
+				obj_player.x = target_x;
+				obj_player.y = target_y;
+				obj_camera.x = target_x;
+				obj_camera.y = target_y;
+				break;
+				
+			case trans_mode.prev:
+				mode = trans_mode.intro;
+				room_goto_previous();
+				obj_player.x = target_x;
+				obj_player.y = target_y;
+				obj_camera.x = target_x;
+				obj_camera.y = target_y;
 				break;
 			
 			case trans_mode.goto:
-				mode = trans_mode.intro
-				room_goto(target)
+				mode = trans_mode.intro;
+				room_goto(target);
+				obj_player.x = target_x;
+				obj_player.y = target_y;
+				obj_camera.x = target_x;
+				obj_camera.y = target_y;
 				break;
 			
 			case trans_mode.restart:
 				game_restart();
 				break;
 			case trans_mode.endgame:
-				mode = trans_mode.intro
+				mode = trans_mode.intro;
 				game_end();
 				break;
 		}

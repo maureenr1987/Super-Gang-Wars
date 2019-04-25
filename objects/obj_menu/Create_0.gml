@@ -16,13 +16,10 @@ menu_itemheight = font_get_size(font_menu);
 menu_committed = -1;
 menu_control = true;
 
-menu = [
-	"Quit",
-	"Continue",
-	"New Game"
-];
+menu = ["Quit","Continue"]
+
 menu_items = array_length_1d(menu);
-menu_cursor = 2;
+menu_cursor = 1;
 
 clr = c_black;
 out = c_red;

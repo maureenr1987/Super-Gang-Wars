@@ -19,4 +19,4 @@ for (var i = 0; i < menu_items; i++){
 }	
 
 DrawSetText(c_white,font_title,fa_center,fa_bottom)
-OutlineTextColor(w/2, h/2,"SUPER GANG WARS",clr,out,1.5);
+OutlineTextColor(w/2, h/2,"SUPER GANG WARS",clr,out,1);

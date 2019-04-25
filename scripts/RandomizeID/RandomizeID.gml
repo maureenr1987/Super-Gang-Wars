@@ -1,6 +1,7 @@
 /// @desc CharacterRandomizer(who);
-/// @arg who
+/// @arg gender
 
+#region //Boy Names
 var boynames = [
 	"Aaden",
 	"Aarav",
@@ -1027,8 +1028,10 @@ var boynames = [
 	"Zephyr",
 	"Zion",
 	"Zyaire"
-]
+];
+#endregion
 
+#region //Girl Names
 var girlnames = [
 	"Aadhya",
 	"Aaliyah",
@@ -2918,8 +2921,10 @@ var girlnames = [
 	"Zora",
 	"Zuri",
 	"Zylina"
-]
+];
+#endregion
 
+#region //Last Names
 var lastnames = [
 	"Aang",
 	"Ables",
@@ -3863,18 +3868,17 @@ var lastnames = [
 	"Zoid",
 	"Zorel",
 	"Zoro"
-]
+];
+#endregion
 
-
-if (random(1) < 0.5) {
-	argument0.firstname = boynames[irandom_range(0,array_length_1d(boynames)-1)];
-	argument0.middlename = boynames[irandom_range(0,array_length_1d(boynames)-1)];
-	argument0.gender = "male";
+if (argument[0] == "male") {
+	firstname = boynames[irandom_range(0,array_length_1d(boynames)-1)];
+	middlename = boynames[irandom_range(0,array_length_1d(boynames)-1)];
+	
 }
 else {
-	argument0.firstname = girlnames[irandom_range(0,array_length_1d(girlnames)-1)];
-	argument0.middlename = girlnames[irandom_range(0,array_length_1d(girlnames)-1)];
-	argument0.gender = "female";
+	firstname = girlnames[irandom_range(0,array_length_1d(girlnames)-1)];
+	middlename = girlnames[irandom_range(0,array_length_1d(girlnames)-1)];
+	
 }
-
-argument0.lastname = lastnames[irandom_range(0,array_length_1d(lastnames)-1)];
+lastname = lastnames[irandom_range(0,array_length_1d(lastnames)-1)];

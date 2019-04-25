@@ -1,6 +1,4 @@
 /// @desc (begin)
-
-
 Setxp(self);
 RecalcStats(self);
 current_hp = hp;
@@ -12,4 +10,3 @@ if (ds_list_size(inventory) > 1) currentitem = irandom_range(1,ds_list_size(inve
 SpawnItem();
 
 walllist = ds_list_create();
-l = 0;

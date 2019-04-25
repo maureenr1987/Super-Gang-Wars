@@ -40,6 +40,14 @@
             "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
             "propertyId": "7f450d0b-8f24-42bc-aa29-219a01b8193e",
             "value": "\"obj_item_higher_warden_gun\""
+        },
+        {
+            "id": "0558bd56-28c7-4cde-b9d4-df8f7483c7b1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
+            "propertyId": "6b8cd215-28ff-4f75-8404-0a690bad853c",
+            "value": "10"
         }
     ],
     "parentObjectId": "096c81af-a960-4782-b9f7-a33b636611ba",

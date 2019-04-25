@@ -10,11 +10,19 @@ for (var i = 1; i < array_length_1d(tonextlvl_array); i++){
 }
 
 with (argument0){
-	//Set player level and other stats
-	hp =  2 * lvl + 78;
-	atk = 2 * lvl + 101;
-	def = 2 * lvl + 78;
-	spd = 2 * lvl + 100;
+	if (argument0.object_index == obj_player) || (global.difficulty == 3){
+		//Set player level and other stats
+		hp =  2 * lvl + 78;
+		atk = 2 * lvl + 101;
+		def = 2 * lvl + 78;
+		spd = 2 * lvl + 100;
+	} else {
+		//Set player level and other stats
+		hp =  2 * lvl + 28;
+		atk = 2 * lvl + 41;
+		def = 2 * lvl + 28;
+		spd = 2 * lvl + 30;
+	}
 	
 	if (lvl <= 100){
 		totalxp = totalxp_array[lvl];

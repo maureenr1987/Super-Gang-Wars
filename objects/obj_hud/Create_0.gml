@@ -15,8 +15,20 @@ global.inv = [
 	"obj_item_startgun",
 	"obj_item_lesser_warden_gun",
 	"obj_item_medium_warden_gun",
-	"obj_item_higher_warden_gun"
+	"obj_item_higher_warden_gun",
+	"obj_item_draco_buster"
 ];
 
 target_x = 0;
 target_y = 0;
+
+HideHUDTimer = 0;
+
+
+//0 == Level never beaten
+//1 == Level passed on easy
+//2 == Level passed on medium
+//3 == Level passed on hard
+
+
+

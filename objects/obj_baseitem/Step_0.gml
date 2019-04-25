@@ -24,7 +24,6 @@ CurrentDelay -= delta_time/1000;
 
 //Custom step event
 event_user(3);
-event_user(4);
 
 //Item rest/face positoin
 if (Owner.hsp == 0 && CurrentDelay <= -50 && !use1 && !use2 ) {

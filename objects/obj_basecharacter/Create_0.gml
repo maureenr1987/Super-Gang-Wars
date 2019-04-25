@@ -1,9 +1,10 @@
 event_inherited();
-polygon = polygon_from_instance(id)
+polygon = polygon_from_instance(id);
 /*
 Event User 0 - Create
 Event User 1 - Input
 Event User 2 - Step
+Event_User 3 - Dead
 */
 
 global.showID = true;
@@ -24,23 +25,18 @@ forcespd = 0;
 forcedir = 0;
 
 //Idenity
-firstname = "";
-middlename = "";
-lastname = "";
-gender = "";
-
-//Randomize Idenity
-RandomizeID(self);
+RandomizeID(gender);
 
 //Set level and other stats
-lvl = 1;
-xp = 0;
-RecalcStats(self);
+
+Setxp(id)
+RecalcStats(id)
 current_hp = hp;
 
 //Inventory an items
 inventory = ds_list_create();
 ds_list_add(inventory, CreateItemDS("obj_baseitem",1));
+ds_list_mark_as_map(inventory,0);
 
 currentitem = 0;
 physitem = emptyobj;
@@ -56,7 +52,6 @@ currency = irandom_range(lvl*10,lvl*20)
 //Visibility
 is_visable = true;
 colour = $000000;
-value = 0;
 
 //Give Start item
 if (startitem == "random") AddToInventory(global.inv[irandom(array_length_1d(global.inv)-1)],1,self);
@@ -65,3 +60,5 @@ else if (startitem != "noone") AddToInventory(startitem,1,self);
 ////Custom create
 event_user(0);
 
+
+sprite = string_delete(sprite_get_name(sprite_index),string_length(sprite_get_name(sprite_index))-3,4)

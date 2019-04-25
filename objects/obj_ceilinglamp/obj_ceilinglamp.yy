@@ -57,7 +57,7 @@
             "mvc": "1.0",
             "objectId": "84334f4e-b6d2-4ffe-89cf-f8641f75877e",
             "propertyId": "a89637b7-5f88-4100-a038-c4d3e5c67480",
-            "value": "1.2"
+            "value": "1.35"
         },
         {
             "id": "b5480226-3cd0-49b4-9d60-67a2d740aabb",
@@ -65,7 +65,15 @@
             "mvc": "1.0",
             "objectId": "84334f4e-b6d2-4ffe-89cf-f8641f75877e",
             "propertyId": "acc21797-5541-499d-a7a7-ca1316572c37",
-            "value": "$FFFFDACE"
+            "value": "$FFFFFFFF"
+        },
+        {
+            "id": "b782bf6a-6011-4d0f-9030-b66bcca94926",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "84334f4e-b6d2-4ffe-89cf-f8641f75877e",
+            "propertyId": "2ef294e2-d3e3-42d8-ae28-23948a810f59",
+            "value": "spr_lut_light_intensity_spot"
         }
     ],
     "parentObjectId": "84334f4e-b6d2-4ffe-89cf-f8641f75877e",

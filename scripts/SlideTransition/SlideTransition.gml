@@ -8,6 +8,6 @@ obj_transition.mode = argument[0];
 
 if (argument_count > 3){
 	obj_transition.target = argument[1];
-	obj_hud.target_x = argument[2];
-	obj_hud.target_y = argument[3];
+	obj_transition.target_x = argument[2];
+	obj_transition.target_y = argument[3];
 }

@@ -1,33 +1,28 @@
 /// @desc Controlls/Collision/Animation
-polygon = polygon_from_instance(id)
+//polygon = polygon_from_instance(id)
 ////Input or AI
 if (cancontrol) event_user(1);
 else {
-	ResetControls(self);
+	ResetControls(id);
 }
 
-
-////Movement
+#region //Calculate Movement, Face Direction, and Force
 //Calculate movement
 hsp = x_axis * walksp * (delta_time/10000);
 vsp += grv * (delta_time/10000);
 
-
-
-
-if (place_meeting(x, y + 1,obj_wall)) && (key_jump){
+//Jump
+if place_meeting(x, y + 1,obj_wall) && (key_jump){
 	vsp = (jmp * -1);
 }
+//WallJump
+if place_meeting(x + hsp,y, obj_wall) && !place_meeting(x, y + 30,obj_wall) && (key_jump){
+	vsp = (jmp * -1);
+	forcedir = point_direction(0,0,hsp*-1,0);
+	forcespd = 5;
+}
 
-//Calculate direction player is 'facing'
-/*if (x_axis != 0 || y_axis != 0){
-	var facepoint = point_direction(0,0,x_axis,y_axis);
-	if (facepoint <= 45 || facepoint >= 315) && (x_axis >= 0.3) face = 0; else if (facepoint >= 135 && facepoint <= 225 && x_axis <= -0.3) face = 180;
-	if (facepoint >= 225 && facepoint <= 315) face = 270; else if (facepoint >= 45 && facepoint <= 135) face = 90;
-}  else if (image_xscale = 1) face = 0; else face = 180;*/
-
-
-
+//Face Direction
 if (x_cam_axis == 0 && y_cam_axis == 0){
 	if (x_axis >= 0.8) face = 0; else if (x_axis <= -0.8) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
 	if (y_axis > 0.8) face = 270; else if (y_axis < -0.8) face = 90;
@@ -35,17 +30,14 @@ if (x_cam_axis == 0 && y_cam_axis == 0){
 	if (sign(x_cam_axis) >= 0.8) face = 0; else if (sign(x_cam_axis) <= -0.8) face = 180; else if (image_xscale = 1) face = 0; else face = 180;
 	if (sign(y_cam_axis) > 0.8) face = 270; else if (sign(y_cam_axis) < -0.8) face = 90;
 }
-
-
-/*
-////Is the Player Visible?
-var val = 0;
-for (var i=0; i <= 32; i++){
-	val += color_get_value(draw_getpixel(640,360-16+i)) + color_get_value(draw_getpixel(640-16+i,360));
-}
-is_visable = (val > 0);*/
-
-
+	#region //Old stuff
+	//Calculate direction player is 'facing'
+	/*if (x_axis != 0 || y_axis != 0){
+		var facepoint = point_direction(0,0,x_axis,y_axis);
+		if (facepoint <= 45 || facepoint >= 315) && (x_axis >= 0.3) face = 0; else if (facepoint >= 135 && facepoint <= 225 && x_axis <= -0.3) face = 180;
+		if (facepoint >= 225 && facepoint <= 315) face = 270; else if (facepoint >= 45 && facepoint <= 135) face = 90;
+	}  else if (image_xscale = 1) face = 0; else face = 180;*/#endregion
+	
 //Force
 if (forcespd >= 0) {
 	hsp += lengthdir_x(forcespd,forcedir);
@@ -55,8 +47,23 @@ if (forcespd >= 0) {
 }
 else forcespd = 0;
 
+//Death 
+if (current_hp <= 0) {
+	if (!dead){
+		event_user(10);
+		dead = true
+		cancontrol = false;
+		ResetControls(self);
+		instance_destroy(physitem);
+	}
+}
+else {
+	dead = false;
+	cancontrol = true;
+}
+#endregion
 
-////Items
+#region //Switch and Use Item
 //Use/Hit current item
 if (key_use1) if (instance_exists(physitem)) physitem.use1 = true;
 //Hit with current item
@@ -72,14 +79,15 @@ if instance_exists(physitem){
 	for (var i=0; i<=ds_list_size(inventory)-1; i++){ if (string(object_get_name(physitem.object_index)) == ds_map_find_value(ds_list_find_value(inventory,i),"item")) exists = true;}
 	if (!exists) {if (currentitem == ds_list_size(inventory)) {currentitem = ds_list_size(inventory)-1} SpawnItem()}
 }
+#endregion
 
-////Collision
+#region //Collision
 
 //Ladders
 if place_meeting(x, y+1, obj_ladder){
 	var ladder = instance_nearest(x,y,obj_ladder)
-	if (face == 90 && abs(hsp) < 3) { vsp = -5; x = ladder.x + ladder.sprite_width/2;}
-	else if (face == 270 && abs(hsp) < 1) { vsp = 5; x = ladder.x + ladder.sprite_width/2;}
+	if (y_axis == -1 && abs(hsp) < 3) { vsp = -5; x = ladder.x + ladder.sprite_width/2;}
+	else if (y_axis == 1 && abs(hsp) < 1) { vsp = 5; x = ladder.x + ladder.sprite_width/2;}
 	else if (abs(hsp) < 3) { vsp = 0;}
 }
 
@@ -100,27 +108,35 @@ if (place_meeting(x,y+vsp,obj_wall)){
 	vsp = 0;
 }
 y += vsp;
+#endregion
 
+#region //Visibility
+var cam = view_camera[0];
 
-////Custom step
+var gui_x = display_get_width() * (x - camera_get_view_x(cam)) / camera_get_view_width(cam);
+var gui_y = display_get_height() * (y - camera_get_view_y(cam)) / camera_get_view_height(cam);
+var value = 0;
+for (var i = -24; i<=24; i+=4){
+	colour = draw_getpixel(gui_x,gui_y+i);
+	value += color_get_value(colour);
+}
+value /= 12;
+colour = draw_getpixel(gui_x,gui_y+i);
+is_visable = (value > 15);
+#endregion
+
+#region //Custom step for child objects
 event_user(2);
+#endregion
 
+#region //Animation
 
-////Animation
 //Die
 if (current_hp <= 0) {
-	if (!dead){
-		var objxp = instance_create_layer(x, y, "Player", obj_xp);
-		objxp.xp = lvl * 5;
-		dead = true
-		cancontrol = false;
-		ResetControls(self);
-		instance_destroy(physitem);
-	}
 	sprite_index = asset_get_index(sprite + "dead");
 	image_speed = 0;
 	if place_meeting(x,y+30,obj_wall) image_index = 1; else image_index = 0;
-}
+} 
 
 //Player is falling
 else if(!place_meeting(x, y + 1, obj_wall)){
@@ -137,6 +153,4 @@ else {
 }
 //Flip sprite
 if (face == 0) image_xscale = 1; else if (face == 180) image_xscale = -1;
-
-////Other Stuff
-if (!dead) && (room != 0)cancontrol = true; else cancontrol = false;
+#endregion

@@ -14,9 +14,12 @@ if instance_exists(obj_player){
 			AddToInventory(content, content_quantity, pl)
 	
 			//Feedback text
+			var itembuffer = instance_create_layer(0,0,"hidden",asset_get_index(content));
 			var txt = instance_create_layer(x, y+irandom_range(0, 50),"Overlay",obj_feedback)
-			txt.text = "+" + string(content_quantity) + " " + content;
+			txt.text = "+" + string(content_quantity) + " " + itembuffer.name;
 			txt.image_speed *= 0.3;
+			opened = true;
+			instance_destroy(itembuffer);
 			
 			//Destroy Sparkle
 			instance_destroy();

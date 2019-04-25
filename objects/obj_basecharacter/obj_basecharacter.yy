@@ -73,18 +73,21 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "b67a4f11-e125-4d12-98d4-a43444e47ca3",
+            "id": "4903c6f3-95be-459e-806e-0427cc571e22",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
-            "listItems": null,
+            "listItems": [
+                "\"male\"",
+                "\"female\""
+            ],
             "multiselect": false,
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "spr_player_",
-            "varName": "sprite",
-            "varType": 2
+            "value": "\"male\"",
+            "varName": "gender",
+            "varType": 6
         },
         {
             "id": "7f450d0b-8f24-42bc-aa29-219a01b8193e",
@@ -96,7 +99,9 @@
                 "\"obj_item_startgun\"",
                 "\"obj_item_lesser_warden_gun\"",
                 "\"obj_item_medium_warden_gun\"",
-                "\"obj_item_higher_warden_gun\""
+                "\"obj_item_higher_warden_gun\"",
+                "\"obj_item_draco_buster\"",
+                "\"obj_item_warden_baton\""
             ],
             "multiselect": false,
             "rangeEnabled": false,
@@ -120,6 +125,20 @@
             "value": "1",
             "varName": "walksp",
             "varType": 0
+        },
+        {
+            "id": "6b8cd215-28ff-4f75-8404-0a690bad853c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "lvl",
+            "varType": 1
         }
     ],
     "solid": false,

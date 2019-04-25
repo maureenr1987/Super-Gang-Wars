@@ -18,14 +18,6 @@
     "maskSpriteId": "6b1c400a-ab1d-487e-b4ce-f6bb6557e111",
     "overriddenProperties": [
         {
-            "id": "d967e7bf-f4ed-423f-8ef8-5f2cf92e050a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
-            "propertyId": "b67a4f11-e125-4d12-98d4-a43444e47ca3",
-            "value": "spr_mediumwarden_"
-        },
-        {
             "id": "f6978c22-6b3c-4953-8a9a-360135dce179",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -40,6 +32,14 @@
             "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
             "propertyId": "7f450d0b-8f24-42bc-aa29-219a01b8193e",
             "value": "\"obj_item_medium_warden_gun\""
+        },
+        {
+            "id": "2bb93dd5-67ac-4f35-a819-ff14af47e0d9",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
+            "propertyId": "6b8cd215-28ff-4f75-8404-0a690bad853c",
+            "value": "5"
         }
     ],
     "parentObjectId": "096c81af-a960-4782-b9f7-a33b636611ba",

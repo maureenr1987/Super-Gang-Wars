@@ -1,13 +1,8 @@
-/// @desc
 
-if instance_exists(obj_player){
-/// @desc Move to next room
-var pl = instance_nearest(x, y, obj_player)
-overlap = point_in_circle(pl.x,pl.y,x,y,64);
-
-if (global.showID && overlap){
+if instance_exists(obj_player){ 
+	var pl = instance_nearest(x, y, obj_player);
 	
-	//Interaction
+	if (global.showID) && place_meeting(x,y,pl){
 	
 	//Check if the player has the password
 	var index = ds_list_find_index(pl.passwordlist,password);
@@ -22,7 +17,17 @@ if (global.showID && overlap){
 		//If the player does not have the password don't let them through
 		if (index != -1) {
 			//Next room
-			SlideTransition(trans_mode.goto, target_room, target_x, target_y)		
+			switch (mode) {
+				case "next":
+					SlideTransition(trans_mode.next, target_room, target_x, target_y)
+					break;
+				case "prev":
+					SlideTransition(trans_mode.prev, target_room, target_x, target_y)
+					break;
+				case "goto":
+					SlideTransition(trans_mode.goto, target_room, target_x, target_y)
+					break;
+			}
 		}
 		else {
 			//Feedback text
@@ -36,7 +41,4 @@ if (global.showID && overlap){
 		if !gamepad_is_connected(0) otxtbbl = CreateTextBubble(x+sprite_width/2, y-sprite_width/2,"E");
 		else otxtbbl = CreateTextBubble(x+sprite_width/2, y-sprite_width/2,"B");
 	}
-	
-}
-else instance_destroy(otxtbbl);
-}
+}}

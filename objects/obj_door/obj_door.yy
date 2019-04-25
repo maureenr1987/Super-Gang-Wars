@@ -57,6 +57,24 @@
             "varType": 2
         },
         {
+            "id": "1bac78aa-db3a-4839-b145-5150fc9253bd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": [
+                "\"next\"",
+                "\"prev\"",
+                "\"goto\""
+            ],
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"next\"",
+            "varName": "mode",
+            "varType": 6
+        },
+        {
             "id": "60bd479d-9a05-40fd-a1a4-d520323cf7d0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -101,5 +119,5 @@
     ],
     "solid": false,
     "spriteId": "0a8b6ca3-af41-4a3f-8508-0589dafceb75",
-    "visible": true
+    "visible": false
 }

@@ -1,6 +1,8 @@
-/// @desc set gui size/Quit/Restart/Debug
-w = display_get_gui_width();
-h = display_get_gui_height();
+/// @desc functions keys
+
+
+//Subtract delay
+HideHUDTimer -= delta_time/1000;
 
 //Quit game
 if keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_select){
@@ -34,3 +36,4 @@ if keyboard_check(vk_f3){
 	obj_player.xp += floor(obj_player.tonextlvl/20);
 	RecalcStats(obj_player);
 }
+

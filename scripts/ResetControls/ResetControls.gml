@@ -18,4 +18,7 @@ with (argument0){
 
 	use1_pressed = false;
 	use2_pressed = false;	
+	
+	vsp = 0;
+	hsp = 0;
 }

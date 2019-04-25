@@ -30,4 +30,6 @@
 	//If the item doesn't exist then create a slot for it
 	else {
 		ds_list_add(argument2.inventory, CreateItemDS(argument0,argument1));
+		
+		ds_list_mark_as_map(argument2.inventory,ds_list_size(argument2.inventory)-1)
 	}

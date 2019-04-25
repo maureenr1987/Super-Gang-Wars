@@ -4,7 +4,9 @@
     "mvc": "1.1",
     "name": "ba2b2623-7121-4f55-a8c4-b1f4573edaac",
     "children": [
+        "b5888d2f-a70a-428b-8e20-94a158f25f7d",
         "d350e85b-938e-4f8b-87b9-d5e06fdad984",
+        "c9d5351f-f182-420c-a75c-1c5087ad8cd5",
         "a384c4e6-e6c5-4f07-9073-e8278646c92c",
         "d2c401bc-b869-490b-b1ad-f649f9c0d2df",
         "5f65144c-6cef-4ce7-9458-71dd63898ed0",
@@ -12,7 +14,12 @@
         "e2482a01-1c3c-48f1-a861-fa9cafcc7285",
         "08df2def-b739-49ec-871d-71741f89c0e8",
         "a2d73d1a-28bb-41fb-9e1e-a37dabb660d8",
-        "0112217b-e5e4-451e-9746-fcccb224df31"
+        "0112217b-e5e4-451e-9746-fcccb224df31",
+        "c226129a-f16f-49fa-a9b8-78390d39722d",
+        "ad4be7ca-4f6a-4aa7-a94f-97eaac2439e8",
+        "c1ee637c-4dd9-4283-9163-988c8ab6b552",
+        "fa4244bb-1667-47d5-9beb-565a8d733c15",
+        "8b4c9a72-2006-49a2-b99b-8a4069b9cbdf"
     ],
     "filterType": "GMObject",
     "folderName": "GUI & Game Objects",

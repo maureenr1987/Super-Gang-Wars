@@ -1,6 +1,8 @@
 w = display_get_gui_width();
 h = display_get_gui_height();
 
+if (global.world_jail != 0) menu = ["Quit","Continue"]; else menu = ["Quit","New Game"];
+
 menu_x = w - (w*.05) + yeet;
 menu_y = h - (h*.05);
 
@@ -25,12 +27,9 @@ if (menu_control){
 }
 
 if (menu_x > w + 150 && menu_committed != -1){
-	
-	
-	
-	switch (menu_committed){
-		case 2: SlideTransition(trans_mode.goto, rm_jail_1_cell,448,448); break;
-		case 1: with (obj_hud){event_user(1);} break;
-		case 0: game_end(); break;
+	switch (menu[menu_committed]){
+		case "New Game": SlideTransition(trans_mode.goto, rm_jail_1,448,448); break;
+		case "Continue": SlideTransition(trans_mode.goto, rm_LevelSelect,0,0); break;
+		case "Quit": game_end(); break;
 	}
 }

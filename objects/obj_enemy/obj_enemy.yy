@@ -47,14 +47,7 @@
     ],
     "maskSpriteId": "6b1c400a-ab1d-487e-b4ce-f6bb6557e111",
     "overriddenProperties": [
-        {
-            "id": "9afad49f-67cc-48bc-951c-0b5e9d9e53bc",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
-            "propertyId": "b67a4f11-e125-4d12-98d4-a43444e47ca3",
-            "value": "spr_enemy_"
-        }
+        
     ],
     "parentObjectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
     "persistent": false,
@@ -100,7 +93,7 @@
             "varType": 1
         },
         {
-            "id": "043e5f63-d5be-4387-ac41-67d75c7841bf",
+            "id": "c035da24-19a7-436a-afa6-a0c17bd889ea",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -109,9 +102,37 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
-            "varName": "lvl",
+            "value": "75",
+            "varName": "retreat_dist",
             "varType": 1
+        },
+        {
+            "id": "3f68be4e-f7d1-469b-a557-4f51b9d407c9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "150",
+            "varName": "chase_dist",
+            "varType": 1
+        },
+        {
+            "id": "760ef96f-aede-4316-819c-de658cdcf1b2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "50",
+            "varName": "look_angle",
+            "varType": 0
         }
     ],
     "solid": false,
