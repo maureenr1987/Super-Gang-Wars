@@ -7,6 +7,7 @@ if (room == rm_Menu || room == rm_LevelSelect) {
 	
 	//Load Player Info
 	LoadPlayerInfo();
+	LoadAchievements();
 	
 	//Reset audio
 	audio_stop_all();

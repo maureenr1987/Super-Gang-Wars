@@ -44,20 +44,13 @@ if instance_exists(nemesis){
 			
 			//The NPC's behavior for movement
 			//If too close then back away
-			if point_in_circle(c_nemesis.x, c_nemesis.y, x, y, chase_dist){
-				y_axis = 0;
-				if ( abs(lengthdir_x(2.5, c_nemesis_dir-180)) > 1.5) x_axis = sign(lengthdir_x(1, c_nemesis_dir-180)); else x_axis = 0;
-			} 
+			if (distance_to_object(c_nemesis) < chase_dist) if (abs(lengthdir_x(2.5, c_nemesis_dir-180)) > 1.5) x_axis = sign(lengthdir_x(1, c_nemesis_dir-180)); else x_axis = 0;
+			
 			//If at a good distance stay
-			else if point_in_circle(c_nemesis.x, c_nemesis.y, x, y, retreat_dist){
-				y_axis = 0;
-				x_axis = 0;
-			}
+			else if (distance_to_object(c_nemesis) < chase_dist) x_axis = 0;
+			
 			//If too far away then chase
-			else {
-				if ( abs(lengthdir_y(2.5, c_nemesis_dir)) > 1.5) y_axis = sign(lengthdir_y(1, c_nemesis_dir)); else y_axis = 0;
-				if ( abs(lengthdir_x(2.5, c_nemesis_dir)) > 1.5) x_axis = sign(lengthdir_x(1, c_nemesis_dir)); else x_axis = 0;
-			}
+			else if ( abs(lengthdir_x(2.5, c_nemesis_dir)) > 1.5) x_axis = sign(lengthdir_x(1, c_nemesis_dir)); else x_axis = 0;
 			
 			//Look at Nemesis
 			if ( abs(lengthdir_x(2.5, c_nemesis_dir)) > 1.5) x_cam_axis = sign(lengthdir_x(1, c_nemesis_dir)); else x_cam_axis = 0;
@@ -69,7 +62,7 @@ if instance_exists(nemesis){
 			}
 			
 			//Randomly jump sometimes
-			if(random(1) < 0.01 && y > c_nemesis.y) {
+			if(random(1) < 0.015 && y > c_nemesis.y) {
 				key_jump = true;
 			}
 		

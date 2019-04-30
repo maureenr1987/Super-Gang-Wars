@@ -12,8 +12,8 @@ if file_exists("savedgame.sav") && instance_exists(obj_player){
 	pl.gender = _map[?"gender"];
 	
 	pl.xp = _map[?"xp"];	
-	Setlvl(pl);
-	Setxp(pl);
 	RecalcStats(pl);
-	pl.current_hp = _map[?"hp"];
+	
+	pl.current_hp = pl.hp;
+	SlideTransition(trans_mode.goto, _map[?"room"], _map[?"x"], _map[?"y"])
 }

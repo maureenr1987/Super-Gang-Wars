@@ -1,5 +1,5 @@
 /// @desc
 event_inherited();
 
-var fl = instance_create_layer(x,y,"Enemy",obj_flashlight);
-fl.Owner = self;
+fl = instance_create_layer(x,x,"Items",obj_flashlight);
+fl.Owner = id;

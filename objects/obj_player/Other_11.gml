@@ -34,8 +34,8 @@ if (cancontrol) {
 	//Get player controller input
 	else {
 		
-		x_axis = sign(gamepad_axis_value(0, gp_axislh));
-		y_axis = sign(gamepad_axis_value(0, gp_axislv));
+		x_axis = gamepad_axis_value(0, gp_axislh);
+		y_axis = gamepad_axis_value(0, gp_axislv);
 		
 		if (x_axis == 0 && y_axis == 0) {
 			var key_left = gamepad_button_check(0,gp_padl)

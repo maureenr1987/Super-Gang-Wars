@@ -15,11 +15,11 @@
         "08df2def-b739-49ec-871d-71741f89c0e8",
         "a2d73d1a-28bb-41fb-9e1e-a37dabb660d8",
         "0112217b-e5e4-451e-9746-fcccb224df31",
-        "c226129a-f16f-49fa-a9b8-78390d39722d",
         "ad4be7ca-4f6a-4aa7-a94f-97eaac2439e8",
         "c1ee637c-4dd9-4283-9163-988c8ab6b552",
         "fa4244bb-1667-47d5-9beb-565a8d733c15",
-        "8b4c9a72-2006-49a2-b99b-8a4069b9cbdf"
+        "8b4c9a72-2006-49a2-b99b-8a4069b9cbdf",
+        "aba343e4-4fda-4481-98bc-b75f195ffe38"
     ],
     "filterType": "GMObject",
     "folderName": "GUI & Game Objects",

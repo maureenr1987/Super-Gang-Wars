@@ -77,7 +77,7 @@
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
-            "value": "Minecraft_eat1"
+            "value": "snd_eat"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

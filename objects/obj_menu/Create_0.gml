@@ -23,3 +23,5 @@ menu_cursor = 1;
 
 clr = c_black;
 out = c_red;
+
+first = false

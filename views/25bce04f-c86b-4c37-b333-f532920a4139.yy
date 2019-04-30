@@ -10,7 +10,7 @@
         "eb1bf122-25ea-4d80-9777-d9029735dd2f"
     ],
     "filterType": "GMSprite",
-    "folderName": "Enemy",
+    "folderName": "BaseEnemy",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -22,5 +22,6 @@ instance_create_layer(0,0,"Overlay",obj_vignette);
 instance_create_layer(0,0,"Overlay",obj_camera);
 instance_create_layer(0,0,"Overlay",obj_lighting_init);
 instance_create_layer(0,0,"Overlay",obj_musicplayer);
+instance_create_layer(0,0,"Overlay",obj_menuctrl);
 
 #endregion

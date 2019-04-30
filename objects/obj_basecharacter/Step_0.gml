@@ -6,9 +6,9 @@ else {
 	ResetControls(id);
 }
 
-#region //Calculate Movement, Face Direction, and Force
+#region //Calculate Movement, Face Direction, Force and Death
 //Calculate movement
-hsp = x_axis * walksp * (delta_time/10000);
+hsp = sign(x_axis) * walksp * (delta_time/10000);
 vsp += grv * (delta_time/10000);
 
 //Jump
@@ -86,8 +86,8 @@ if instance_exists(physitem){
 //Ladders
 if place_meeting(x, y+1, obj_ladder){
 	var ladder = instance_nearest(x,y,obj_ladder)
-	if (y_axis == -1 && abs(hsp) < 3) { vsp = -5; x = ladder.x + ladder.sprite_width/2;}
-	else if (y_axis == 1 && abs(hsp) < 1) { vsp = 5; x = ladder.x + ladder.sprite_width/2;}
+	if (sign(y_axis) == -1 && abs(hsp) < 3) { vsp = -5; x = ladder.x + ladder.sprite_width/2;}
+	else if (sign(y_axis) == 1 && abs(hsp) < 1) { vsp = 5; x = ladder.x + ladder.sprite_width/2;}
 	else if (abs(hsp) < 3) { vsp = 0;}
 }
 
@@ -138,4 +138,14 @@ else {
 }
 //Flip sprite
 if (face == 0) image_xscale = 1; else if (face == 180) image_xscale = -1;
+#endregion
+
+#region //Footstep
+if (sprite_index == asset_get_index(sprite + "run")) {
+	if (image_index >= 2 && image_angle < 3 && !stepped) {
+		FootStepSound()
+		stepped = true;
+	}
+	else stepped = false;
+}
 #endregion

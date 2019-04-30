@@ -1,9 +1,12 @@
-/*/// @desc
+/// @desc
 if (room == 0) audio_stop_all();
 
 switch(room){
 	case rm_Menu:
 		new_current_music = emptysound;
+		break;
+	case rm_LevelSelect:
+		new_current_music = music_tenderness_134;
 		break;
 	
 	case rm_jail_1:
@@ -15,11 +18,11 @@ switch(room){
 	case rm_jail_7:
 	case rm_jail_8:
 	case rm_jail_9:
-		new_current_music = Devil_Dragon_Tatoo___Stealth;
+		new_current_music = music_arches_129__1_;
 		break
 		
 	case rm_jail_10:
-		new_current_music = Devil_Dragon_Tatoo___Culmination;
+		new_current_music = music_PM_ATG_3_110BPM_E;
 		break
 }
 

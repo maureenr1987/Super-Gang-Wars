@@ -5,7 +5,7 @@
     "name": "obj_higherwarden",
     "eventList": [
         {
-            "id": "a70fe84b-5d3f-4a26-8f65-c870a19ed41b",
+            "id": "e22138e7-463f-414e-9299-162d12ad7281",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
