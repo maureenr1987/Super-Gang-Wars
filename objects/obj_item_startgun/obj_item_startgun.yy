@@ -23,6 +23,14 @@
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
             "value": "Basic Gun"
+        },
+        {
+            "id": "7192b2ff-c78b-459d-93df-375243d99edf",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "fb83a21d-93e9-4b9c-b429-76cbbee7baa3",
+            "value": "2"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

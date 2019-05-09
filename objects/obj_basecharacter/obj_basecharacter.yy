@@ -73,6 +73,20 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "7d56e2ec-5cfa-43e8-8915-2f5489043e56",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "random",
+            "varName": "name",
+            "varType": 2
+        },
+        {
             "id": "4903c6f3-95be-459e-806e-0427cc571e22",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -101,7 +115,11 @@
                 "\"obj_item_medium_warden_gun\"",
                 "\"obj_item_higher_warden_gun\"",
                 "\"obj_item_draco_buster\"",
-                "\"obj_item_warden_baton\""
+                "\"obj_item_warden_baton\"",
+                "\"obj_item_grenade\"",
+                "\"obj_item_molotov_cocktail\"",
+                "\"obj_item_nail_bat\"",
+                "\"obj_item_tommy_gun\""
             ],
             "multiselect": false,
             "rangeEnabled": false,

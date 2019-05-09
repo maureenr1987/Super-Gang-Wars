@@ -6,8 +6,8 @@
     "children": [
         "76492332-e6ee-42f1-83ca-87ae4a309ffd",
         "b8891972-637d-4104-80c2-19a7de5f14cb",
-        "e1bb5d64-fc64-429f-acf2-58e4bf66d44f",
-        "022d1b9b-4be2-42b1-b841-f37997928f9d"
+        "030d88c2-fbcd-4e22-b994-543d2ef9c1af",
+        "e1bb5d64-fc64-429f-acf2-58e4bf66d44f"
     ],
     "filterType": "GMSound",
     "folderName": "ItemSFX",

@@ -14,7 +14,7 @@ varying vec4 v_vColour;
 
 // How many texels to diverge from this fragment when blending?
 // BLEND_ITERATIONS is how many steps we take to reach this distance
-#define BLEND_TEXELS 128.0
+#define BLEND_TEXELS 512.0
 
 // The ambient shadow color and intensity
 uniform float u_AmbientShadow;
@@ -122,8 +122,8 @@ vec4 average(sampler2D sampler, vec2 coord, float dist) {
 	// 2x for adjacent
 	// 4x for center
 	// becomes 16 and 1 / 16 is 0.0625
-	return (1.0 * col0 + 2.0 * col1 + 1.0 * col2 + 2.0 * col3 + 4.0 * col4 + 2.0 * col5 + 1.0 * col6 + 2.0 * col7 + 1.0 * col8) * 0.0625;
+	//return (1.0 * col0 + 2.0 * col1 + 1.0 * col2 + 2.0 * col3 + 4.0 * col4 + 2.0 * col5 + 1.0 * col6 + 2.0 * col7 + 1.0 * col8) * 0.0625;
 	
 	// Even blend with slight origin bias
-	//return (2.5 * col0 + 2.5 * col2 + 6.0 * col4 + 2.5 * col6 + 2.5 * col8) * 0.0625;
+	return (2.5 * col0 + 2.5 * col2 + 6.0 * col4 + 2.5 * col6 + 2.5 * col8) * 0.0625;
 }

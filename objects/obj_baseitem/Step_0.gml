@@ -1,32 +1,27 @@
-/// @description
-//Check if owner uses/hits item
-if (CurrentDelay <= 0){
-	if (use1) {
-		event_user(1);
-		var snd = audio_play_sound(use1_sfx,1,false)
-		audio_sound_pitch(snd,random_range(0.93,1.07))
-		ScreenShake(shakeonusemagnitude, 10);
-		CurrentDelay = use1_delay;
-	}
-	if (use2) {
-		event_user(2);
-		var snd = audio_play_sound(use2_sfx,1,false)
-		audio_sound_pitch(snd,random_range(0.93,1.07))
-		ScreenShake(shakeonusemagnitude, 10);
-		CurrentDelay = use2_delay;
-	}
-	use1 = false;
-	use2 = false;
+//Check if owner is trying to use the item
+if (use) {
+	//Use the item
+	event_user(1);
+	
+	//Play use sound and randomize pitch
+	var snd = audio_play_sound(use_sfx,1,false);
+	audio_sound_pitch(snd,random_range(0.93,1.07));
+	
+	//Shake screen
+	if (Owner.object_index == obj_player) ScreenShake(use_shake, 10);
+	
+	//Set delay till next use
+	if (Owner.current_item_out == 1) Owner.current_item_delay_1 = use_delay; 
+	else Owner.current_item_delay_2 = use_delay;
 }
+use = false;
 
-//Subtract delay
-CurrentDelay -= delta_time/1000;
 
 //Custom step event
-event_user(3);
+event_user(2);
 
 //Item rest/face positoin
-if (Owner.hsp == 0 && CurrentDelay <= -50 && !use1 && !use2 ) {
+if (Owner.hsp == 0 && Owner.current_item_delay_1 <= -50 && Owner.current_item_delay_2 <= -50 && !use) {
 	if (Owner.face == 180 || Owner.face == 0){
 		x = Owner.x;
 		image_angle = Owner.face - (25 * image_yscale)

@@ -13,7 +13,7 @@
         "b57197ad-1348-4449-b317-cbd81c6a3d5a"
     ],
     "filterType": "GMObject",
-    "folderName": "projectiles",
+    "folderName": "Projectiles",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

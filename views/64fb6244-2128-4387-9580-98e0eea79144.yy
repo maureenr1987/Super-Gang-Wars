@@ -7,7 +7,7 @@
         "4b64d5cd-c800-4455-aedb-8340daa8ec5d"
     ],
     "filterType": "GMRoom",
-    "folderName": "Mafia",
+    "folderName": "1950",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -1,4 +1,4 @@
-/// @description (use1) MUDA! MUDA! MUDA!
+/// @description (use) MUDA! MUDA! MUDA!
 //fist 
 var fist = instance_create_depth(x,y,layer_get_depth("Items")-20,obj_warudofist);
 

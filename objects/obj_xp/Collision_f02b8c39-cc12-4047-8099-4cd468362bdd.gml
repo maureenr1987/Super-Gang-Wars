@@ -1,4 +1,4 @@
 /// @desc
-other.xp += xp
+other.xp += floor((other.neededxp/other.lvl)/8);
 instance_destroy();
-RecalcStats(other)
+RecalcStats(other);

@@ -20,7 +20,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 13,
+            "enumb": 12,
             "eventtype": 7,
             "m_owner": "d01d7333-0a5c-416c-a043-a0782fbd5b7f"
         },
@@ -38,14 +38,6 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "f7c874e5-9e30-44fa-ad6c-00fe3345238c",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "31a3e735-277d-485d-a2f1-f7a58cfd8fa9",
-            "value": "140"
-        },
-        {
             "id": "d5917bbe-8fd2-4a1a-ab4c-26b471e273c3",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -54,28 +46,28 @@
             "value": "300"
         },
         {
-            "id": "afe65d6c-c4bc-4d39-ac2e-3ae0caa7366e",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
-            "value": "Sword"
-        },
-        {
             "id": "9b58b5aa-ee0d-4484-93cf-a6d85e9b2e71",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
-            "value": "snd_sword_col"
+            "value": "snd_swoosh_axe"
         },
         {
-            "id": "3194c441-b81d-43f7-855f-587a0737b5e6",
+            "id": "d92dd873-c6d4-4739-a255-96ad8bde75ef",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
-            "value": "obj_item_basesword"
+            "propertyId": "31a3e735-277d-485d-a2f1-f7a58cfd8fa9",
+            "value": "100"
+        },
+        {
+            "id": "028e3338-9de3-4bdf-a9e4-226caeb5fe05",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "fb83a21d-93e9-4b9c-b429-76cbbee7baa3",
+            "value": "3"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

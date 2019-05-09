@@ -4,10 +4,9 @@
     "mvc": "1.1",
     "name": "065e0e95-f811-453d-80e7-9fa55f520e0b",
     "children": [
-        "74e9684b-81f9-4a2d-a5da-a5392a729c43",
-        "4ff32c17-7d87-463e-bf97-db2b8ba1661f",
-        "aae26598-2e21-4301-80c1-df7af8e39331",
-        "ecfbc965-e4e2-4241-a429-218160dce421"
+        "206198ba-3a25-462c-86b4-d1d0c52a0e4f",
+        "bb0a9ab8-3848-4b74-adce-59c82bf122c8",
+        "5f8bc353-0a5a-42f6-98b4-a547b5dae75b"
     ],
     "filterType": "GMSprite",
     "folderName": "MafiaEnemies",

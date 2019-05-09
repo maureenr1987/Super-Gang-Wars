@@ -1,3 +1,3 @@
 /// @desc
-forcespd = 5
-audio_play_sound(snd_flashbang,1,false);
+event_inherited();
+audio_play_sound(snd_explosion,1,false);

@@ -10,15 +10,12 @@ with (argument0){
 
 	key_jump = false;
 	key_interact = false;
-	key_use1 = false;
-	key_use2 = false;
+	
+	key_use_1 = false;
+	key_use_2 = false;
 
 	key_switchnext = false;
 	key_switchprev = false;
 
-	use1_pressed = false;
-	use2_pressed = false;	
-	
-	vsp = 0;
-	hsp = 0;
+	use_pressed = false;
 }

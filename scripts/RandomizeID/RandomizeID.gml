@@ -3871,14 +3871,12 @@ var lastnames = [
 ];
 #endregion
 
-if (argument[0] == "male") {
+if (gender == "male") {
 	firstname = boynames[irandom_range(0,array_length_1d(boynames)-1)];
 	middlename = boynames[irandom_range(0,array_length_1d(boynames)-1)];
-	
 }
 else {
-	firstname = girlnames[irandom_range(0,array_length_1d(girlnames)-1)];
-	middlename = girlnames[irandom_range(0,array_length_1d(girlnames)-1)];
-	
+	firstname = girlnames[irandom_range(0,array_length_1d(girlnames)-1)];		
+	middlename = girlnames[irandom_range(0,array_length_1d(girlnames)-1)];	
 }
 lastname = lastnames[irandom_range(0,array_length_1d(lastnames)-1)];

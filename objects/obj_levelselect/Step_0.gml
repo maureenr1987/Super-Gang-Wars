@@ -24,17 +24,11 @@ if (obj_menuctrl.next) {
 		//The player selected a difficulty
 		if (menu_cursor != 4) {
 			global.difficulty = menu_cursor;
-			//if (coor[0] == 1 && coor[1] == 1) 
-			//if (coor[0] == 2 && coor[1] == 1) 
-			//if (coor[0] == 3 && coor[1] == 1) 
-
-			//if (coor[0] == 1 && coor[1] == 2) 
-			//if (coor[0] == 2 && coor[1] == 2) 
-			//if (coor[0] == 3 && coor[1] == 2) 
-
-			//if (coor[0] == 1 && coor[1] == 3) SlideTransition(trans_mode.goto, rm_mafi_1,448,448);
-			if (coor[0] == 2 && coor[1] == 3) SlideTransition(trans_mode.goto, rm_jail_1,448,448);
-			//if (coor[0] == 3 && coor[1] == 3)
+			switch(level_selected){
+				case 1: SlideTransition(trans_mode.goto, rm_mafi_1,384,512) break;
+				case 2: SlideTransition(trans_mode.goto, rm_jail_1,448,448) break;
+				case 3: SlideTransition(trans_mode.goto, rm_1950_1,448,448) break;
+			}
 		}
 		//The player selected cancel
 		else menu_current = 1;
@@ -46,3 +40,4 @@ if (obj_menuctrl.prev) {
 	if (menu_current == 1) SlideTransition(trans_mode.goto,rm_Menu,0,0);
 	else if (menu_current == 2){ menu_current = 1; menu_cursor = 3;}
 }
+

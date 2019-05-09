@@ -6,12 +6,15 @@
     "children": [
         "6e8ad8bb-155d-47d8-9b20-54e4bf1e7503",
         "17629d52-383b-409d-b185-ade7232be5eb",
+        "4337ed78-c85a-465c-8bd7-a81672c04b6d",
         "bdd7e382-21b4-4129-9584-8fd5c7ee358a",
         "3832c623-5771-4cb8-b7c2-69b363a95fc1",
         "dd1066aa-80d3-490d-a009-327d273f0cc6",
         "96461c5e-d5e7-4a24-b80d-8f94b61726d1",
         "b997640c-79b7-4884-b587-81876421ab6c",
-        "654c5dd1-11a3-4a20-a94c-f6b2678560d6"
+        "654c5dd1-11a3-4a20-a94c-f6b2678560d6",
+        "238f9fb1-e430-4577-80d3-728a1ed19fb2",
+        "a71acee2-80d1-4611-a711-52f0196dbd25"
     ],
     "filterType": "GMSprite",
     "folderName": "Enviorment",

@@ -17,14 +17,6 @@
             "value": "Draco Buster"
         },
         {
-            "id": "d33e7aec-65f0-43cf-9532-ce4fa3008034",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
-            "value": "obj_item_draco_buster"
-        },
-        {
             "id": "79ef4f4c-0c5e-4eec-9d0d-9fe2650a0280",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -55,9 +47,17 @@
             "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
             "propertyId": "fd1ebc15-ff82-4346-96c1-ab3fbd712a37",
             "value": "300"
+        },
+        {
+            "id": "59bed1a4-3e66-45ae-bcff-deafb9e129cd",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "fb83a21d-93e9-4b9c-b429-76cbbee7baa3",
+            "value": "6"
         }
     ],
-    "parentObjectId": "5dfcf5d4-0e30-4ffc-8bd9-9840bff81039",
+    "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

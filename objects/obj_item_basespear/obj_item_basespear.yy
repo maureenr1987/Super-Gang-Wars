@@ -20,7 +20,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 13,
+            "enumb": 12,
             "eventtype": 7,
             "m_owner": "cc583cbf-2c5f-41bb-be3f-ccf628878c0b"
         },
@@ -62,20 +62,20 @@
             "value": "Spear"
         },
         {
-            "id": "b1eeffe4-9c90-4b0c-a4e3-003f9d6a3b69",
+            "id": "bed74af0-e539-4c03-820b-70f7daf3030f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "fb83a21d-93e9-4b9c-b429-76cbbee7baa3",
+            "value": "3"
+        },
+        {
+            "id": "b6421a47-bbac-4ee3-ad88-8830c0ef3a01",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
-            "value": "snd_sword_col"
-        },
-        {
-            "id": "9ad6dec7-b2b4-4d92-b7bc-36c62fb1d2d4",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
-            "value": "obj_item_basespear"
+            "value": "snd_swoosh_pole"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

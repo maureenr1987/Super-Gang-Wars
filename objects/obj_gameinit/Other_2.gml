@@ -25,3 +25,22 @@ instance_create_layer(0,0,"Overlay",obj_musicplayer);
 instance_create_layer(0,0,"Overlay",obj_menuctrl);
 
 #endregion
+
+window_set_cursor(cr_none);
+window_set_fullscreen(true);
+
+global.debug = 0;
+global.inv = [
+	//"obj_baseitem",
+	"obj_item_startgun",
+	"obj_item_lesser_warden_gun",
+	"obj_item_medium_warden_gun",
+	"obj_item_higher_warden_gun",
+	"obj_item_draco_buster",
+	"obj_item_warden_baton",
+	
+	"obj_item_grenade",
+	"obj_item_molotov_cocktail",
+	"obj_item_nail_bat",
+	"obj_item_tommy_gun"
+];

@@ -13,8 +13,8 @@ if (cancontrol) {
 		
 		//Jump, Use item, and Jump
 		key_jump = keyboard_check_pressed(vk_space);
-		if (use1_pressed) key_use1 = mouse_check_button_pressed(mb_left); else  key_use1 = mouse_check_button(mb_left);
-		if (use2_pressed) key_use2 = mouse_check_button_pressed(mb_right); else key_use2 = mouse_check_button(mb_right);
+		if (use_pressed) key_use_1 = mouse_check_button_pressed(mb_left); else  key_use = mouse_check_button(mb_left);
+		if (use_pressed) key_use_2 = mouse_check_button_pressed(mb_right); else  key_use = mouse_check_button(mb_right);
 		key_interact = keyboard_check_pressed(ord("E"));
 		
 		//Switch Item
@@ -53,8 +53,8 @@ if (cancontrol) {
 		
 		//Jump, Use item, and Jump
 		key_jump = gamepad_button_check_pressed(0, gp_face1);
-		if (use1_pressed) key_use1 = gamepad_button_check_pressed(0, gp_shoulderrb); else key_use1 = gamepad_button_check(0, gp_shoulderrb);
-		if (use2_pressed) key_use2 = gamepad_button_check_pressed(0, gp_shoulderlb); else key_use2 = gamepad_button_check(0, gp_shoulderlb);
+		if (use_pressed) key_use_1 = gamepad_button_check_pressed(0, gp_shoulderrb); else key_use = gamepad_button_check(0, gp_shoulderrb);
+		if (use_pressed) key_use_2 = gamepad_button_check_pressed(0, gp_shoulderlb); else key_use = gamepad_button_check(0, gp_shoulderlb);
 		key_interact = gamepad_button_check_pressed(0, gp_face2);
 		
 		//Move Camera

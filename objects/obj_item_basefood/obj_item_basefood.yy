@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 13,
+            "enumb": 12,
             "eventtype": 7,
             "m_owner": "c45a783f-ae29-480e-ac92-1846e7249ab1"
         },
@@ -64,20 +64,20 @@
             "value": "Apple"
         },
         {
-            "id": "8147b88d-e692-44da-8546-a37a10d4258a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
-            "value": "obj_item_basefood"
-        },
-        {
             "id": "b642aa50-ded8-4a46-8893-3800f7205086",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
             "value": "snd_eat"
+        },
+        {
+            "id": "30de0cc0-b6ef-4c0e-8e54-5f8463194b5b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "fb83a21d-93e9-4b9c-b429-76cbbee7baa3",
+            "value": "1"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

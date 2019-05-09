@@ -34,12 +34,12 @@
             "value": "snd_Gunshot_launch"
         },
         {
-            "id": "f16e8cc0-efb1-4858-9190-7e7521c1ded5",
+            "id": "a3bc95e0-97e4-41a3-86af-0b9e77cf6cd7",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
-            "value": "obj_item_missilelauncher"
+            "propertyId": "fb83a21d-93e9-4b9c-b429-76cbbee7baa3",
+            "value": "3"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",

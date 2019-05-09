@@ -24,6 +24,14 @@ switch(room){
 	case rm_jail_10:
 		new_current_music = music_PM_ATG_3_110BPM_E;
 		break
+		
+	case rm_mafi_1:
+		new_current_music = music_last_chance_103;
+		break;
+		
+	case rm_1950_1:
+		new_current_music = music_last_chance_103;
+		break;
 }
 
 if (new_current_music != current_music) {

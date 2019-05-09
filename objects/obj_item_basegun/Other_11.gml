@@ -1,4 +1,5 @@
 /// @description (use1) Fire gun
+
 //projectile_
 var projectile = instance_create_layer(x,y,"Overlay",projectile_type);
 projectile.direction = image_angle + random_range(-miss, miss);

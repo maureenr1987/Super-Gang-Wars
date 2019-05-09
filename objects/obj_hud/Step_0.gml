@@ -11,7 +11,8 @@ if keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_selec
 
 //Reset game
 if keyboard_check_pressed(ord("R")) || gamepad_button_check_pressed(0, gp_start){
-	SlideTransition(trans_mode.goto, rm_Menu,-800,1000);
+	if keyboard_check(vk_alt) SlideTransition(trans_mode.restart)
+	else LoadRevivePlayer();
 }
 
 //Debugmode
@@ -33,7 +34,8 @@ if (keyboard_check_pressed(vk_f11)){
 
 //Add exp
 if keyboard_check(vk_f3){
-	obj_player.xp += floor(obj_player.tonextlvl/20);
+	if keyboard_check(vk_alt) obj_player.xp -= floor(obj_player.tonextlvl/20);
+	else obj_player.xp += floor(obj_player.tonextlvl/20);
 	RecalcStats(obj_player);
 }
 

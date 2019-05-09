@@ -17,22 +17,6 @@
             "value": "Warden Baton"
         },
         {
-            "id": "59d35656-ef3d-4b43-bdf9-c57f168fe2bb",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
-            "value": "obj_item_warden_baton"
-        },
-        {
-            "id": "589e087c-80b6-425c-b111-4b41b80472a3",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
-            "value": "noone"
-        },
-        {
             "id": "d604e66a-3414-413a-9a6e-ec20f5642bb9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",

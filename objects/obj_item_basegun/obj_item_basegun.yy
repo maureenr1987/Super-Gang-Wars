@@ -60,12 +60,12 @@
             "value": "A basic gun. It's low price makes it a popular for beginerszz3"
         },
         {
-            "id": "496bb9fb-5269-4f6b-a9c7-d5db6f5e9228",
+            "id": "d9582e30-6e30-411b-b58d-c6cc4c8ac922",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
-            "propertyId": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
-            "value": "obj_item_basegun"
+            "propertyId": "fb83a21d-93e9-4b9c-b429-76cbbee7baa3",
+            "value": "2"
         }
     ],
     "parentObjectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
@@ -179,7 +179,7 @@
             "resourceFilter": 1023,
             "value": "2",
             "varName": "recoil",
-            "varType": 1
+            "varType": 0
         }
     ],
     "solid": false,

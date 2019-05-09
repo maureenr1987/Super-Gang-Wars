@@ -77,20 +77,6 @@
             "varType": 2
         },
         {
-            "id": "693c44b5-5586-4cd6-8e7b-809d6573ab30",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "obj_baseitem",
-            "varName": "obj",
-            "varType": 2
-        },
-        {
             "id": "b575c5f5-03a9-4ab6-acdd-2d6099ec4c39",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -143,21 +129,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "1000",
-            "varName": "use1_delay",
-            "varType": 1
-        },
-        {
-            "id": "050578ed-fa1a-4d84-8820-14b36c387f40",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1000",
-            "varName": "use2_delay",
+            "varName": "use_delay",
             "varType": 1
         },
         {
@@ -171,21 +143,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "True",
-            "varName": "use1_pressed",
-            "varType": 3
-        },
-        {
-            "id": "e5cfb039-6129-413e-8186-006ed9f2475d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "True",
-            "varName": "use2_pressed",
+            "varName": "use_pressed",
             "varType": 3
         },
         {
@@ -199,11 +157,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "emptysound",
-            "varName": "use1_sfx",
+            "varName": "use_sfx",
             "varType": 5
         },
         {
-            "id": "e09f2288-d787-4d35-a421-b3b9659ba5a5",
+            "id": "fb83a21d-93e9-4b9c-b429-76cbbee7baa3",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -212,9 +170,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "emptysound",
-            "varName": "use2_sfx",
-            "varType": 5
+            "value": "0",
+            "varName": "use_shake",
+            "varType": 0
         }
     ],
     "solid": false,

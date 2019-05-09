@@ -1,5 +1,4 @@
 /// @desc Controlls/Collision/Animation
-//polygon = polygon_from_instance(id)
 ////Input or AI
 if (cancontrol) event_user(1);
 else {
@@ -64,21 +63,50 @@ else {
 #endregion
 
 #region //Switch and Use Item
-//Use/Hit current item
-if (key_use1) if (instance_exists(physitem)) physitem.use1 = true;
-//Hit with current item
-if (key_use2) if (instance_exists(physitem)) physitem.use2 = true;
+//Use current item
+
+//Set and Use the current item
+if (key_use_1) && (current_item_delay_1 <= 0 || global.debug) { current_item_out = 1; current_item = current_item_1; SpawnItem(); physitem.use = true; }
+if (key_use_2) && (current_item_delay_2 <= 0 || global.debug) { current_item_out = 2; current_item = current_item_2; SpawnItem(); physitem.use = true; }
+
+
 //Switch currentitem
 if (key_switchnext || key_switchprev){
-	if (key_switchnext) currentitem++; if (currentitem >= ds_list_size(inventory)) currentitem = 0;	
-	if (key_switchprev) currentitem--; if (currentitem < 0) currentitem = ds_list_size(inventory) - 1;
-	SpawnItem();
+	if (current_item_out == 1){
+		if (key_switchnext) current_item_1++; if (current_item_1 >= ds_list_size(inventory)) current_item_1 = 0;
+		if (key_switchprev) current_item_1--; if (current_item_1 < 0) current_item_1 = ds_list_size(inventory) - 1;
+		current_item = current_item_1;
+		SpawnItem()
+	}
+	else {
+		if (key_switchnext) current_item_2++; if (current_item_2 >= ds_list_size(inventory)) current_item_2 = 0;	
+		if (key_switchprev) current_item_2--; if (current_item_2 < 0) current_item_2 = ds_list_size(inventory) - 1;
+		current_item = current_item_2;
+		SpawnItem()
+	}
 }
+
+//If the current item is on the last slot and it runs out, then move up the current item by one
 if instance_exists(physitem){
 	var exists = false;
-	for (var i=0; i<=ds_list_size(inventory)-1; i++){ if (string(object_get_name(physitem.object_index)) == ds_map_find_value(ds_list_find_value(inventory,i),"item")) exists = true;}
-	if (!exists) {if (currentitem == ds_list_size(inventory)) {currentitem = ds_list_size(inventory)-1} SpawnItem()}
+	
+	//Check if item exists in inventory
+	for (var i=0; i<=ds_list_size(inventory)-1; i++){ if (object_get_name(physitem.object_index) == ds_map_find_value(ds_list_find_value(inventory,i),"item")) exists = true; }
+	
+	//If it doesn't exist then switch slots
+	if (!exists && current_item == ds_list_size(inventory)) {
+		if (current_item_out == 1) { current_item_1 = ds_list_size(inventory)-1; current_item = current_item_1; }
+		else { current_item_2 = ds_list_size(inventory)-1; current_item = current_item_2; }
+	}
+	SpawnItem()
 }
+
+
+
+//Subtract current item delay
+current_item_delay_1 -= delta_time/1000;
+current_item_delay_2 -= delta_time/1000;
+
 #endregion
 
 #region //Collision

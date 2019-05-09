@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 12,
             "m_owner": "096c81af-a960-4782-b9f7-a33b636611ba"
+        },
+        {
+            "id": "7e84406a-3666-4d37-8c35-75733d9ba151",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 20,
+            "eventtype": 7,
+            "m_owner": "096c81af-a960-4782-b9f7-a33b636611ba"
         }
     ],
     "maskSpriteId": "6b1c400a-ab1d-487e-b4ce-f6bb6557e111",
@@ -102,7 +112,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "75",
+            "value": "50",
             "varName": "retreat_dist",
             "varType": 1
         },
@@ -116,7 +126,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "150",
+            "value": "100",
             "varName": "chase_dist",
             "varType": 1
         },

@@ -1,4 +1,4 @@
-/// @description (use1) sword start
+/// @description (use) sword start
 //Lunge
 Owner.forcespd = lunge;
 Owner.forcedir = Owner.face;

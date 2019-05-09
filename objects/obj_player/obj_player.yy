@@ -82,12 +82,12 @@
             "value": "5"
         },
         {
-            "id": "54ec09ab-8407-4431-8456-a8bc9d6c1d23",
+            "id": "bbda61ae-6be7-4879-a87b-5acbd7788343",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
-            "propertyId": "b67a4f11-e125-4d12-98d4-a43444e47ca3",
-            "value": "spr_player_jail_"
+            "propertyId": "7d56e2ec-5cfa-43e8-8915-2f5489043e56",
+            "value": "Bill Cosby"
         }
     ],
     "parentObjectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",

@@ -18,14 +18,6 @@
     "maskSpriteId": "7565ca00-50bc-4ba9-acd3-48fa66dfb9c9",
     "overriddenProperties": [
         {
-            "id": "2bc47751-2cef-4d9c-8d19-7401b75c90fa",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
-            "propertyId": "b67a4f11-e125-4d12-98d4-a43444e47ca3",
-            "value": "spr_dragon_montoya_"
-        },
-        {
             "id": "1c8a183e-c1d1-423b-b04d-e3e10dc02224",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -47,7 +39,15 @@
             "mvc": "1.0",
             "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
             "propertyId": "6b8cd215-28ff-4f75-8404-0a690bad853c",
-            "value": "20"
+            "value": "25"
+        },
+        {
+            "id": "9a47208f-7659-4af5-a3cc-5f2a1155bc0a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
+            "propertyId": "7d56e2ec-5cfa-43e8-8915-2f5489043e56",
+            "value": "Dragon Montoya De Shano"
         }
     ],
     "parentObjectId": "096c81af-a960-4782-b9f7-a33b636611ba",

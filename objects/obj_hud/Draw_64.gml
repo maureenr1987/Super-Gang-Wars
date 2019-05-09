@@ -20,7 +20,7 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	x = 5;
 	y = 0;
 	
-	var boxwidth = 100;
+	var boxwidth = 130;
 	if (boxwidth < string_width(NAME + GEND) ) boxwidth = string_width(NAME + GEND) + 5;
 	
 	//draw rectangle
@@ -63,6 +63,7 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	text_y += 20;
 	
 	#endregion
+	
 	#region //Draw Item Icon
 	/*//if inventory is empty
 	if (ds_list_size(pl.inventory) <= 1) { text_y += 5; OutlineTextColor(x,text_y,"Your invemtory is empty",c_gray,c_black,1);}
@@ -100,6 +101,7 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	instance_destroy(itembuffer);
 	}*/
 	#endregion
+	
 	#region //Draw Inventory
 	//Draw inventory box
 	draw_set_color(c_black);
@@ -125,11 +127,14 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	
 		text_y += 10
 		
-		//Highlight Current Item
-		if (i == obj_player.currentitem) {
-			//DrawSetText(c_gray,font_stats,fa_left,fa_top)
-			OutlineTextColor(x,text_y,"> x"+string(quan),c_white,c_black,1);
-			OutlineTextColor(x+35,text_y,itembuffer.name,c_white,c_black,1.5);
+		//Highlight Current Item 1
+		if (i == obj_player.current_item_1) {
+			OutlineTextColor(x,text_y,"> x"+string(quan),c_white,c_red,1);
+			OutlineTextColor(x+35,text_y,itembuffer.name,c_white,c_red,1);
+		}
+		else if (i == obj_player.current_item_2) {
+			OutlineTextColor(x,text_y,"> x"+string(quan),c_white,c_blue,1);
+			OutlineTextColor(x+35,text_y,itembuffer.name,c_white,c_blue,1);
 		}
 		//No Highlight
 		else {
@@ -160,4 +165,5 @@ if (global.debug){
 	}
 }
 #endregion
+
 display_set_gui_size(oldw,oldh)

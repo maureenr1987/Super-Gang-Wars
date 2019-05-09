@@ -1,4 +1,4 @@
-/// @desc (use1) Fire missile
+/// @desc (use) Fire missile
 //Missile
 var missile = instance_create_layer(x,y,"Player",obj_missle);
 missile.direction = image_angle;
