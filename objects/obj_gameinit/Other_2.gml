@@ -33,11 +33,11 @@ global.debug = 0;
 global.inv = [
 	//"obj_baseitem",
 	"obj_item_startgun",
-	"obj_item_lesser_warden_gun",
+	"obj_item_warden_baton",
 	"obj_item_medium_warden_gun",
 	"obj_item_higher_warden_gun",
 	"obj_item_draco_buster",
-	"obj_item_warden_baton",
+	"obj_item_boss_baton",
 	
 	"obj_item_grenade",
 	"obj_item_molotov_cocktail",

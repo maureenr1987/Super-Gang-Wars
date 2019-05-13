@@ -14,5 +14,6 @@ SpawnItem();
 current_item_out = 1;
 current_item = 1;
 current_item_1 = 1;
+current_item_2 = 2;
 
 walllist = ds_list_create();

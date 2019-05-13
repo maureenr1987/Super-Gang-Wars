@@ -22,14 +22,15 @@ if (coor[0] == 3 && coor[1] == 3) level_selected = 3;
 
 #region Draw level tiles
 //The sprites and their numbers are arranged like a number pad
-if (level_selected == 1) draw_sprite(spr_menu_frame,0,w*0.5-110,h*0.8+20); 
-else draw_sprite(spr_menu_frame,1,w*0.5-110,h*0.8+18);
+/*
+if (level_selected == 1) draw_sprite(spr_menu_frame_dm,0,w*0.5-110,h*0.8+20); 
+else draw_sprite(spr_menu_frame_dm,1,w*0.5-110,h*0.8+18);
 
-if (level_selected == 2) draw_sprite(spr_menu_frame_dm,0,w*0.5,h*0.8+20); 
-else draw_sprite(spr_menu_frame_dm,1,w*0.5,h*0.8+18);
+if (level_selected == 2) draw_sprite(spr_menu_frame_cp,0,w*0.5,h*0.8+20); 
+else draw_sprite(spr_menu_frame_cp,1,w*0.5,h*0.8+18);
 
-if (level_selected == 3) draw_sprite(spr_menu_frame,0,w*0.5+110,h*0.8+20); 
-else draw_sprite(spr_menu_frame,1,w*0.5+110,h*0.8+18);
+if (level_selected == 3) draw_sprite(spr_menu_frame_cs,0,w*0.5+110,h*0.8+20); 
+else draw_sprite(spr_menu_frame_cs,1,w*0.5+110,h*0.8+18);
 
 if (level_selected == 4) draw_sprite(spr_menu_frame,0,w*0.5-110,h*0.5+20); 
 else draw_sprite(spr_menu_frame,1,w*0.5-110,h*0.5+18);
@@ -39,15 +40,16 @@ else draw_sprite(spr_menu_frame,1,w*0.5,h*0.5+18);
 
 if (level_selected == 6) draw_sprite(spr_menu_frame,0,w*0.5+110,h*0.5+20); 
 else draw_sprite(spr_menu_frame,1,w*0.5+110,h*0.5+18);
-	
-if (level_selected == 7) draw_sprite(spr_menu_frame,0,w*0.5-110,h*0.2+20); 
-else draw_sprite(spr_menu_frame,1,w*0.5-110,h*0.2+18); 
+*/
+if (level_selected == 7) draw_sprite(spr_menu_frame_dm,0,w*0.5-110,h*0.2+20); 
+else draw_sprite(spr_menu_frame_dm,1,w*0.5-110,h*0.2+18); 
 
-if (level_selected == 8) draw_sprite(spr_menu_frame,0,w*0.5,h*0.2+20); 
-else draw_sprite(spr_menu_frame,1,w*0.5,h*0.2+18);
+if (level_selected == 8) draw_sprite(spr_menu_frame_cp,0,w*0.5,h*0.2+20); 
+else draw_sprite(spr_menu_frame_cp,1,w*0.5,h*0.2+18);
 
-if (level_selected == 9) draw_sprite(spr_menu_frame,0,w*0.5+110,h*0.2+20); 
-else draw_sprite(spr_menu_frame,1,w*0.5+110,h*0.2+18);
+if (level_selected == 9) draw_sprite(spr_menu_frame_cs,0,w*0.5+110,h*0.2+20); 
+else draw_sprite(spr_menu_frame_cs,1,w*0.5+110,h*0.2+18);
+
 #endregion
 
 #region Draw level name

@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
             "propertyId": "6b8cd215-28ff-4f75-8404-0a690bad853c",
-            "value": "10"
+            "value": "20"
         },
         {
             "id": "f3e6b1b2-b4f0-4e33-b4d3-23a06262e211",

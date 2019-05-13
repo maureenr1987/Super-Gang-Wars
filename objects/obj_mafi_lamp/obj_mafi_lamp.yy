@@ -31,7 +31,7 @@
             "mvc": "1.0",
             "objectId": "84334f4e-b6d2-4ffe-89cf-f8641f75877e",
             "propertyId": "a89637b7-5f88-4100-a038-c4d3e5c67480",
-            "value": "1.3"
+            "value": "1.5"
         },
         {
             "id": "356717e9-96ce-49ac-8f15-35c06f574a6a",
@@ -66,7 +66,7 @@
             "value": "spr_lut_light_intensity_line"
         }
     ],
-    "parentObjectId": "84334f4e-b6d2-4ffe-89cf-f8641f75877e",
+    "parentObjectId": "a82ae63d-7a5d-4fc9-abf5-d2b3359151d3",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

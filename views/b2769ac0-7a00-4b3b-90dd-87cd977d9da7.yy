@@ -12,7 +12,8 @@
         "88a55b3a-1fa2-434f-84ce-0697d7c013bf",
         "90b18879-2a91-46ee-bf3d-a20495d5f8d0",
         "b64d335b-f3ba-412b-902f-25f32e31d606",
-        "a8a5bf8b-676a-4614-aee1-768d097858fc"
+        "a8a5bf8b-676a-4614-aee1-768d097858fc",
+        "6f5dac71-d652-416c-be66-b71564554a89"
     ],
     "filterType": "GMRoom",
     "folderName": "Mafi",

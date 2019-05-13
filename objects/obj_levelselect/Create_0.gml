@@ -9,5 +9,3 @@ menu = ["","Mild", "Spicy", "Fire","cancel"];
 // 2 == difficulty
 menu_current = 1
 menu_cursor = 1;
-
-axis_pressed = false;

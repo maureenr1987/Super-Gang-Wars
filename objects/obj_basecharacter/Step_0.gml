@@ -54,11 +54,16 @@ if (current_hp <= 0) {
 		cancontrol = false;
 		ResetControls(self);
 		instance_destroy(physitem);
+		timer_to_erase_corpse = 5000;
 	}
 }
 else {
 	dead = false;
 	cancontrol = true;
+}
+if (dead && object_index != obj_player){
+	timer_to_erase_corpse -= delta_time/1000;
+	if (timer_to_erase_corpse <= 0) instance_destroy();
 }
 #endregion
 
@@ -66,8 +71,8 @@ else {
 //Use current item
 
 //Set and Use the current item
-if (key_use_1) && (current_item_delay_1 <= 0 || global.debug) { current_item_out = 1; current_item = current_item_1; SpawnItem(); physitem.use = true; }
-if (key_use_2) && (current_item_delay_2 <= 0 || global.debug) { current_item_out = 2; current_item = current_item_2; SpawnItem(); physitem.use = true; }
+if (key_use_1) && ((current_item_delay_1 <= 0) || (global.debug && object_index == obj_player)) { current_item_out = 1; current_item = current_item_1; SpawnItem(); physitem.use = true; }
+if (key_use_2) && ((current_item_delay_2 <= 0) || (global.debug && object_index == obj_player)) { current_item_out = 2; current_item = current_item_2; SpawnItem(); physitem.use = true; }
 
 
 //Switch currentitem
@@ -100,8 +105,6 @@ if instance_exists(physitem){
 	}
 	SpawnItem()
 }
-
-
 
 //Subtract current item delay
 current_item_delay_1 -= delta_time/1000;

@@ -3,8 +3,9 @@ if (room == 0) audio_stop_all();
 
 switch(room){
 	case rm_Menu:
-		new_current_music = emptysound;
+		new_current_music = music_night_crawler;
 		break;
+		
 	case rm_LevelSelect:
 		new_current_music = music_tenderness_134;
 		break;
@@ -26,6 +27,14 @@ switch(room){
 		break
 		
 	case rm_mafi_1:
+	case rm_mafi_2:
+	case rm_mafi_3:
+	case rm_mafi_4:
+	case rm_mafi_5:
+	case rm_mafi_6:
+	case rm_mafi_7:
+	case rm_mafi_8:
+	case rm_mafi_9:
 		new_current_music = music_last_chance_103;
 		break;
 		

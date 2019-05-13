@@ -42,7 +42,7 @@ if instance_exists(nemesis){
 			if(!instance_exists(physitem)) SpawnItem();
 			
 			//The NPC's behavior for movement
-			var same_elevation = (y >= c_nemesis.y-5 && y <= c_nemesis.y+5)
+			var same_elevation = (y >= c_nemesis.y-sprite_height/3 && y <= c_nemesis.y+sprite_height/3)
 			
 			//If too close then back away
 			if (distance_to_object(c_nemesis) < chase_dist && same_elevation) { if (abs(lengthdir_x(2.5, c_nemesis_dir-180)) > 1.5) x_axis = sign(lengthdir_x(1, c_nemesis_dir-180)); else x_axis = 0;}

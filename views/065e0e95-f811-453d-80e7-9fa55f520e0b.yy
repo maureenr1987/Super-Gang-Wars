@@ -6,7 +6,8 @@
     "children": [
         "206198ba-3a25-462c-86b4-d1d0c52a0e4f",
         "bb0a9ab8-3848-4b74-adce-59c82bf122c8",
-        "5f8bc353-0a5a-42f6-98b4-a547b5dae75b"
+        "5f8bc353-0a5a-42f6-98b4-a547b5dae75b",
+        "de7efd23-532b-4eaf-80f6-fab0efbfef23"
     ],
     "filterType": "GMSprite",
     "folderName": "MafiaEnemies",
