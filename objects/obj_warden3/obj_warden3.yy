@@ -1,24 +1,24 @@
 {
-    "id": "248b8de9-294a-493c-988b-a16e2624c447",
+    "id": "7a9a951f-1c7a-40a2-bf57-4886f857af8a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_mediumwarden",
+    "name": "obj_warden3",
     "eventList": [
         {
-            "id": "15b264f5-e3ec-4065-a60a-dcb66bc7226a",
+            "id": "e22138e7-463f-414e-9299-162d12ad7281",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "248b8de9-294a-493c-988b-a16e2624c447"
+            "m_owner": "7a9a951f-1c7a-40a2-bf57-4886f857af8a"
         }
     ],
     "maskSpriteId": "6b1c400a-ab1d-487e-b4ce-f6bb6557e111",
     "overriddenProperties": [
         {
-            "id": "f6978c22-6b3c-4953-8a9a-360135dce179",
+            "id": "5decae1a-9912-4d14-85a9-f89aab1ca4e6",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
@@ -26,20 +26,20 @@
             "value": "1.4"
         },
         {
-            "id": "10b6790f-7fb4-468a-bcc2-eada898720ab",
+            "id": "6247a262-7e90-4e86-967d-ff6883a86134",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
             "propertyId": "7f450d0b-8f24-42bc-aa29-219a01b8193e",
-            "value": "\"obj_item_medium_warden_gun\""
+            "value": "\"obj_item_higher_warden_gun\""
         },
         {
-            "id": "2bb93dd5-67ac-4f35-a819-ff14af47e0d9",
+            "id": "0558bd56-28c7-4cde-b9d4-df8f7483c7b1",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7419a4d1-bf5b-4886-bd79-5cebcf529ffe",
             "propertyId": "6b8cd215-28ff-4f75-8404-0a690bad853c",
-            "value": "20"
+            "value": "30"
         }
     ],
     "parentObjectId": "096c81af-a960-4782-b9f7-a33b636611ba",
@@ -60,6 +60,6 @@
         
     ],
     "solid": false,
-    "spriteId": "56a417d0-38a0-4033-b100-822bc25e65ac",
+    "spriteId": "3685e322-d742-4523-a651-91537ba9143b",
     "visible": true
 }

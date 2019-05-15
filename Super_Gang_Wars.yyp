@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "04b8fac4-beb2-4e7f-b429-c071316b1588",
+            "Value": {
+                "id": "203bc501-9056-47a3-9e38-3ba7c04c645f",
+                "resourcePath": "objects\\obj_item_bread\\obj_item_bread.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04ef43ee-59db-4b74-a1e6-71520a7992f8",
             "Value": {
                 "id": "235e20c0-28f3-43ac-a68d-9e5cad3bd97a",
@@ -618,7 +626,15 @@
             "Key": "248b8de9-294a-493c-988b-a16e2624c447",
             "Value": {
                 "id": "0c8c6fd5-6c1b-4808-b151-0bd6015469d8",
-                "resourcePath": "objects\\obj_mediumwarden\\obj_mediumwarden.yy",
+                "resourcePath": "objects\\obj_warden2\\obj_warden2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2519b02c-0231-489e-b62f-699f1ccdeecd",
+            "Value": {
+                "id": "2d182c53-c5af-49d5-bda3-513de4d6f0b6",
+                "resourcePath": "objects\\obj_item_apple\\obj_item_apple.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -692,6 +708,14 @@
                 "id": "8e3cbe32-32bb-47f7-a1c7-cacb63354228",
                 "resourcePath": "sounds\\snd_eat\\snd_eat.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "2890c31e-26be-4d9d-aea1-c3f12c520ab3",
+            "Value": {
+                "id": "f5cd7473-e61d-4efa-b7f8-9ffc8cf60557",
+                "resourcePath": "objects\\obj_item_chicken\\obj_item_chicken.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2151,6 +2175,14 @@
             }
         },
         {
+            "Key": "76e827a4-b391-41e7-ac00-47021b1246d0",
+            "Value": {
+                "id": "d7880cc2-9c18-4aab-b8e8-d461f74e8643",
+                "resourcePath": "objects\\obj_random_enemy\\obj_random_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "770eb2a5-f251-453e-b777-c5176e5759f7",
             "Value": {
                 "id": "1b5eef27-73bf-4977-b3cc-32a8ebb58e93",
@@ -2226,7 +2258,7 @@
             "Key": "7a9a951f-1c7a-40a2-bf57-4886f857af8a",
             "Value": {
                 "id": "8edcfbfd-a99e-4144-a43d-7bbdc7cbb047",
-                "resourcePath": "objects\\obj_higherwarden\\obj_higherwarden.yy",
+                "resourcePath": "objects\\obj_warden3\\obj_warden3.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -4679,6 +4711,14 @@
             }
         },
         {
+            "Key": "f4b39190-908f-4da8-a9b4-8391f07192c1",
+            "Value": {
+                "id": "28aa4d29-8896-409f-9a5a-6086ff5b0357",
+                "resourcePath": "objects\\obj_playerlamp\\obj_playerlamp.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f58095eb-08ef-463d-a62e-4efe84b08ecb",
             "Value": {
                 "id": "c365bf0a-ab97-4844-a578-237f37e7cef2",
@@ -4874,7 +4914,7 @@
             "Key": "fdb9c7c9-f9e3-40c2-bc99-f00c86f8a1ff",
             "Value": {
                 "id": "7ea295a6-a091-43c9-8d76-4593119b0ad8",
-                "resourcePath": "objects\\obj_lesserwarden\\obj_lesserwarden.yy",
+                "resourcePath": "objects\\obj_warden1\\obj_warden1.yy",
                 "resourceType": "GMObject"
             }
         },

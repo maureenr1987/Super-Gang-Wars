@@ -1,5 +1,5 @@
 /// @desc (dead)
-var xp = instance_create_layer(x,y,"Items",obj_xp);
+var xp = instance_create_layer(x,y,"Overlay",obj_xp);
 xp.xp = lvl;
 
 

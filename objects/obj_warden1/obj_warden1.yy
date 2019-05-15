@@ -2,7 +2,7 @@
     "id": "fdb9c7c9-f9e3-40c2-bc99-f00c86f8a1ff",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_lesserwarden",
+    "name": "obj_warden1",
     "eventList": [
         {
             "id": "6b56d11d-334a-498f-8827-0a01e4222dc2",

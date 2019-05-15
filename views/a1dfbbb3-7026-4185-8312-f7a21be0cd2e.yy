@@ -13,7 +13,8 @@
         "bc9be24e-5608-44fc-bd54-9404f3e33333",
         "6feb4125-2fac-44ee-9c17-4c86e8a3271a",
         "4f00226e-a04c-484a-8b76-00f53bf11528",
-        "7a407ba2-17d7-4c63-a39b-fa8ee1ab4497"
+        "7a407ba2-17d7-4c63-a39b-fa8ee1ab4497",
+        "f4b39190-908f-4da8-a9b4-8391f07192c1"
     ],
     "filterType": "GMObject",
     "folderName": "Lighting",

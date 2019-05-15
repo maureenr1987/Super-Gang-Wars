@@ -61,7 +61,7 @@
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
-            "value": "Apple"
+            "value": ""
         },
         {
             "id": "b642aa50-ded8-4a46-8893-3800f7205086",

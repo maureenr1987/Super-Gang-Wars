@@ -13,4 +13,8 @@ if (repeatt > 0){
 } 
 else Itempositioncenter_x = 10;
 
-if (repeatt == 1 && !m) { AddToInventory(string(object_get_name(object_index)),-1,Owner); m = true }
+if (repeatt == 1 && !m) {
+	AddToInventory(string(object_get_name(object_index)),-1,Owner); 
+	Owner.current_hp += healthplus; if (Owner.current_hp > Owner.hp) Owner.current_hp = Owner.hp;
+	m = true 
+}
