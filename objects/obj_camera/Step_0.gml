@@ -33,13 +33,6 @@ for (var i = 0; i <= 10; i++){
 	}
 }
 
-//Set GUI size
-display_set_gui_size(camera_get_view_width(cam),camera_get_view_height(cam));
-
-//if instance_exists(obj_player) camera_set_view_angle(cam,obj_player.face);
-
-
-
 //Switch zoom
 if keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_stickr) {
 	if (target_zoom >= 0.9) target_zoom = 0.5; else target_zoom += 0.2;

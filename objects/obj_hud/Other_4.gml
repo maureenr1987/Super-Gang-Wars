@@ -1,4 +1,9 @@
 /// @desc
+//set gui size
+display_set_gui_size(640,360);
+w = display_get_gui_width();
+h = display_get_gui_height();
+
 if (room == rm_Menu || room == rm_LevelSelect) {
 	//Delete old player object and make a new one
 	if instance_exists(obj_player) instance_destroy(obj_player);

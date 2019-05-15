@@ -63,7 +63,7 @@ if instance_exists(nemesis){
 			}
 			
 			//Randomly jump sometimes
-			if(random(1) < 0.015 && !same_elevation) {
+			if(random(1) < 0.015 && same_elevation) {
 				key_jump = true;
 			}
 		

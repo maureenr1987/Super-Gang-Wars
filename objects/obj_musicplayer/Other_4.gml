@@ -37,6 +37,9 @@ switch(room){
 	case rm_mafi_9:
 		new_current_music = music_last_chance_103;
 		break;
+	case rm_mafi_10:
+		new_current_music = music_PM_ATG_3_110BPM_B;
+		break;
 		
 	case rm_1950_1:
 		new_current_music = music_last_chance_103;

@@ -6,7 +6,7 @@
     "eventList": [
         
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "6c1ca550-fa35-46ea-be66-ec1f36962031",
     "overriddenProperties": [
         {
             "id": "d313a1ea-7f85-411f-9a7f-e51a2ce5393d",
@@ -54,7 +54,7 @@
             "mvc": "1.0",
             "objectId": "096c81af-a960-4782-b9f7-a33b636611ba",
             "propertyId": "3f68be4e-f7d1-469b-a557-4f51b9d407c9",
-            "value": "250"
+            "value": "200"
         }
     ],
     "parentObjectId": "096c81af-a960-4782-b9f7-a33b636611ba",

@@ -22,7 +22,15 @@
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
-            "value": "M.Warden Gun"
+            "value": "CZ P-01"
+        },
+        {
+            "id": "7d5e7eb0-b19e-4f35-b91a-34f46059b027",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
+            "propertyId": "ea4937a3-cebd-4539-a068-af5d21175eed",
+            "value": "10"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",
@@ -41,6 +49,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "7ad20851-a3ce-4951-973b-fbfb6fa49459",
+    "spriteId": "c17ed4ac-7f46-4b67-a3eb-b7d149fb88e0",
     "visible": true
 }

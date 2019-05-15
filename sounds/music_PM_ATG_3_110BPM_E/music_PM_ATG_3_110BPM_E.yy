@@ -3,12 +3,12 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "music_PM_ATG_3_110BPM_E",
-    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "audioGroupGuid": "08ea9e06-6816-4cec-b76f-3fabb8491c26",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.5
+    "volume": 0.55
 }

@@ -1,9 +1,4 @@
 /// @desc
-var oldw = display_get_gui_width();
-var oldh = display_get_gui_height();
-display_set_gui_size(640,360);
-w = display_get_gui_width();
-h = display_get_gui_height();
 
 if instance_exists(obj_player) && !(room == 0 || room == 1){
 	var pl = obj_player;
@@ -165,5 +160,3 @@ if (global.debug){
 	}
 }
 #endregion
-
-display_set_gui_size(oldw,oldh)

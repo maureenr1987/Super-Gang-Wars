@@ -22,7 +22,23 @@
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
-            "value": "H.Warden Gun"
+            "value": "Colt M4 Carbine"
+        },
+        {
+            "id": "42ea5a56-752e-42d1-bf0c-41f59c6917b3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
+            "propertyId": "a6932145-547b-4be8-bcf6-4ad8c4df3152",
+            "value": "snd_Gunshot_tch"
+        },
+        {
+            "id": "cc51cf2f-b825-454c-8232-ba755b85ca30",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "31e10c66-239b-4158-87a0-68c55ee37915",
+            "propertyId": "ea4937a3-cebd-4539-a068-af5d21175eed",
+            "value": "10"
         }
     ],
     "parentObjectId": "31e10c66-239b-4158-87a0-68c55ee37915",

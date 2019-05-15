@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "18a1d1e9-2746-45d8-b693-b60787bb647b",
             "propertyId": "785ca590-aceb-42ab-a53d-310880224076",
-            "value": "Warden Baton"
+            "value": "Baton"
         },
         {
             "id": "d604e66a-3414-413a-9a6e-ec20f5642bb9",

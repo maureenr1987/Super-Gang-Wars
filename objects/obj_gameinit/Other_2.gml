@@ -37,10 +37,14 @@ global.inv = [
 	"obj_item_medium_warden_gun",
 	"obj_item_higher_warden_gun",
 	"obj_item_draco_buster",
-	"obj_item_boss_baton",
 	
 	"obj_item_grenade",
 	"obj_item_molotov_cocktail",
 	"obj_item_nail_bat",
 	"obj_item_tommy_gun"
 ];
+
+audio_group_load(audiogroup_music);
+audio_group_load(audiogroup_items);
+audio_group_load(audiogroup_gui);
+audio_group_load(audiogroup_footstep);
