@@ -1,8 +1,8 @@
 {
-    "id": "0ee5827d-e75d-4b49-a0b0-3f9db91c71cb",
+    "id": "534856ad-bbe3-4607-a333-525bba2dc79f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "LoadAchievements",
+    "name": "exit_to_menu",
     "IsCompatibility": false,
     "IsDnD": false
 }

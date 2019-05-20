@@ -27,21 +27,33 @@ ds_map_add(_map, "gender", pl.gender);
 ds_map_add(_map, "xp", pl.xp);
 
 //Saveroom
-ds_map_add(_map, "difficulty", global.difficulty);
 ds_map_add(_map, "x", pl.x)
 ds_map_add(_map, "y", pl.y)
 ds_map_add(_map, "room", room);
 
-//Save level completion
-ds_map_add(_map, "world_jail", global.world_jail);
-ds_map_add(_map, "world_1950", global.world_1950);
-ds_map_add(_map, "world_musi", global.world_musi);
-ds_map_add(_map, "world_cact", global.world_cact);
-ds_map_add(_map, "world_casi", global.world_casi);
-ds_map_add(_map, "world_notr", global.world_notr);
-ds_map_add(_map, "world_spac", global.world_spac);
-ds_map_add(_map, "world_mafi", global.world_mafi);
-ds_map_add(_map, "world_yurt", global.world_yurt);
+//Audio Volumes
+ds_map_add(_map, "audio_vol_master", global.audio_vol_master);
+ds_map_add(_map, "audio_vol_music", global.audio_vol_music);
+ds_map_add(_map, "audio_vol_itemsfx", global.audio_vol_itemsfx);
+ds_map_add(_map, "audio_vol_menusfx", global.audio_vol_menusfx);
+ds_map_add(_map, "audio_vol_othersfx", global.audio_vol_othersfx);
+
+//Difficulty
+ds_map_add(_map, "difficulty_preset", global.difficulty_preset);
+ds_map_add(_map, "difficulty_respawn", global.difficulty_respawn);
+ds_map_add(_map, "difficulty_apples", global.difficulty_apples);
+ds_map_add(_map, "difficulty_enemy_strength", global.difficulty_enemy_strength);
+ds_map_add(_map, "difficulty_enemy_placement", global.difficulty_enemy_placement);
+
+//Graphics
+ds_map_add(_map, "guisize_h", global.guisize_h);
+ds_map_add(_map, "guisize_w", global.guisize_w);
+ds_map_add(_map, "gui_size", global.gui_size);
+ds_map_add(_map, "fullscreen", global.fullscreen);
+
+//Game Completion
+ds_map_add(_map, "levelcompletion_jail", global.levelcompletion_jail);
+ds_map_add(_map, "levelcompletion_mafi", global.levelcompletion_mafi);
 
 //Wrap root list in a MAP!
 var _wrapper = ds_map_create();

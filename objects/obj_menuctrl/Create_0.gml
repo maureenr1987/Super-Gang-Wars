@@ -2,9 +2,15 @@
 use_x_axis = false;
 use_y_axis = false
 
-axis_x_pressed = false
-axis_y_pressed = false
+x_axis_is_pressed = false
+y_axis_is_pressed = false
+
+x_axis_can_hold = false;
+y_axis_can_hold = false;
+
 up = false;
 down = false;
 left = false;
 right = false;
+
+pressed_timer = 0;

@@ -1,28 +1,12 @@
 /// @desc
 //set gui size
-display_set_gui_size(640,360);
+display_set_gui_size(global.guisize_w,global.guisize_h);
 w = display_get_gui_width();
 h = display_get_gui_height();
 
-if (room == rm_Menu || room == rm_LevelSelect) {
-	//Delete old player object and make a new one
-	if instance_exists(obj_player) instance_destroy(obj_player);
-	instance_create_layer(0,0,"Player",obj_player);
-	obj_player.cancontrol = false;
-	
-	//Load Player Info
-	LoadPlayerInfo();
-	LoadAchievements();
-	
-	//Reset audio
-	audio_stop_all();
-	
-}
-
-//If in any other room save the players
-else {
+if !(room == rm_Menu || room == rm_LevelSelect) {
 	obj_player.cancontrol = true;
-	SaveGame()
-}
+	SaveGame();
+} 
+else obj_player.cancontrol = false;
 ResetControls(self)
-

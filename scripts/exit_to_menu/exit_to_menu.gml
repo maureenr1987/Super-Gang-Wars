@@ -1,0 +1,1 @@
+SlideTransition(trans_mode.goto, rm_Menu, 0, 0);

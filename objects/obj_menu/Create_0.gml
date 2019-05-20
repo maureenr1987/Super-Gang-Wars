@@ -8,7 +8,7 @@ h = display_get_gui_height();
 
 
 //Setup menu
-menu_items = ["",""]
+menu_items = ["Continue","Quit"];
 menu_cursor = 0;
 menu_control = true;
 

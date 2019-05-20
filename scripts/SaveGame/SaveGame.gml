@@ -1,1 +1,1 @@
-instance_create_layer(0,0,"Overlay",obj_save)
+instance_create_layer(0,0,"Transition",obj_save)

@@ -1,5 +1,5 @@
 //Set the continue text
-if (global.world_jail != 0) menu_items = ["Continue","Quit"]; else menu_items = ["New Game","Quit"];
+//if (global.world_jail != 0) menu_items = ["Continue","Quit"]; else menu_items = ["New Game","Quit"];
 
 //Control Menu
 if (obj_menuctrl.up){

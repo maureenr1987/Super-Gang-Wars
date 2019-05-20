@@ -10,19 +10,45 @@ for (var i = 1; i < array_length_1d(tonextlvl_array); i++){
 }
 
 with (argument0){
-	if (argument0.object_index == obj_player) || (global.difficulty == 3){
+	if (argument0.object_index == obj_player){
 		//Set player level and other stats
 		hp =  2 * lvl + 78;
 		atk = 2 * lvl + 101;
 		def = 2 * lvl + 78;
 		spd = 2 * lvl + 100;
 	} else {
-		//Set player level and other stats
-		hp =  2 * lvl + 28;
-		atk = 2 * lvl + 41;
-		def = 2 * lvl + 28;
-		spd = 2 * lvl + 30;
+		switch (global.difficulty_enemy_strength) {
+			case 0:
+				hp =  lvl + 20;
+				atk = lvl + 20;
+				def = lvl + 20;
+				spd = lvl + 20;
+				break;
+			case 1:
+				hp =  1.5 * lvl + 40;
+				atk = 1.5 * lvl + 40;
+				def = 1.5 * lvl + 40;
+				spd = 1.5 * lvl + 40;
+				break;
+			case 2:
+				hp =  2 * lvl + 60;
+				atk = 2 * lvl + 60;
+				def = 2 * lvl + 60;
+				spd = 2 * lvl + 60;
+				break;
+			case 3:
+				hp =  2 * lvl + 80;
+				atk = 2 * lvl + 80;
+				def = 2 * lvl + 80;
+				spd = 2 * lvl + 80;
+				break;
+		}
 	}
+	hp =  floor(hp)
+	atk = floor(atk)
+	def = floor(def)
+	spd = floor(spd)
+	
 	
 	if (lvl <= 100){
 		totalxp = totalxp_array[lvl];

@@ -1,0 +1,1 @@
+SlideTransition(trans_mode.endgame);

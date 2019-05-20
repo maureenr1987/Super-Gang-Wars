@@ -1,0 +1,1 @@
+content_quantity = global.difficulty_apples;

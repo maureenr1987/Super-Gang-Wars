@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_warden3",
     "eventList": [
-        {
-            "id": "e22138e7-463f-414e-9299-162d12ad7281",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "7a9a951f-1c7a-40a2-bf57-4886f857af8a"
-        }
+        
     ],
     "maskSpriteId": "6b1c400a-ab1d-487e-b4ce-f6bb6557e111",
     "overriddenProperties": [

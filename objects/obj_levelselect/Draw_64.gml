@@ -51,6 +51,20 @@ else draw_sprite(spr_menu_frame_cs,1,w*0.5+110,h*0.2+18);
 
 #region Draw level name
 switch(level_selected){
+	case 8: var stars = global.levelcompletion_mafi;  break;
+	case 7: var stars = global.levelcompletion_jail;  break;
+	default: var stars = 0; break;
+}
+switch (stars) {
+	case 0: var stars_ = ""; break;
+	case 1: var stars_ = "*"; break;
+	case 2: var stars_ = "**"; break;
+	case 3: var stars_ = "***"; break;
+	case 4: var stars_ = "****"; break;
+	case 5: var stars_ = "*****"; break;
+}
+
+switch(level_selected){
 	case 8: level_name = "Capone's Hideout"  break;
 	case 7: level_name = "Dragon's Prison" break;
 	case 9: level_name = "EmPtY r0oM" break;
@@ -64,19 +78,18 @@ draw_text_transformed(w*0.5+3,-13,level_name,1.5,1.5,0)
 draw_set_color(c_white);
 draw_text_transformed(w*0.5,-15,level_name,1.5,1.5,0)
 
+draw_text_transformed(w*0.05,30,stars_,1.5,1.5,0)
+
 #endregion
 
-
-
-#region Draw the difficulty menu
-if (menu_current == 2){
-	DrawSetText(c_white,font_menu,fa_left,fa_top);
-	draw_text(10,20,"Difficulty");
-	for (var i=1; i < array_length_1d(menu); i++){
-		if (i == menu_cursor) draw_text(10,i*30+21,"> " + menu[i]);
-		else  draw_text(10,i*30+20,"   " + menu[i]);
-	}
+switch (level_selected){
+	case 7:
+		obj_player.sprite = "spr_player_jail_";
+		break;
+	case 8:
+		obj_player.sprite = "spr_player_mafi_";
+		break;
+	case 9:
+		obj_player.sprite = "spr_player_1950_";
+		break;
 }
-#endregion
-
-

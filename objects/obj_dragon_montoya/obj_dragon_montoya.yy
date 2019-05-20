@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_dragon_montoya",
     "eventList": [
-        {
-            "id": "a0622915-e7a2-4651-93fe-afb9c3c7cfd1",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "8b7e304e-6637-4ac8-bf10-a955c0aa41bc"
-        }
+        
     ],
     "maskSpriteId": "7565ca00-50bc-4ba9-acd3-48fa66dfb9c9",
     "overriddenProperties": [
