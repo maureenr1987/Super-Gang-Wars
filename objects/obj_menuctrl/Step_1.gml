@@ -12,7 +12,7 @@ if (use_x_axis){
 	var x_axis = sign(gamepad_axis_value(0,gp_axislh));
 	var left_ = keyboard_check(ord("A")) || keyboard_check(vk_left) || gamepad_button_check(0,gp_padl) || (x_axis == -1);
 	var right_ = keyboard_check(ord("D")) || keyboard_check(vk_right) || gamepad_button_check(0,gp_padr) || (x_axis == 1);
-	if (x_axis_is_pressed && !x_axis_can_hold) { left = false; right = false; } else { left = left_; right = right_; pressed_timer = 150;}
+	if (x_axis_is_pressed && !x_axis_can_hold) { left = false; right = false; } else { left = left_; right = right_; pressed_timer = 200;}
 	x_axis_is_pressed = (left_ || right_);
 }
 #endregion
@@ -22,7 +22,7 @@ if (use_y_axis){
 	var y_axis = sign(gamepad_axis_value(0,gp_axislv));
 	var up_ = keyboard_check(ord("W")) || keyboard_check(vk_up) || gamepad_button_check(0,gp_padu) || (y_axis == -1);
 	var down_ = keyboard_check(ord("S")) || keyboard_check(vk_down) || gamepad_button_check(0,gp_padd) || (y_axis == 1);
-	if (y_axis_is_pressed && !y_axis_can_hold) { up = false; down = false; } else { up = up_; down = down_; pressed_timer = 150; }
+	if (y_axis_is_pressed && !y_axis_can_hold) { up = false; down = false; } else { up = up_; down = down_; pressed_timer = 200; }
 	y_axis_is_pressed = (up_ || down_);
 }
 #endregion
