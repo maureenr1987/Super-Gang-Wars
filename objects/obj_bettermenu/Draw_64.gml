@@ -17,7 +17,7 @@ var start_x = w*0.5;
 #endregion
 
 #region Draw Pause Menu "Background"
-	var c = c_black;
+	var c = c_white;
 	draw_set_alpha(0.5);
 	//draw_rectangle_color(0,0,w,h,c,c,c,c, false);
 	draw_set_alpha(1);
@@ -31,7 +31,7 @@ var start_x = w*0.5;
 	var xo ;
 	var yy = 0; repeat(ds_height){
 		lty = start_y + (yy*y_buffer);
-		c = c_black;
+		c = c_white;
 		o = 0;
 		xo = 0;
 		
@@ -42,14 +42,14 @@ var start_x = w*0.5;
 		}
 		
 		//draw_text_color(ltx+xo,lty,ds_grid[# 0, yy], c,c,c,c ,1);
-		OutlineTextColor(ltx+xo,lty,ds_grid[# 0, yy], c_black, c, o)
+		OutlineTextColor(ltx+xo,lty,ds_grid[# 0, yy], c_white, c, o)
 		yy++;
 	}
 #endregion
 
 #region Draw Dividing line
 	if !(room == 0 && page == 0) {
-		draw_line_width_color(start_x, start_y - y_buffer, start_x, lty + y_buffer,1,c_black,out)
+		draw_line_width_color(start_x, start_y - y_buffer, start_x, lty + y_buffer,1,c_white,out)
 	}
 #endregion
 
@@ -67,7 +67,7 @@ yy = 0; repeat(ds_height){
 			var current_array = ds_grid[# 4, yy]
 			var left_shift = "<< ";
 			var right_shift = " >>";
-			c = c_black;
+			c = c_white;
 			
 			if (current_val == 0) left_shift = "";
 			if (current_val == array_length_1d(ds_grid[# 4, yy])-1) right_shift = "";
@@ -82,11 +82,11 @@ yy = 0; repeat(ds_height){
 			var current_val = ds_grid[# 3, yy];
 			var current_array = ds_grid[# 4, yy];
 			var circle_pos = ((current_val - current_array[0]) / (current_array[1] - current_array[0]));
-			c = c_black;
+			c = c_white;
 			
 			if (inputting && yy == menu_option[page]) draw_set_color(out);
 			draw_line_width(rtx, rty, rtx + len, rty, 2);
-			draw_set_color(c_black);
+			draw_set_color(c_white);
 			
 			if (inputting && yy == menu_option[page]) c = out;
 			
@@ -97,7 +97,7 @@ yy = 0; repeat(ds_height){
 		case menu_element_type.toggle:
 			var current_val = ds_grid[# 3, yy];
 			var c1, c2;
-			c = c_black;
+			c = c_white;
 			
 			if (inputting && yy == menu_option[page]) c = out;
 			

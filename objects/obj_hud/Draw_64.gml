@@ -21,7 +21,7 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	//draw rectangle
 	draw_set_color(c_black);
 	draw_set_alpha(0.5);
-	draw_roundrect_ext(x-15, y-10, x+boxwidth, y+65 , 10, 10, false);
+	draw_roundrect_ext(x-15, y-10, x+boxwidth, y+45 , 10, 10, false);
 	draw_set_alpha(1);
 	
 	text_y = 0;
@@ -42,6 +42,7 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	else draw_healthbar(x + string_width(HP)+5, text_y+5 , x+boxwidth-5, text_y+10, (pl.current_hp / pl.hp) * 100 , c_dkgray , c_red, c_lime, 0, true, true);
 	text_y += 10;
 	
+	/*
 	//Other Stats
 	DrawSetText(c_gray,font_stats,fa_left,fa_top)
 	draw_text(x, text_y, "HP - " + string(pl.hp))
@@ -50,7 +51,7 @@ if instance_exists(obj_player) && !(room == 0 || room == 1){
 	
 	draw_text(x, text_y, "SPD - " + string(pl.spd))
 	draw_text(x+70, text_y, "DEF - " + string(pl.def))
-	text_y += 10;
+	text_y += 10;*/
 	
 	//xp
 	OutlineText(x, text_y,XP)
